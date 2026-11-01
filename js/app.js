@@ -425,6 +425,9 @@
     if (g) { hideTip(); go(g.dataset.go); }
   });
 
+  // 候選人號次（2026-10 抽籤）；尚無號次時不顯示
+  function ballot(c) { return c.number ? `<span class="ballot num" title="號次 ${c.number}">${c.number}</span>` : ""; }
+
   function partyDot(k) { return `<i class="pdot" style="background:${party(k).color}"></i>`; }
 
   // 選區底色：該區最近一次縣市長選舉的領先者與領先幅度
@@ -517,7 +520,7 @@
       <section>
         <h4>2026 候選人 <span class="h4-note">${d.candidates.length} 人爭取 ${d.seats} 席${pred ? "　✓ 我的預測當選" : ""}</span></h4>
         ${pred
-          ? `<ol class="bars">${d.candidates.map((c) => barRow(`${c.elected ? '<b class="ok">✓</b>' : '<b class="ok"></b>'}${esc(c.name)}${c.incumbent ? "<em>現任</em>" : ""}`, c.party, c.share, maxShare)).join("")}</ol>`
+          ? `<ol class="bars">${d.candidates.map((c) => barRow(`${c.elected ? '<b class="ok">✓</b>' : '<b class="ok"></b>'}${ballot(c)}${esc(c.name)}${c.incumbent ? "<em>現任</em>" : ""}`, c.party, c.share, maxShare)).join("")}</ol>`
           : candList(d.candidates)}
       </section>
       <section>
@@ -526,7 +529,7 @@
       </section>
       ${d.mayorForecast ? `<section>
         <h4>我的預測：本區縣市長得票 <span class="h4-note">領先 ${d.mayorForecast.margin.toFixed(1)} 個百分點</span></h4>
-        <ol class="bars">${d.mayorForecast.candidates.map((x) => barRow(esc(x.name), x.party, x.share)).join("")}</ol>
+        <ol class="bars">${d.mayorForecast.candidates.map((x) => barRow(ballot(x) + esc(x.name), x.party, x.share)).join("")}</ol>
       </section>` : ""}
       <section>
         <h4>本區歷次縣市長選舉 <span class="h4-note">中選會開票結果</span></h4>
@@ -567,13 +570,13 @@
   function sortedEntries(o) { return Object.entries(o || {}).sort((a, b) => b[1] - a[1]); }
 
   function candList(list) {
-    return `<ul class="cands">${list.map((c) => `<li title="${esc(c.partyName)}">${partyDot(c.party)}${esc(c.name)}${c.incumbent ? "<em>現任</em>" : ""}</li>`).join("")}</ul>`;
+    return `<ul class="cands">${list.map((c) => `<li title="${esc(c.partyName)}${c.number ? ` · ${c.number} 號` : ""}">${ballot(c)}${partyDot(c.party)}${esc(c.name)}${c.incumbent ? "<em>現任</em>" : ""}</li>`).join("")}</ul>`;
   }
 
   function mayorList(m) {
     return m.basis === "prediction"
-      ? `<ol class="bars">${m.candidates.map((x) => barRow(esc(x.name) + (x.incumbent ? "<em>現任</em>" : ""), x.party, x.share ?? 0)).join("")}</ol>`
-      : `<ul class="cands mayor">${m.candidates.map((x) => `<li>${partyDot(x.party)}${esc(x.name)}<small>${esc(x.partyName)}</small>${x.incumbent ? "<em>現任</em>" : ""}</li>`).join("")}</ul>`;
+      ? `<ol class="bars">${m.candidates.map((x) => barRow(ballot(x) + esc(x.name) + (x.incumbent ? "<em>現任</em>" : ""), x.party, x.share ?? 0)).join("")}</ol>`
+      : `<ul class="cands mayor">${m.candidates.map((x) => `<li>${ballot(x)}${partyDot(x.party)}${esc(x.name)}<small>${esc(x.partyName)}</small>${x.incumbent ? "<em>現任</em>" : ""}</li>`).join("")}</ul>`;
   }
 
   function seatLabel(c) {

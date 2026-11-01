@@ -251,12 +251,15 @@ def main():
             total = sum(votes.values())
             return ({k: round(v / total * 100, 2) for k, v in votes.most_common()} if total else {}), dict(votes.most_common())
 
-        # 2026 登記參選人（data/candidates_2026/<縣市代碼>.txt，格式：選區|姓名|政黨，縣市長以「市長」為選區）
+        # 2026 登記參選人（data/candidates_2026/<縣市代碼>.txt，格式：選區|姓名|政黨|號次，縣市長以「市長」為選區，號次未知時留空）
         reg = collections.defaultdict(list)
         for line in (ROOT / f"data/candidates_2026/{code}.txt").read_text(encoding="utf-8").splitlines():
             if line.strip():
-                k, cname, pname = line.split("|")
-                reg[k].append({"name": cname, "party": PARTY_KEY.get(pname, "IND"), "partyName": pname})
+                k, cname, pname, *rest = line.split("|")
+                row = {"name": cname, "party": PARTY_KEY.get(pname, "IND"), "partyName": pname}
+                if rest and rest[0].strip():
+                    row["number"] = int(rest[0])
+                reg[k].append(row)
 
         def han(nm):
             return "".join(ch for ch in nm if "\u4e00" <= ch <= "\u9fff")

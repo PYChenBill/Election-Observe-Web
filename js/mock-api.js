@@ -30,6 +30,11 @@
   const sortedShares = (obj) => Object.entries(obj).sort((a, b) => b[1] - a[1]);
 
   // 依預測得票率標出前 N 名當選，並加總為政黨得票
+  // 有號次時依號次排列，尚無號次者排在後面（再以現任優先）
+  function byBallot(a, b) {
+    return (a.number ?? 1e9) - (b.number ?? 1e9) || b.incumbent - a.incumbent;
+  }
+
   function applyPrediction(candidates, pred, seats) {
     const list = candidates.map((c) => ({ ...c, share: pred[c.name] ?? null, elected: false }));
     const ranked = list.filter((c) => c.share != null).sort((a, b) => b.share - a.share);
@@ -75,8 +80,7 @@
       seatsByParty = {};
       candidates.filter((c) => c.elected).forEach((c) => (seatsByParty[c.party] = (seatsByParty[c.party] || 0) + 1));
     } else {
-      candidates = d.candidates.map((c) => ({ ...c, share: null, elected: false }))
-        .sort((a, b) => b.incumbent - a.incumbent);
+      candidates = d.candidates.map((c) => ({ ...c, share: null, elected: false })).sort(byBallot);
       partyShares = d.party2022 || {};
       seatsByParty = dhondt(partyShares, d.seats, caps);
       basis = "2022";
@@ -96,7 +100,7 @@
         margin: +(top[0].share - (top[1] ? top[1].share : 0)).toFixed(1) };
     }
     const h = c.mayorHistory[c.mayorHistory.length - 1];
-    return { basis: "2022", candidates: c.mayorCandidates.map((x) => ({ ...x, share: null })).sort((a, b) => b.incumbent - a.incumbent),
+    return { basis: "2022", candidates: c.mayorCandidates.map((x) => ({ ...x, share: null })).sort(byBallot),
       leader: h.results[0].party, leaderName: h.results[0].name, margin: +(h.results[0].share - h.results[1].share).toFixed(1) };
   }
 
@@ -126,7 +130,7 @@
     // GET /api/meta
     async getMeta() {
       const [d, preds] = await data();
-      return { election: "2026 地方公職人員選舉", voteDate: "2026-11-28", updatedAt: "2026-10-16",
+      return { election: "2026 地方公職人員選舉", voteDate: "2026-11-28", updatedAt: "2026-11-01",
         parties: PARTIES, hasPredictions: Object.keys(preds).length > 0, source: d.source };
     },
     // GET /api/counties
