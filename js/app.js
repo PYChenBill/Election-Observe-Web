@@ -574,8 +574,14 @@
   }
 
   function mayorList(m) {
+    const fmt = (n) => n.toLocaleString("zh-TW");
+    const hasVotes = m.voted != null;
+    const v = (n) => (hasVotes ? n ?? null : undefined);
+    const other = m.otherShare != null ? barRow("其他候選人", "IND", m.otherShare, 100, v(m.otherVotes)) : "";
+    const turnout = m.turnout != null
+      ? `<p class="tip-foot">預測投票率 ${m.turnout.toFixed(1)}%${m.electors ? `，選舉人約 ${fmt(m.electors)}、投票約 ${fmt(m.voted)} 人（選舉人為 2026 估計值）` : ""}</p>` : "";
     return m.basis === "prediction"
-      ? `<ol class="bars">${m.candidates.map((x) => barRow(ballot(x) + esc(x.name) + (x.incumbent ? "<em>現任</em>" : ""), x.party, x.share ?? 0)).join("")}</ol>`
+      ? `<ol class="bars${hasVotes ? " with-votes" : ""}">${m.candidates.filter((x) => x.share != null || m.otherShare == null).map((x) => barRow(ballot(x) + esc(x.name) + (x.incumbent ? "<em>現任</em>" : ""), x.party, x.share ?? 0, 100, v(x.votes))).join("")}${other}</ol>${turnout}`
       : `<ul class="cands mayor">${m.candidates.map((x) => `<li>${ballot(x)}${partyDot(x.party)}${esc(x.name)}<small>${esc(x.partyName)}</small>${x.incumbent ? "<em>現任</em>" : ""}</li>`).join("")}</ul>`;
   }
 
@@ -595,10 +601,10 @@
       `${partyDot(r.party)}${esc(r.name)} <span class="num">${r.share.toFixed(1)}%</span>`).join("　")}</p>`;
   }
 
-  function barRow(label, p, share, max = 100) {
+  function barRow(label, p, share, max = 100, votes) {
     return `<li><span class="bar-label">${label}</span>
       <span class="bar-track"><span class="bar-fill" style="width:${(share / max) * 100}%;background:${party(p).color}"></span></span>
-      <span class="num">${share.toFixed(1)}%</span></li>`;
+      <span class="num">${share.toFixed(1)}%</span>${votes !== undefined ? `<span class="num pred-votes">${votes != null ? votes.toLocaleString("zh-TW") + " 票" : ""}</span>` : ""}</li>`;
   }
 
   function seatSummary(sf) {

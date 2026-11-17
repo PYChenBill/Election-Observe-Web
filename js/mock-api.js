@@ -96,8 +96,12 @@
     if (pred && Object.keys(pred).length) {
       const { list } = applyPrediction(c.mayorCandidates, pred, 1);
       const top = list.filter((x) => x.share != null);
+      const votes = c.votes || {};
+      list.forEach((x) => (x.votes = votes[x.name] ?? null));
       return { basis: "prediction", candidates: list, leader: top[0].party, leaderName: top[0].name,
-        margin: +(top[0].share - (top[1] ? top[1].share : 0)).toFixed(1) };
+        margin: +(top[0].share - (top[1] ? top[1].share : 0)).toFixed(1),
+        turnout: c.turnout ?? null, electors: c.electors ?? null, voted: c.voted ?? null,
+        otherShare: pred["其他"] ?? null, otherVotes: votes["其他"] ?? null };
     }
     const h = c.mayorHistory[c.mayorHistory.length - 1];
     return { basis: "2022", candidates: c.mayorCandidates.map((x) => ({ ...x, share: null })).sort(byBallot),
@@ -120,7 +124,7 @@
     return (cache[c.code] = {
       id: c.code, name: c.name, totalSeats: c.totalSeats, seatForecast, seatPredicted,
       seatBasis: Object.keys(dp).length ? "mixed" : "2022",
-      mayor: buildMayor(c, p.mayor), mayorHistory: c.mayorHistory, districts, indigenous
+      mayor: buildMayor({ ...c, turnout: p.mayorTurnout, electors: p.mayorElectors, voted: p.mayorVoted, votes: p.mayorVotes }, p.mayor), mayorHistory: c.mayorHistory, districts, indigenous
     });
   }
 
