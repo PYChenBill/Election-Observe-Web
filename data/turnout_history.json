@@ -1,0 +1,8640 @@
+{
+ "_note": "投票率＝投票數／選舉人數（%）。縣市長：全縣市與各 2026 議員選區範圍內的縣市長選舉；議員：當年議員選舉依 2026 選區範圍重新加總。2014、2018 年選區範圍與 2026 不同者，以 2026 範圍內的鄉鎮／村里加總。原住民選區當年無同類選區者為 null。",
+ "source": "中選會選舉資料庫開票檔（github.com/kiang/db.cec.gov.tw 鏡像）",
+ "nationalMayor": {
+  "2014": {
+   "voted": 12512135,
+   "electors": 18511356,
+   "turnout": 67.59
+  },
+  "2018": {
+   "voted": 12791031,
+   "electors": 19102502,
+   "turnout": 66.96
+  },
+  "2022": {
+   "voted": 11695610,
+   "electors": 19181901,
+   "turnout": 60.97
+  }
+ },
+ "counties": {
+  "09007": {
+   "code": "09007",
+   "name": "連江縣",
+   "mayor": {
+    "2014": {
+     "voted": 6732,
+     "electors": 10040,
+     "turnout": 67.05
+    },
+    "2018": {
+     "voted": 7682,
+     "electors": 10773,
+     "turnout": 71.31
+    },
+    "2022": {
+     "voted": 8620,
+     "electors": 11810,
+     "turnout": 72.99
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "南竿鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 3799,
+       "electors": 5951,
+       "turnout": 63.84
+      },
+      "2018": {
+       "voted": 4334,
+       "electors": 6200,
+       "turnout": 69.9
+      },
+      "2022": {
+       "voted": 4579,
+       "electors": 6466,
+       "turnout": 70.82
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 3799,
+       "electors": 5949,
+       "turnout": 63.86
+      },
+      "2018": {
+       "voted": 4335,
+       "electors": 6200,
+       "turnout": 69.92
+      },
+      "2022": {
+       "voted": 4576,
+       "electors": 6465,
+       "turnout": 70.78
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "北竿鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 1335,
+       "electors": 1881,
+       "turnout": 70.97
+      },
+      "2018": {
+       "voted": 1518,
+       "electors": 2035,
+       "turnout": 74.59
+      },
+      "2022": {
+       "voted": 2089,
+       "electors": 2745,
+       "turnout": 76.1
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 1333,
+       "electors": 1879,
+       "turnout": 70.94
+      },
+      "2018": {
+       "voted": 1519,
+       "electors": 2034,
+       "turnout": 74.68
+      },
+      "2022": {
+       "voted": 2087,
+       "electors": 2742,
+       "turnout": 76.11
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "莒光鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 785,
+       "electors": 1212,
+       "turnout": 64.77
+      },
+      "2018": {
+       "voted": 1126,
+       "electors": 1442,
+       "turnout": 78.09
+      },
+      "2022": {
+       "voted": 969,
+       "electors": 1321,
+       "turnout": 73.35
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 783,
+       "electors": 1211,
+       "turnout": 64.66
+      },
+      "2018": {
+       "voted": 1126,
+       "electors": 1442,
+       "turnout": 78.09
+      },
+      "2022": {
+       "voted": 968,
+       "electors": 1320,
+       "turnout": 73.33
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "東引鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 813,
+       "electors": 996,
+       "turnout": 81.63
+      },
+      "2018": {
+       "voted": 704,
+       "electors": 1096,
+       "turnout": 64.23
+      },
+      "2022": {
+       "voted": 983,
+       "electors": 1278,
+       "turnout": 76.92
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 813,
+       "electors": 996,
+       "turnout": 81.63
+      },
+      "2018": {
+       "voted": 704,
+       "electors": 1095,
+       "turnout": 64.29
+      },
+      "2022": {
+       "voted": 982,
+       "electors": 1277,
+       "turnout": 76.9
+      }
+     }
+    }
+   ],
+   "indigenous": []
+  },
+  "09020": {
+   "code": "09020",
+   "name": "金門縣",
+   "mayor": {
+    "2014": {
+     "voted": 46757,
+     "electors": 103555,
+     "turnout": 45.15
+    },
+    "2018": {
+     "voted": 50419,
+     "electors": 117913,
+     "turnout": 42.76
+    },
+    "2022": {
+     "voted": 48089,
+     "electors": 122294,
+     "turnout": 39.32
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "金城鎮",
+      "金寧鄉",
+      "烏坵鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 25335,
+       "electors": 55268,
+       "turnout": 45.84
+      },
+      "2018": {
+       "voted": 26770,
+       "electors": 63486,
+       "turnout": 42.17
+      },
+      "2022": {
+       "voted": 25758,
+       "electors": 66076,
+       "turnout": 38.98
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 25323,
+       "electors": 55180,
+       "turnout": 45.89
+      },
+      "2018": {
+       "voted": 26753,
+       "electors": 63432,
+       "turnout": 42.18
+      },
+      "2022": {
+       "voted": 25747,
+       "electors": 66019,
+       "turnout": 39.0
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "金沙鎮",
+      "金湖鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 16902,
+       "electors": 38303,
+       "turnout": 44.13
+      },
+      "2018": {
+       "voted": 18888,
+       "electors": 43102,
+       "turnout": 43.82
+      },
+      "2022": {
+       "voted": 18095,
+       "electors": 44793,
+       "turnout": 40.4
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 16888,
+       "electors": 38232,
+       "turnout": 44.17
+      },
+      "2018": {
+       "voted": 18872,
+       "electors": 43008,
+       "turnout": 43.88
+      },
+      "2022": {
+       "voted": 18081,
+       "electors": 44758,
+       "turnout": 40.4
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "烈嶼鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 4520,
+       "electors": 9984,
+       "turnout": 45.27
+      },
+      "2018": {
+       "voted": 4761,
+       "electors": 11325,
+       "turnout": 42.04
+      },
+      "2022": {
+       "voted": 4236,
+       "electors": 11425,
+       "turnout": 37.08
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 4515,
+       "electors": 9964,
+       "turnout": 45.31
+      },
+      "2018": {
+       "voted": 4760,
+       "electors": 11323,
+       "turnout": 42.04
+      },
+      "2022": {
+       "voted": 4235,
+       "electors": 11417,
+       "turnout": 37.09
+      }
+     }
+    }
+   ],
+   "indigenous": []
+  },
+  "10002": {
+   "code": "10002",
+   "name": "宜蘭縣",
+   "mayor": {
+    "2014": {
+     "voted": 257288,
+     "electors": 365138,
+     "turnout": 70.46
+    },
+    "2018": {
+     "voted": 258048,
+     "electors": 373510,
+     "turnout": 69.09
+    },
+    "2022": {
+     "voted": 240916,
+     "electors": 374779,
+     "turnout": 64.28
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "宜蘭市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 49672,
+       "electors": 74174,
+       "turnout": 66.97
+      },
+      "2018": {
+       "voted": 50748,
+       "electors": 76344,
+       "turnout": 66.47
+      },
+      "2022": {
+       "voted": 47035,
+       "electors": 76650,
+       "turnout": 61.36
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 49178,
+       "electors": 73209,
+       "turnout": 67.17
+      },
+      "2018": {
+       "voted": 50222,
+       "electors": 75410,
+       "turnout": 66.6
+      },
+      "2022": {
+       "voted": 46537,
+       "electors": 75588,
+       "turnout": 61.57
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "頭城鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 18963,
+       "electors": 24352,
+       "turnout": 77.87
+      },
+      "2018": {
+       "voted": 17857,
+       "electors": 24345,
+       "turnout": 73.35
+      },
+      "2022": {
+       "voted": 17452,
+       "electors": 24249,
+       "turnout": 71.97
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 18839,
+       "electors": 24173,
+       "turnout": 77.93
+      },
+      "2018": {
+       "voted": 17734,
+       "electors": 24144,
+       "turnout": 73.45
+      },
+      "2022": {
+       "voted": 17332,
+       "electors": 24027,
+       "turnout": 72.14
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "礁溪鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 22674,
+       "electors": 29403,
+       "turnout": 77.11
+      },
+      "2018": {
+       "voted": 21867,
+       "electors": 30106,
+       "turnout": 72.63
+      },
+      "2022": {
+       "voted": 20279,
+       "electors": 29950,
+       "turnout": 67.71
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 22520,
+       "electors": 29143,
+       "turnout": 77.27
+      },
+      "2018": {
+       "voted": 21694,
+       "electors": 29812,
+       "turnout": 72.77
+      },
+      "2022": {
+       "voted": 20112,
+       "electors": 29610,
+       "turnout": 67.92
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "員山鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 18685,
+       "electors": 26472,
+       "turnout": 70.58
+      },
+      "2018": {
+       "voted": 18949,
+       "electors": 27266,
+       "turnout": 69.5
+      },
+      "2022": {
+       "voted": 17505,
+       "electors": 27549,
+       "turnout": 63.54
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 18509,
+       "electors": 26152,
+       "turnout": 70.77
+      },
+      "2018": {
+       "voted": 18762,
+       "electors": 26961,
+       "turnout": 69.59
+      },
+      "2022": {
+       "voted": 17307,
+       "electors": 27157,
+       "turnout": 63.73
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "壯圍鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 16133,
+       "electors": 20208,
+       "turnout": 79.83
+      },
+      "2018": {
+       "voted": 15818,
+       "electors": 20762,
+       "turnout": 76.19
+      },
+      "2022": {
+       "voted": 14389,
+       "electors": 21272,
+       "turnout": 67.64
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 16024,
+       "electors": 20012,
+       "turnout": 80.07
+      },
+      "2018": {
+       "voted": 15676,
+       "electors": 20573,
+       "turnout": 76.2
+      },
+      "2022": {
+       "voted": 14267,
+       "electors": 21049,
+       "turnout": 67.78
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "羅東鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 35324,
+       "electors": 54523,
+       "turnout": 64.79
+      },
+      "2018": {
+       "voted": 35963,
+       "electors": 55640,
+       "turnout": 64.64
+      },
+      "2022": {
+       "voted": 33378,
+       "electors": 55126,
+       "turnout": 60.55
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 34803,
+       "electors": 53526,
+       "turnout": 65.02
+      },
+      "2018": {
+       "voted": 35382,
+       "electors": 54654,
+       "turnout": 64.74
+      },
+      "2022": {
+       "voted": 32922,
+       "electors": 54050,
+       "turnout": 60.91
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "五結鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 21833,
+       "electors": 32413,
+       "turnout": 67.36
+      },
+      "2018": {
+       "voted": 22657,
+       "electors": 33840,
+       "turnout": 66.95
+      },
+      "2022": {
+       "voted": 21094,
+       "electors": 34891,
+       "turnout": 60.46
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 21598,
+       "electors": 31943,
+       "turnout": 67.61
+      },
+      "2018": {
+       "voted": 22423,
+       "electors": 33411,
+       "turnout": 67.11
+      },
+      "2022": {
+       "voted": 20832,
+       "electors": 34293,
+       "turnout": 60.75
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "towns": [
+      "冬山鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 28619,
+       "electors": 42932,
+       "turnout": 66.66
+      },
+      "2018": {
+       "voted": 29549,
+       "electors": 43993,
+       "turnout": 67.17
+      },
+      "2022": {
+       "voted": 27818,
+       "electors": 44463,
+       "turnout": 62.56
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 28336,
+       "electors": 42373,
+       "turnout": 66.87
+      },
+      "2018": {
+       "voted": 29221,
+       "electors": 43420,
+       "turnout": 67.3
+      },
+      "2022": {
+       "voted": 27464,
+       "electors": 43744,
+       "turnout": 62.78
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "towns": [
+      "三星鄉",
+      "大同鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 17139,
+       "electors": 22427,
+       "turnout": 76.42
+      },
+      "2018": {
+       "voted": 17188,
+       "electors": 23234,
+       "turnout": 73.98
+      },
+      "2022": {
+       "voted": 16680,
+       "electors": 23520,
+       "turnout": 70.92
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 13744,
+       "electors": 18480,
+       "turnout": 74.37
+      },
+      "2018": {
+       "voted": 13625,
+       "electors": 19050,
+       "turnout": 71.52
+      },
+      "2022": {
+       "voted": 13124,
+       "electors": 19177,
+       "turnout": 68.44
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "towns": [
+      "南澳鄉",
+      "蘇澳鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 28246,
+       "electors": 38234,
+       "turnout": 73.88
+      },
+      "2018": {
+       "voted": 27452,
+       "electors": 37980,
+       "turnout": 72.28
+      },
+      "2022": {
+       "voted": 25286,
+       "electors": 37109,
+       "turnout": 68.14
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 24539,
+       "electors": 33905,
+       "turnout": 72.38
+      },
+      "2018": {
+       "voted": 23699,
+       "electors": 33510,
+       "turnout": 70.72
+      },
+      "2022": {
+       "voted": 21664,
+       "electors": 32441,
+       "turnout": 66.78
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 11,
+     "name": "第11選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 1018,
+       "electors": 1523,
+       "turnout": 66.84
+      },
+      "2018": {
+       "voted": 1083,
+       "electors": 1749,
+       "turnout": 61.92
+      },
+      "2022": {
+       "voted": 1044,
+       "electors": 2004,
+       "turnout": 52.1
+      }
+     }
+    },
+    {
+     "no": 12,
+     "name": "第12選區（山地原住民）",
+     "scope": "大同鄉及宜蘭市、頭城、礁溪、員山、壯圍、三星",
+     "council": {
+      "2014": {
+       "voted": 3732,
+       "electors": 4537,
+       "turnout": 82.26
+      },
+      "2018": {
+       "voted": 3961,
+       "electors": 4845,
+       "turnout": 81.75
+      },
+      "2022": {
+       "voted": 3948,
+       "electors": 5104,
+       "turnout": 77.35
+      }
+     }
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "scope": "南澳鄉及羅東、五結、冬山、蘇澳",
+     "council": {
+      "2014": {
+       "voted": 3899,
+       "electors": 4766,
+       "turnout": 81.81
+      },
+      "2018": {
+       "voted": 4125,
+       "electors": 5069,
+       "turnout": 81.38
+      },
+      "2022": {
+       "voted": 3889,
+       "electors": 5375,
+       "turnout": 72.35
+      }
+     }
+    }
+   ]
+  },
+  "10004": {
+   "code": "10004",
+   "name": "新竹縣",
+   "mayor": {
+    "2014": {
+     "voted": 277203,
+     "electors": 403173,
+     "turnout": 68.76
+    },
+    "2018": {
+     "voted": 290600,
+     "electors": 427652,
+     "turnout": 67.95
+    },
+    "2022": {
+     "voted": 267013,
+     "electors": 452720,
+     "turnout": 58.98
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "竹北市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 30284,
+       "electors": 45026,
+       "turnout": 67.26
+      },
+      "2018": {
+       "voted": 31471,
+       "electors": 47987,
+       "turnout": 65.58
+      },
+      "2022": {
+       "voted": 28734,
+       "electors": 50168,
+       "turnout": 57.28
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 30151,
+       "electors": 44683,
+       "turnout": 67.48
+      },
+      "2018": {
+       "voted": 31297,
+       "electors": 47636,
+       "turnout": 65.7
+      },
+      "2022": {
+       "voted": 28577,
+       "electors": 49784,
+       "turnout": 57.4
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "竹北市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 41379,
+       "electors": 69295,
+       "turnout": 59.71
+      },
+      "2018": {
+       "voted": 53452,
+       "electors": 83002,
+       "turnout": 64.4
+      },
+      "2022": {
+       "voted": 53860,
+       "electors": 98383,
+       "turnout": 54.75
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 41223,
+       "electors": 68803,
+       "turnout": 59.91
+      },
+      "2018": {
+       "voted": 53280,
+       "electors": 82467,
+       "turnout": 64.61
+      },
+      "2022": {
+       "voted": 53649,
+       "electors": 97750,
+       "turnout": 54.88
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "湖口鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 40406,
+       "electors": 58674,
+       "turnout": 68.87
+      },
+      "2018": {
+       "voted": 40850,
+       "electors": 61121,
+       "turnout": 66.83
+      },
+      "2022": {
+       "voted": 37740,
+       "electors": 64996,
+       "turnout": 58.07
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 40009,
+       "electors": 57869,
+       "turnout": 69.14
+      },
+      "2018": {
+       "voted": 40438,
+       "electors": 60222,
+       "turnout": 67.15
+      },
+      "2022": {
+       "voted": 37342,
+       "electors": 63890,
+       "turnout": 58.45
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "新豐鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 29816,
+       "electors": 41645,
+       "turnout": 71.6
+      },
+      "2018": {
+       "voted": 29860,
+       "electors": 43984,
+       "turnout": 67.89
+      },
+      "2022": {
+       "voted": 25273,
+       "electors": 46193,
+       "turnout": 54.71
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 29605,
+       "electors": 41189,
+       "turnout": 71.88
+      },
+      "2018": {
+       "voted": 29556,
+       "electors": 43445,
+       "turnout": 68.03
+      },
+      "2022": {
+       "voted": 25009,
+       "electors": 45555,
+       "turnout": 54.9
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "關西鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 19004,
+       "electors": 24674,
+       "turnout": 77.02
+      },
+      "2018": {
+       "voted": 17331,
+       "electors": 23912,
+       "turnout": 72.48
+      },
+      "2022": {
+       "voted": 15970,
+       "electors": 23240,
+       "turnout": 68.72
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 18756,
+       "electors": 24280,
+       "turnout": 77.25
+      },
+      "2018": {
+       "voted": 17082,
+       "electors": 23538,
+       "turnout": 72.57
+      },
+      "2022": {
+       "voted": 15747,
+       "electors": 22844,
+       "turnout": 68.93
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "新埔鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 20545,
+       "electors": 28318,
+       "turnout": 72.55
+      },
+      "2018": {
+       "voted": 19980,
+       "electors": 28030,
+       "turnout": 71.28
+      },
+      "2022": {
+       "voted": 18218,
+       "electors": 28475,
+       "turnout": 63.98
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 20434,
+       "electors": 28112,
+       "turnout": 72.69
+      },
+      "2018": {
+       "voted": 19865,
+       "electors": 27806,
+       "turnout": 71.44
+      },
+      "2022": {
+       "voted": 18100,
+       "electors": 28194,
+       "turnout": 64.2
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "橫山鄉",
+      "尖石鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 14458,
+       "electors": 18077,
+       "turnout": 79.98
+      },
+      "2018": {
+       "voted": 14152,
+       "electors": 18058,
+       "turnout": 78.37
+      },
+      "2022": {
+       "voted": 12862,
+       "electors": 17749,
+       "turnout": 72.47
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 9789,
+       "electors": 12294,
+       "turnout": 79.62
+      },
+      "2018": {
+       "voted": 9200,
+       "electors": 11930,
+       "turnout": 77.12
+      },
+      "2022": {
+       "voted": 8052,
+       "electors": 11507,
+       "turnout": 69.97
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "towns": [
+      "芎林鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 12527,
+       "electors": 16343,
+       "turnout": 76.65
+      },
+      "2018": {
+       "voted": 12525,
+       "electors": 16663,
+       "turnout": 75.17
+      },
+      "2022": {
+       "voted": 10934,
+       "electors": 17157,
+       "turnout": 63.73
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 12381,
+       "electors": 16126,
+       "turnout": 76.78
+      },
+      "2018": {
+       "voted": 12394,
+       "electors": 16441,
+       "turnout": 75.38
+      },
+      "2022": {
+       "voted": 10802,
+       "electors": 16893,
+       "turnout": 63.94
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "towns": [
+      "竹東鎮",
+      "五峰鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 49444,
+       "electors": 76444,
+       "turnout": 64.68
+      },
+      "2018": {
+       "voted": 51150,
+       "electors": 79583,
+       "turnout": 64.27
+      },
+      "2022": {
+       "voted": 45890,
+       "electors": 81449,
+       "turnout": 56.34
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 45489,
+       "electors": 70763,
+       "turnout": 64.28
+      },
+      "2018": {
+       "voted": 47043,
+       "electors": 73679,
+       "turnout": 63.85
+      },
+      "2022": {
+       "voted": 41969,
+       "electors": 75286,
+       "turnout": 55.75
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "towns": [
+      "寶山鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 8723,
+       "electors": 11723,
+       "turnout": 74.41
+      },
+      "2018": {
+       "voted": 9363,
+       "electors": 12465,
+       "turnout": 75.11
+      },
+      "2022": {
+       "voted": 8577,
+       "electors": 12512,
+       "turnout": 68.55
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 8670,
+       "electors": 11620,
+       "turnout": 74.61
+      },
+      "2018": {
+       "voted": 9303,
+       "electors": 12359,
+       "turnout": 75.27
+      },
+      "2022": {
+       "voted": 8523,
+       "electors": 12403,
+       "turnout": 68.72
+      }
+     }
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "towns": [
+      "北埔鄉",
+      "峨眉鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 10617,
+       "electors": 12954,
+       "turnout": 81.96
+      },
+      "2018": {
+       "voted": 10466,
+       "electors": 12847,
+       "turnout": 81.47
+      },
+      "2022": {
+       "voted": 8955,
+       "electors": 12398,
+       "turnout": 72.23
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 10563,
+       "electors": 12874,
+       "turnout": 82.05
+      },
+      "2018": {
+       "voted": 10403,
+       "electors": 12765,
+       "turnout": 81.5
+      },
+      "2022": {
+       "voted": 8892,
+       "electors": 12296,
+       "turnout": 72.32
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 12,
+     "name": "第12選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 925,
+       "electors": 1737,
+       "turnout": 53.25
+      },
+      "2018": {
+       "voted": 1049,
+       "electors": 1945,
+       "turnout": 53.93
+      },
+      "2022": {
+       "voted": 1007,
+       "electors": 2170,
+       "turnout": 46.41
+      }
+     }
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "scope": "尖石鄉及竹北、湖口、新豐、關西、新埔、橫山",
+     "council": {
+      "2014": {
+       "voted": 5096,
+       "electors": 6640,
+       "turnout": 76.75
+      },
+      "2018": {
+       "voted": 5473,
+       "electors": 7128,
+       "turnout": 76.78
+      },
+      "2022": {
+       "voted": 5308,
+       "electors": 7544,
+       "turnout": 70.36
+      }
+     }
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "scope": "五峰鄉及芎林、竹東、寶山、北埔、峨眉",
+     "council": {
+      "2014": {
+       "voted": 3864,
+       "electors": 5367,
+       "turnout": 72.0
+      },
+      "2018": {
+       "voted": 3996,
+       "electors": 5561,
+       "turnout": 71.86
+      },
+      "2022": {
+       "voted": 3804,
+       "electors": 5794,
+       "turnout": 65.65
+      }
+     }
+    }
+   ]
+  },
+  "10005": {
+   "code": "10005",
+   "name": "苗栗縣",
+   "mayor": {
+    "2014": {
+     "voted": 324807,
+     "electors": 446182,
+     "turnout": 72.8
+    },
+    "2018": {
+     "voted": 315841,
+     "electors": 446507,
+     "turnout": 70.74
+    },
+    "2022": {
+     "voted": 298319,
+     "electors": 443908,
+     "turnout": 67.2
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "公館鄉",
+      "頭屋鄉",
+      "苗栗市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 77530,
+       "electors": 108695,
+       "turnout": 71.33
+      },
+      "2018": {
+       "voted": 75087,
+       "electors": 108407,
+       "turnout": 69.26
+      },
+      "2022": {
+       "voted": 69785,
+       "electors": 106749,
+       "turnout": 65.37
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 77173,
+       "electors": 108021,
+       "turnout": 71.44
+      },
+      "2018": {
+       "voted": 74696,
+       "electors": 107723,
+       "turnout": 69.34
+      },
+      "2022": {
+       "voted": 69360,
+       "electors": 105970,
+       "turnout": 65.45
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "三義鄉",
+      "銅鑼鄉",
+      "西湖鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 27952,
+       "electors": 35765,
+       "turnout": 78.15
+      },
+      "2018": {
+       "voted": 26348,
+       "electors": 34747,
+       "turnout": 75.83
+      },
+      "2022": {
+       "voted": 23724,
+       "electors": 33103,
+       "turnout": 71.67
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 27819,
+       "electors": 35574,
+       "turnout": 78.2
+      },
+      "2018": {
+       "voted": 26208,
+       "electors": 34539,
+       "turnout": 75.88
+      },
+      "2022": {
+       "voted": 23585,
+       "electors": 32864,
+       "turnout": 71.77
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "苑裡鎮",
+      "通霄鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 50689,
+       "electors": 68134,
+       "turnout": 74.4
+      },
+      "2018": {
+       "voted": 48973,
+       "electors": 66262,
+       "turnout": 73.91
+      },
+      "2022": {
+       "voted": 45543,
+       "electors": 64986,
+       "turnout": 70.08
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 50562,
+       "electors": 67931,
+       "turnout": 74.43
+      },
+      "2018": {
+       "voted": 48834,
+       "electors": 66035,
+       "turnout": 73.95
+      },
+      "2022": {
+       "voted": 45429,
+       "electors": 64754,
+       "turnout": 70.16
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "後龍鎮",
+      "造橋鄉",
+      "竹南鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 75704,
+       "electors": 104432,
+       "turnout": 72.49
+      },
+      "2018": {
+       "voted": 73827,
+       "electors": 106679,
+       "turnout": 69.2
+      },
+      "2022": {
+       "voted": 72031,
+       "electors": 108267,
+       "turnout": 66.53
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 75223,
+       "electors": 103590,
+       "turnout": 72.62
+      },
+      "2018": {
+       "voted": 73384,
+       "electors": 105781,
+       "turnout": 69.37
+      },
+      "2022": {
+       "voted": 71518,
+       "electors": 107214,
+       "turnout": 66.71
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "南庄鄉",
+      "頭份市",
+      "三灣鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 63247,
+       "electors": 92359,
+       "turnout": 68.48
+      },
+      "2018": {
+       "voted": 63853,
+       "electors": 94828,
+       "turnout": 67.34
+      },
+      "2022": {
+       "voted": 61797,
+       "electors": 97022,
+       "turnout": 63.69
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 61623,
+       "electors": 89686,
+       "turnout": 68.71
+      },
+      "2018": {
+       "voted": 62183,
+       "electors": 92179,
+       "turnout": 67.46
+      },
+      "2022": {
+       "voted": 60246,
+       "electors": 94361,
+       "turnout": 63.85
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "卓蘭鎮",
+      "獅潭鄉",
+      "大湖鄉",
+      "泰安鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 29685,
+       "electors": 36797,
+       "turnout": 80.67
+      },
+      "2018": {
+       "voted": 27753,
+       "electors": 35584,
+       "turnout": 77.99
+      },
+      "2022": {
+       "voted": 25439,
+       "electors": 33781,
+       "turnout": 75.31
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 26448,
+       "electors": 33200,
+       "turnout": 79.66
+      },
+      "2018": {
+       "voted": 24415,
+       "electors": 31867,
+       "turnout": 76.62
+      },
+      "2022": {
+       "voted": 22169,
+       "electors": 30010,
+       "turnout": 73.87
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 1941,
+       "electors": 2995,
+       "turnout": 64.81
+      },
+      "2018": {
+       "voted": 2028,
+       "electors": 3153,
+       "turnout": 64.32
+      },
+      "2022": {
+       "voted": 1887,
+       "electors": 3239,
+       "turnout": 58.26
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 3786,
+       "electors": 4526,
+       "turnout": 83.65
+      },
+      "2018": {
+       "voted": 3940,
+       "electors": 4781,
+       "turnout": 82.41
+      },
+      "2022": {
+       "voted": 3919,
+       "electors": 5014,
+       "turnout": 78.16
+      }
+     }
+    }
+   ]
+  },
+  "10007": {
+   "code": "10007",
+   "name": "彰化縣",
+   "mayor": {
+    "2014": {
+     "voted": 740797,
+     "electors": 1015804,
+     "turnout": 72.93
+    },
+    "2018": {
+     "voted": 731136,
+     "electors": 1031222,
+     "turnout": 70.9
+    },
+    "2022": {
+     "voted": 667519,
+     "electors": 1028606,
+     "turnout": 64.9
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "芬園鄉",
+      "彰化市",
+      "花壇鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 170160,
+       "electors": 237764,
+       "turnout": 71.57
+      },
+      "2018": {
+       "voted": 168195,
+       "electors": 241778,
+       "turnout": 69.57
+      },
+      "2022": {
+       "voted": 151666,
+       "electors": 240197,
+       "turnout": 63.14
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 169619,
+       "electors": 236823,
+       "turnout": 71.62
+      },
+      "2018": {
+       "voted": 167628,
+       "electors": 240828,
+       "turnout": 69.6
+      },
+      "2022": {
+       "voted": 151151,
+       "electors": 239225,
+       "turnout": 63.18
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "福興鄉",
+      "秀水鄉",
+      "鹿港鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 100805,
+       "electors": 134222,
+       "turnout": 75.1
+      },
+      "2018": {
+       "voted": 98113,
+       "electors": 137741,
+       "turnout": 71.23
+      },
+      "2022": {
+       "voted": 90028,
+       "electors": 137890,
+       "turnout": 65.29
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 100512,
+       "electors": 133738,
+       "turnout": 75.16
+      },
+      "2018": {
+       "voted": 97838,
+       "electors": 137264,
+       "turnout": 71.28
+      },
+      "2022": {
+       "voted": 89776,
+       "electors": 137432,
+       "turnout": 65.32
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "和美鎮",
+      "伸港鄉",
+      "線西鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 81510,
+       "electors": 112123,
+       "turnout": 72.7
+      },
+      "2018": {
+       "voted": 81313,
+       "electors": 115687,
+       "turnout": 70.29
+      },
+      "2022": {
+       "voted": 74531,
+       "electors": 117079,
+       "turnout": 63.66
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 81338,
+       "electors": 111796,
+       "turnout": 72.76
+      },
+      "2018": {
+       "voted": 81099,
+       "electors": 115312,
+       "turnout": 70.33
+      },
+      "2022": {
+       "voted": 74327,
+       "electors": 116691,
+       "turnout": 63.7
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "員林市",
+      "永靖鄉",
+      "大村鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 111868,
+       "electors": 156007,
+       "turnout": 71.71
+      },
+      "2018": {
+       "voted": 109961,
+       "electors": 159307,
+       "turnout": 69.02
+      },
+      "2022": {
+       "voted": 104452,
+       "electors": 161482,
+       "turnout": 64.68
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 111698,
+       "electors": 155658,
+       "turnout": 71.76
+      },
+      "2018": {
+       "voted": 109784,
+       "electors": 158919,
+       "turnout": 69.08
+      },
+      "2022": {
+       "voted": 104282,
+       "electors": 160987,
+       "turnout": 64.78
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "埔鹽鄉",
+      "溪湖鎮",
+      "埔心鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 72618,
+       "electors": 97821,
+       "turnout": 74.24
+      },
+      "2018": {
+       "voted": 73639,
+       "electors": 99382,
+       "turnout": 74.1
+      },
+      "2022": {
+       "voted": 66620,
+       "electors": 99070,
+       "turnout": 67.25
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 72493,
+       "electors": 97544,
+       "turnout": 74.32
+      },
+      "2018": {
+       "voted": 73354,
+       "electors": 99107,
+       "turnout": 74.01
+      },
+      "2022": {
+       "voted": 66462,
+       "electors": 98717,
+       "turnout": 67.33
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "二水鄉",
+      "社頭鄉",
+      "田中鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 60535,
+       "electors": 82326,
+       "turnout": 73.53
+      },
+      "2018": {
+       "voted": 59002,
+       "electors": 82363,
+       "turnout": 71.64
+      },
+      "2022": {
+       "voted": 53751,
+       "electors": 80942,
+       "turnout": 66.41
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 60433,
+       "electors": 82142,
+       "turnout": 73.57
+      },
+      "2018": {
+       "voted": 58899,
+       "electors": 82166,
+       "turnout": 71.68
+      },
+      "2022": {
+       "voted": 53666,
+       "electors": 80732,
+       "turnout": 66.47
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "北斗鎮",
+      "埤頭鄉",
+      "溪州鄉",
+      "田尾鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 71444,
+       "electors": 97624,
+       "turnout": 73.18
+      },
+      "2018": {
+       "voted": 70821,
+       "electors": 98415,
+       "turnout": 71.96
+      },
+      "2022": {
+       "voted": 64022,
+       "electors": 97955,
+       "turnout": 65.36
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 71332,
+       "electors": 97434,
+       "turnout": 73.21
+      },
+      "2018": {
+       "voted": 70720,
+       "electors": 98241,
+       "turnout": 71.99
+      },
+      "2022": {
+       "voted": 63938,
+       "electors": 97768,
+       "turnout": 65.4
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "towns": [
+      "二林鎮",
+      "大城鄉",
+      "芳苑鄉",
+      "竹塘鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 71857,
+       "electors": 97917,
+       "turnout": 73.39
+      },
+      "2018": {
+       "voted": 70092,
+       "electors": 96549,
+       "turnout": 72.6
+      },
+      "2022": {
+       "voted": 62449,
+       "electors": 93991,
+       "turnout": 66.44
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 71753,
+       "electors": 97704,
+       "turnout": 73.44
+      },
+      "2018": {
+       "voted": 69965,
+       "electors": 96344,
+       "turnout": 72.62
+      },
+      "2022": {
+       "voted": 62332,
+       "electors": 93776,
+       "turnout": 66.47
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 9,
+     "name": "第9選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 1167,
+       "electors": 1759,
+       "turnout": 66.34
+      },
+      "2018": {
+       "voted": 1216,
+       "electors": 1920,
+       "turnout": 63.33
+      },
+      "2022": {
+       "voted": 1248,
+       "electors": 2120,
+       "turnout": 58.87
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": null,
+      "2018": null,
+      "2022": null
+     }
+    }
+   ]
+  },
+  "10008": {
+   "code": "10008",
+   "name": "南投縣",
+   "mayor": {
+    "2014": {
+     "voted": 302736,
+     "electors": 414091,
+     "turnout": 73.11
+    },
+    "2018": {
+     "voted": 300608,
+     "electors": 413222,
+     "turnout": 72.75
+    },
+    "2022": {
+     "voted": 280596,
+     "electors": 406195,
+     "turnout": 69.08
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "名間鄉",
+      "南投市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 84265,
+       "electors": 113561,
+       "turnout": 74.2
+      },
+      "2018": {
+       "voted": 83292,
+       "electors": 113866,
+       "turnout": 73.15
+      },
+      "2022": {
+       "voted": 78340,
+       "electors": 112346,
+       "turnout": 69.73
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 83902,
+       "electors": 112874,
+       "turnout": 74.33
+      },
+      "2018": {
+       "voted": 82846,
+       "electors": 113080,
+       "turnout": 73.26
+      },
+      "2022": {
+       "voted": 77898,
+       "electors": 111482,
+       "turnout": 69.87
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "中寮鄉",
+      "草屯鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 66359,
+       "electors": 92094,
+       "turnout": 72.06
+      },
+      "2018": {
+       "voted": 66581,
+       "electors": 92881,
+       "turnout": 71.68
+      },
+      "2022": {
+       "voted": 62564,
+       "electors": 93105,
+       "turnout": 67.2
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 66107,
+       "electors": 91637,
+       "turnout": 72.14
+      },
+      "2018": {
+       "voted": 66328,
+       "electors": 92411,
+       "turnout": 71.78
+      },
+      "2022": {
+       "voted": 62304,
+       "electors": 92587,
+       "turnout": 67.29
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "水里鄉",
+      "信義鄉",
+      "集集鎮",
+      "魚池鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 38506,
+       "electors": 51668,
+       "turnout": 74.53
+      },
+      "2018": {
+       "voted": 38694,
+       "electors": 50729,
+       "turnout": 76.28
+      },
+      "2022": {
+       "voted": 35938,
+       "electors": 48810,
+       "turnout": 73.63
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 32850,
+       "electors": 44216,
+       "turnout": 74.29
+      },
+      "2018": {
+       "voted": 32619,
+       "electors": 42949,
+       "turnout": 75.95
+      },
+      "2022": {
+       "voted": 30288,
+       "electors": 41022,
+       "turnout": 73.83
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "竹山鎮",
+      "鹿谷鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 45622,
+       "electors": 61856,
+       "turnout": 73.76
+      },
+      "2018": {
+       "voted": 43594,
+       "electors": 61070,
+       "turnout": 71.38
+      },
+      "2022": {
+       "voted": 40179,
+       "electors": 59121,
+       "turnout": 67.96
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 45495,
+       "electors": 61631,
+       "turnout": 73.82
+      },
+      "2018": {
+       "voted": 43463,
+       "electors": 60832,
+       "turnout": 71.45
+      },
+      "2022": {
+       "voted": 40049,
+       "electors": 58852,
+       "turnout": 68.05
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "埔里鎮",
+      "國姓鄉",
+      "仁愛鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 67984,
+       "electors": 94912,
+       "turnout": 71.63
+      },
+      "2018": {
+       "voted": 68447,
+       "electors": 94676,
+       "turnout": 72.3
+      },
+      "2022": {
+       "voted": 63575,
+       "electors": 92813,
+       "turnout": 68.5
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 59272,
+       "electors": 83732,
+       "turnout": 70.79
+      },
+      "2018": {
+       "voted": 59380,
+       "electors": 82976,
+       "turnout": 71.56
+      },
+      "2022": {
+       "voted": 54643,
+       "electors": 80708,
+       "turnout": 67.7
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 6,
+     "name": "第6選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 794,
+       "electors": 1043,
+       "turnout": 76.13
+      },
+      "2018": {
+       "voted": 785,
+       "electors": 1173,
+       "turnout": 66.92
+      },
+      "2022": {
+       "voted": 872,
+       "electors": 1312,
+       "turnout": 66.46
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區（山地原住民）",
+     "scope": "信義鄉及南投、竹山、集集、名間、鹿谷、水里",
+     "council": {
+      "2014": {
+       "voted": 5520,
+       "electors": 7470,
+       "turnout": 73.9
+      },
+      "2018": {
+       "voted": 6028,
+       "electors": 7819,
+       "turnout": 77.09
+      },
+      "2022": {
+       "voted": 5578,
+       "electors": 7887,
+       "turnout": 70.72
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "scope": "仁愛鄉及草屯、中寮、魚池、國姓、埔里",
+     "council": {
+      "2014": {
+       "voted": 8679,
+       "electors": 11205,
+       "turnout": 77.46
+      },
+      "2018": {
+       "voted": 9082,
+       "electors": 11709,
+       "turnout": 77.56
+      },
+      "2022": {
+       "voted": 8896,
+       "electors": 12091,
+       "turnout": 73.58
+      }
+     }
+    }
+   ]
+  },
+  "10009": {
+   "code": "10009",
+   "name": "雲林縣",
+   "mayor": {
+    "2014": {
+     "voted": 419030,
+     "electors": 565557,
+     "turnout": 74.09
+    },
+    "2018": {
+     "voted": 404447,
+     "electors": 565078,
+     "turnout": 71.57
+    },
+    "2022": {
+     "voted": 376649,
+     "electors": 559273,
+     "turnout": 67.35
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "林內鄉",
+      "斗六市",
+      "莿桐鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 89113,
+       "electors": 122886,
+       "turnout": 72.52
+      },
+      "2018": {
+       "voted": 88550,
+       "electors": 125268,
+       "turnout": 70.69
+      },
+      "2022": {
+       "voted": 82708,
+       "electors": 125484,
+       "turnout": 65.91
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 89063,
+       "electors": 122744,
+       "turnout": 72.56
+      },
+      "2018": {
+       "voted": 88512,
+       "electors": 125164,
+       "turnout": 70.72
+      },
+      "2022": {
+       "voted": 82682,
+       "electors": 125373,
+       "turnout": 65.95
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "斗南鎮",
+      "大埤鄉",
+      "古坑鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 58164,
+       "electors": 79895,
+       "turnout": 72.8
+      },
+      "2018": {
+       "voted": 57687,
+       "electors": 79509,
+       "turnout": 72.55
+      },
+      "2022": {
+       "voted": 54034,
+       "electors": 78496,
+       "turnout": 68.84
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 58122,
+       "electors": 79800,
+       "turnout": 72.83
+      },
+      "2018": {
+       "voted": 57656,
+       "electors": 79444,
+       "turnout": 72.57
+      },
+      "2022": {
+       "voted": 54006,
+       "electors": 78434,
+       "turnout": 68.86
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "褒忠鄉",
+      "元長鄉",
+      "虎尾鎮",
+      "土庫鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 84733,
+       "electors": 112322,
+       "turnout": 75.44
+      },
+      "2018": {
+       "voted": 82276,
+       "electors": 112863,
+       "turnout": 72.9
+      },
+      "2022": {
+       "voted": 75242,
+       "electors": 111488,
+       "turnout": 67.49
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 84689,
+       "electors": 112229,
+       "turnout": 75.46
+      },
+      "2018": {
+       "voted": 82213,
+       "electors": 112754,
+       "turnout": 72.91
+      },
+      "2022": {
+       "voted": 75258,
+       "electors": 111385,
+       "turnout": 67.57
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "西螺鎮",
+      "二崙鄉",
+      "崙背鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 59971,
+       "electors": 80972,
+       "turnout": 74.06
+      },
+      "2018": {
+       "voted": 57853,
+       "electors": 79748,
+       "turnout": 72.54
+      },
+      "2022": {
+       "voted": 51792,
+       "electors": 78265,
+       "turnout": 66.18
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 59949,
+       "electors": 80913,
+       "turnout": 74.09
+      },
+      "2018": {
+       "voted": 57825,
+       "electors": 79703,
+       "turnout": 72.55
+      },
+      "2022": {
+       "voted": 51766,
+       "electors": 78213,
+       "turnout": 66.19
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "麥寮鄉",
+      "臺西鄉",
+      "東勢鄉",
+      "四湖鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 67731,
+       "electors": 88835,
+       "turnout": 76.24
+      },
+      "2018": {
+       "voted": 61714,
+       "electors": 89378,
+       "turnout": 69.05
+      },
+      "2022": {
+       "voted": 61843,
+       "electors": 90361,
+       "turnout": 68.44
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 67695,
+       "electors": 88767,
+       "turnout": 76.26
+      },
+      "2018": {
+       "voted": 61687,
+       "electors": 89330,
+       "turnout": 69.06
+      },
+      "2022": {
+       "voted": 61829,
+       "electors": 90306,
+       "turnout": 68.47
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "口湖鄉",
+      "北港鎮",
+      "水林鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 59318,
+       "electors": 80647,
+       "turnout": 73.55
+      },
+      "2018": {
+       "voted": 56367,
+       "electors": 78312,
+       "turnout": 71.98
+      },
+      "2022": {
+       "voted": 51030,
+       "electors": 75179,
+       "turnout": 67.88
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 59291,
+       "electors": 80617,
+       "turnout": 73.55
+      },
+      "2018": {
+       "voted": 56355,
+       "electors": 78293,
+       "turnout": 71.98
+      },
+      "2022": {
+       "voted": 51025,
+       "electors": 75169,
+       "turnout": 67.88
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": null,
+      "2018": null,
+      "2022": null
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": null,
+      "2018": null,
+      "2022": null
+     }
+    }
+   ]
+  },
+  "10010": {
+   "code": "10010",
+   "name": "嘉義縣",
+   "mayor": {
+    "2014": {
+     "voted": 319393,
+     "electors": 430505,
+     "turnout": 74.19
+    },
+    "2018": {
+     "voted": 303269,
+     "electors": 428649,
+     "turnout": 70.75
+    },
+    "2022": {
+     "voted": 284490,
+     "electors": 422568,
+     "turnout": 67.32
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "水上鄉",
+      "太保市",
+      "鹿草鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 62454,
+       "electors": 84676,
+       "turnout": 73.76
+      },
+      "2018": {
+       "voted": 60448,
+       "electors": 86217,
+       "turnout": 70.11
+      },
+      "2022": {
+       "voted": 56442,
+       "electors": 86731,
+       "turnout": 65.08
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 62355,
+       "electors": 84469,
+       "turnout": 73.82
+      },
+      "2018": {
+       "voted": 60319,
+       "electors": 85997,
+       "turnout": 70.14
+      },
+      "2022": {
+       "voted": 56343,
+       "electors": 86490,
+       "turnout": 65.14
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "新港鄉",
+      "民雄鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 61141,
+       "electors": 83963,
+       "turnout": 72.82
+      },
+      "2018": {
+       "voted": 60132,
+       "electors": 85364,
+       "turnout": 70.44
+      },
+      "2022": {
+       "voted": 58274,
+       "electors": 85719,
+       "turnout": 67.98
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 61020,
+       "electors": 83746,
+       "turnout": 72.86
+      },
+      "2018": {
+       "voted": 59999,
+       "electors": 85113,
+       "turnout": 70.49
+      },
+      "2022": {
+       "voted": 58165,
+       "electors": 85478,
+       "turnout": 68.05
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "梅山鄉",
+      "大林鎮",
+      "溪口鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 41921,
+       "electors": 56338,
+       "turnout": 74.41
+      },
+      "2018": {
+       "voted": 41003,
+       "electors": 55401,
+       "turnout": 74.01
+      },
+      "2022": {
+       "voted": 37067,
+       "electors": 53668,
+       "turnout": 69.07
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 41862,
+       "electors": 56244,
+       "turnout": 74.43
+      },
+      "2018": {
+       "voted": 40940,
+       "electors": 55302,
+       "turnout": 74.03
+      },
+      "2022": {
+       "voted": 36989,
+       "electors": 53552,
+       "turnout": 69.07
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "東石鄉",
+      "六腳鄉",
+      "朴子市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 57464,
+       "electors": 77264,
+       "turnout": 74.37
+      },
+      "2018": {
+       "voted": 51835,
+       "electors": 75563,
+       "turnout": 68.6
+      },
+      "2022": {
+       "voted": 51618,
+       "electors": 73701,
+       "turnout": 70.04
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 57337,
+       "electors": 77168,
+       "turnout": 74.3
+      },
+      "2018": {
+       "voted": 51826,
+       "electors": 75448,
+       "turnout": 68.69
+      },
+      "2022": {
+       "voted": 51559,
+       "electors": 73583,
+       "turnout": 70.07
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "義竹鄉",
+      "布袋鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 33442,
+       "electors": 41092,
+       "turnout": 81.38
+      },
+      "2018": {
+       "voted": 29051,
+       "electors": 39584,
+       "turnout": 73.39
+      },
+      "2022": {
+       "voted": 26484,
+       "electors": 37726,
+       "turnout": 70.2
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 33416,
+       "electors": 41044,
+       "turnout": 81.42
+      },
+      "2018": {
+       "voted": 29028,
+       "electors": 39541,
+       "turnout": 73.41
+      },
+      "2022": {
+       "voted": 26466,
+       "electors": 37688,
+       "turnout": 70.22
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "竹崎鄉",
+      "番路鄉",
+      "阿里山鄉",
+      "中埔鄉",
+      "大埔鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 62971,
+       "electors": 87172,
+       "turnout": 72.24
+      },
+      "2018": {
+       "voted": 60800,
+       "electors": 86520,
+       "turnout": 70.27
+      },
+      "2022": {
+       "voted": 54605,
+       "electors": 85023,
+       "turnout": 64.22
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 60558,
+       "electors": 84000,
+       "turnout": 72.09
+      },
+      "2018": {
+       "voted": 58369,
+       "electors": 83251,
+       "turnout": 70.11
+      },
+      "2022": {
+       "voted": 52459,
+       "electors": 81681,
+       "turnout": 64.22
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 2691,
+       "electors": 3595,
+       "turnout": 74.85
+      },
+      "2018": {
+       "voted": 2762,
+       "electors": 3763,
+       "turnout": 73.4
+      },
+      "2022": {
+       "voted": 2448,
+       "electors": 3864,
+       "turnout": 63.35
+      }
+     }
+    }
+   ]
+  },
+  "10013": {
+   "code": "10013",
+   "name": "屏東縣",
+   "mayor": {
+    "2014": {
+     "voted": 505009,
+     "electors": 686810,
+     "turnout": 73.53
+    },
+    "2018": {
+     "voted": 490078,
+     "electors": 689393,
+     "turnout": 71.09
+    },
+    "2022": {
+     "voted": 456382,
+     "electors": 679330,
+     "turnout": 67.18
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "屏東市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 106842,
+       "electors": 163893,
+       "turnout": 65.19
+      },
+      "2018": {
+       "voted": 105375,
+       "electors": 164760,
+       "turnout": 63.96
+      },
+      "2022": {
+       "voted": 97345,
+       "electors": 161826,
+       "turnout": 60.15
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 105498,
+       "electors": 161225,
+       "turnout": 65.44
+      },
+      "2018": {
+       "voted": 103858,
+       "electors": 161744,
+       "turnout": 64.21
+      },
+      "2022": {
+       "voted": 95701,
+       "electors": 158453,
+       "turnout": 60.4
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "里港鄉",
+      "三地門鄉",
+      "麟洛鄉",
+      "鹽埔鄉",
+      "瑪家鄉",
+      "九如鄉",
+      "長治鄉",
+      "霧臺鄉",
+      "高樹鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 103279,
+       "electors": 132004,
+       "turnout": 78.24
+      },
+      "2018": {
+       "voted": 101579,
+       "electors": 132520,
+       "turnout": 76.65
+      },
+      "2022": {
+       "voted": 95006,
+       "electors": 131399,
+       "turnout": 72.3
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 90632,
+       "electors": 117407,
+       "turnout": 77.19
+      },
+      "2018": {
+       "voted": 88814,
+       "electors": 117623,
+       "turnout": 75.51
+      },
+      "2022": {
+       "voted": 82119,
+       "electors": 116049,
+       "turnout": 70.76
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "內埔鄉",
+      "來義鄉",
+      "潮州鎮",
+      "新埤鄉",
+      "萬巒鄉",
+      "竹田鄉",
+      "春日鄉",
+      "枋寮鄉",
+      "泰武鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 121571,
+       "electors": 166299,
+       "turnout": 73.1
+      },
+      "2018": {
+       "voted": 119225,
+       "electors": 166878,
+       "turnout": 71.44
+      },
+      "2022": {
+       "voted": 107973,
+       "electors": 164559,
+       "turnout": 65.61
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 108094,
+       "electors": 149698,
+       "turnout": 72.21
+      },
+      "2018": {
+       "voted": 105439,
+       "electors": 149598,
+       "turnout": 70.48
+      },
+      "2022": {
+       "voted": 94162,
+       "electors": 146490,
+       "turnout": 64.28
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "新園鄉",
+      "東港鎮",
+      "萬丹鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 83966,
+       "electors": 108990,
+       "turnout": 77.04
+      },
+      "2018": {
+       "voted": 77439,
+       "electors": 109834,
+       "turnout": 70.51
+      },
+      "2022": {
+       "voted": 75818,
+       "electors": 108630,
+       "turnout": 69.79
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 83715,
+       "electors": 108567,
+       "turnout": 77.11
+      },
+      "2018": {
+       "voted": 77175,
+       "electors": 109394,
+       "turnout": 70.55
+      },
+      "2022": {
+       "voted": 75549,
+       "electors": 108077,
+       "turnout": 69.9
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "佳冬鄉",
+      "林邊鄉",
+      "崁頂鄉",
+      "南州鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 42931,
+       "electors": 54203,
+       "turnout": 79.2
+      },
+      "2018": {
+       "voted": 40182,
+       "electors": 52901,
+       "turnout": 75.96
+      },
+      "2022": {
+       "voted": 36319,
+       "electors": 51113,
+       "turnout": 71.06
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 42719,
+       "electors": 53909,
+       "turnout": 79.24
+      },
+      "2018": {
+       "voted": 39928,
+       "electors": 52602,
+       "turnout": 75.91
+      },
+      "2022": {
+       "voted": 36113,
+       "electors": 50769,
+       "turnout": 71.13
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "滿州鄉",
+      "恆春鎮",
+      "獅子鄉",
+      "枋山鄉",
+      "車城鄉",
+      "牡丹鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 38338,
+       "electors": 51142,
+       "turnout": 74.96
+      },
+      "2018": {
+       "voted": 39083,
+       "electors": 52118,
+       "turnout": 74.99
+      },
+      "2022": {
+       "voted": 36442,
+       "electors": 51247,
+       "turnout": 71.11
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 30359,
+       "electors": 41248,
+       "turnout": 73.6
+      },
+      "2018": {
+       "voted": 30505,
+       "electors": 41633,
+       "turnout": 73.27
+      },
+      "2022": {
+       "voted": 28219,
+       "electors": 40786,
+       "turnout": 69.19
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "琉球鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 8082,
+       "electors": 10279,
+       "turnout": 78.63
+      },
+      "2018": {
+       "voted": 7195,
+       "electors": 10382,
+       "turnout": 69.3
+      },
+      "2022": {
+       "voted": 7479,
+       "electors": 10556,
+       "turnout": 70.85
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 8057,
+       "electors": 10241,
+       "turnout": 78.67
+      },
+      "2018": {
+       "voted": 7173,
+       "electors": 10342,
+       "turnout": 69.36
+      },
+      "2022": {
+       "voted": 7450,
+       "electors": 10507,
+       "turnout": 70.91
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 8,
+     "name": "第8選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 2111,
+       "electors": 3048,
+       "turnout": 69.26
+      },
+      "2018": {
+       "voted": 2423,
+       "electors": 3458,
+       "turnout": 70.07
+      },
+      "2022": {
+       "voted": 2527,
+       "electors": 3777,
+       "turnout": 66.9
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區（山地原住民）",
+     "scope": "三地門鄉及九如、里港、鹽埔、高樹",
+     "council": {
+      "2014": {
+       "voted": 5182,
+       "electors": 5920,
+       "turnout": 87.53
+      },
+      "2018": {
+       "voted": 5252,
+       "electors": 6091,
+       "turnout": 86.23
+      },
+      "2022": {
+       "voted": 5287,
+       "electors": 6319,
+       "turnout": 83.67
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區（山地原住民）",
+     "scope": "瑪家鄉及屏東市、長治、麟洛、內埔",
+     "council": {
+      "2014": {
+       "voted": 6126,
+       "electors": 8136,
+       "turnout": 75.29
+      },
+      "2018": {
+       "voted": 6547,
+       "electors": 8756,
+       "turnout": 74.77
+      },
+      "2022": {
+       "voted": 6695,
+       "electors": 9362,
+       "turnout": 71.51
+      }
+     }
+    },
+    {
+     "no": 11,
+     "name": "第11選區（山地原住民）",
+     "scope": "泰武鄉及萬丹、萬巒、竹田",
+     "council": {
+      "2014": {
+       "voted": 3894,
+       "electors": 4519,
+       "turnout": 86.17
+      },
+      "2018": {
+       "voted": 4047,
+       "electors": 4723,
+       "turnout": 85.69
+      },
+      "2022": {
+       "voted": 3918,
+       "electors": 4831,
+       "turnout": 81.1
+      }
+     }
+    },
+    {
+     "no": 12,
+     "name": "第12選區（山地原住民）",
+     "scope": "來義鄉及潮州、新埤、新園、崁頂、南州",
+     "council": {
+      "2014": {
+       "voted": 5521,
+       "electors": 7029,
+       "turnout": 78.55
+      },
+      "2018": {
+       "voted": 5566,
+       "electors": 7194,
+       "turnout": 77.37
+      },
+      "2022": {
+       "voted": 5754,
+       "electors": 7490,
+       "turnout": 76.82
+      }
+     }
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "scope": "春日鄉及東港、枋寮、林邊、佳冬、琉球",
+     "council": {
+      "2014": {
+       "voted": 3397,
+       "electors": 3942,
+       "turnout": 86.17
+      },
+      "2018": {
+       "voted": 3436,
+       "electors": 4050,
+       "turnout": 84.84
+      },
+      "2022": {
+       "voted": 3299,
+       "electors": 4218,
+       "turnout": 78.21
+      }
+     }
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "scope": "獅子鄉及枋山",
+     "council": {
+      "2014": {
+       "voted": 3217,
+       "electors": 3748,
+       "turnout": 85.83
+      },
+      "2018": {
+       "voted": 3399,
+       "electors": 3922,
+       "turnout": 86.66
+      },
+      "2022": {
+       "voted": 3203,
+       "electors": 3906,
+       "turnout": 82.0
+      }
+     }
+    },
+    {
+     "no": 15,
+     "name": "第15選區（山地原住民）",
+     "scope": "牡丹鄉及恆春、車城、滿州",
+     "council": {
+      "2014": {
+       "voted": 3544,
+       "electors": 4542,
+       "turnout": 78.03
+      },
+      "2018": {
+       "voted": 3784,
+       "electors": 4786,
+       "turnout": 79.06
+      },
+      "2022": {
+       "voted": 3618,
+       "electors": 4746,
+       "turnout": 76.23
+      }
+     }
+    },
+    {
+     "no": 16,
+     "name": "第16選區（山地原住民）",
+     "scope": "霧臺鄉",
+     "council": {
+      "2014": {
+       "voted": 2599,
+       "electors": 2810,
+       "turnout": 92.49
+      },
+      "2018": {
+       "voted": 2469,
+       "electors": 2778,
+       "turnout": 88.88
+      },
+      "2022": {
+       "voted": 2491,
+       "electors": 2796,
+       "turnout": 89.09
+      }
+     }
+    }
+   ]
+  },
+  "10014": {
+   "code": "10014",
+   "name": "臺東縣",
+   "mayor": {
+    "2014": {
+     "voted": 121406,
+     "electors": 179015,
+     "turnout": 67.82
+    },
+    "2018": {
+     "voted": 122786,
+     "electors": 179706,
+     "turnout": 68.33
+    },
+    "2022": {
+     "voted": 115226,
+     "electors": 177853,
+     "turnout": 64.79
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "臺東市",
+      "蘭嶼鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 57029,
+       "electors": 86544,
+       "turnout": 65.9
+      },
+      "2018": {
+       "voted": 59247,
+       "electors": 88589,
+       "turnout": 66.88
+      },
+      "2022": {
+       "voted": 54781,
+       "electors": 88612,
+       "turnout": 61.82
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 45780,
+       "electors": 68626,
+       "turnout": 66.71
+      },
+      "2018": {
+       "voted": 47211,
+       "electors": 69518,
+       "turnout": 67.91
+      },
+      "2022": {
+       "voted": 43379,
+       "electors": 68700,
+       "turnout": 63.14
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "延平鄉",
+      "卑南鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 12038,
+       "electors": 17240,
+       "turnout": 69.83
+      },
+      "2018": {
+       "voted": 12255,
+       "electors": 17287,
+       "turnout": 70.89
+      },
+      "2022": {
+       "voted": 11893,
+       "electors": 17297,
+       "turnout": 68.76
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 6511,
+       "electors": 9837,
+       "turnout": 66.19
+      },
+      "2018": {
+       "voted": 6510,
+       "electors": 9619,
+       "turnout": 67.68
+      },
+      "2022": {
+       "voted": 6341,
+       "electors": 9417,
+       "turnout": 67.34
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "成功鎮",
+      "長濱鄉",
+      "東河鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 16969,
+       "electors": 26904,
+       "turnout": 63.07
+      },
+      "2018": {
+       "voted": 16447,
+       "electors": 25857,
+       "turnout": 63.61
+      },
+      "2022": {
+       "voted": 15475,
+       "electors": 24758,
+       "turnout": 62.51
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 7945,
+       "electors": 12286,
+       "turnout": 64.67
+      },
+      "2018": {
+       "voted": 7659,
+       "electors": 11768,
+       "turnout": 65.08
+      },
+      "2022": {
+       "voted": 7101,
+       "electors": 11347,
+       "turnout": 62.58
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "鹿野鄉",
+      "池上鄉",
+      "海端鄉",
+      "關山鎮"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 16798,
+       "electors": 24486,
+       "turnout": 68.6
+      },
+      "2018": {
+       "voted": 16821,
+       "electors": 24063,
+       "turnout": 69.9
+      },
+      "2022": {
+       "voted": 16212,
+       "electors": 23512,
+       "turnout": 68.95
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 11406,
+       "electors": 16258,
+       "turnout": 70.16
+      },
+      "2018": {
+       "voted": 11167,
+       "electors": 15733,
+       "turnout": 70.98
+      },
+      "2022": {
+       "voted": 10687,
+       "electors": 15091,
+       "turnout": 70.82
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "金峰鄉",
+      "大武鄉",
+      "太麻里鄉",
+      "達仁鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 15985,
+       "electors": 20689,
+       "turnout": 77.26
+      },
+      "2018": {
+       "voted": 15611,
+       "electors": 20477,
+       "turnout": 76.24
+      },
+      "2022": {
+       "voted": 14320,
+       "electors": 19990,
+       "turnout": 71.64
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 6267,
+       "electors": 8375,
+       "turnout": 74.83
+      },
+      "2018": {
+       "voted": 5562,
+       "electors": 7842,
+       "turnout": 70.93
+      },
+      "2022": {
+       "voted": 4718,
+       "electors": 7245,
+       "turnout": 65.12
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "綠島鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 2587,
+       "electors": 3152,
+       "turnout": 82.07
+      },
+      "2018": {
+       "voted": 2405,
+       "electors": 3433,
+       "turnout": 70.06
+      },
+      "2022": {
+       "voted": 2545,
+       "electors": 3684,
+       "turnout": 69.08
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 2503,
+       "electors": 3032,
+       "turnout": 82.55
+      },
+      "2018": {
+       "voted": 2306,
+       "electors": 3276,
+       "turnout": 70.39
+      },
+      "2022": {
+       "voted": 2434,
+       "electors": 3511,
+       "turnout": 69.32
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "scope": "臺東市",
+     "council": {
+      "2014": {
+       "voted": 8554,
+       "electors": 13616,
+       "turnout": 62.82
+      },
+      "2018": {
+       "voted": 9127,
+       "electors": 14277,
+       "turnout": 63.93
+      },
+      "2022": {
+       "voted": 8537,
+       "electors": 14718,
+       "turnout": 58.0
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區（平地原住民）",
+     "scope": "卑南、蘭嶼",
+     "council": {
+      "2014": {
+       "voted": 3255,
+       "electors": 4672,
+       "turnout": 69.67
+      },
+      "2018": {
+       "voted": 3360,
+       "electors": 4842,
+       "turnout": 69.39
+      },
+      "2022": {
+       "voted": 3251,
+       "electors": 4927,
+       "turnout": 65.98
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區（平地原住民）",
+     "scope": "太麻里、金峰、達仁、大武",
+     "council": {
+      "2014": {
+       "voted": 4907,
+       "electors": 6559,
+       "turnout": 74.81
+      },
+      "2018": {
+       "voted": 5076,
+       "electors": 6722,
+       "turnout": 75.51
+      },
+      "2022": {
+       "voted": 4700,
+       "electors": 6745,
+       "turnout": 69.68
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區（平地原住民）",
+     "scope": "鹿野、延平、關山、海端、池上",
+     "council": {
+      "2014": {
+       "voted": 3185,
+       "electors": 5125,
+       "turnout": 62.15
+      },
+      "2018": {
+       "voted": 3393,
+       "electors": 5208,
+       "turnout": 65.15
+      },
+      "2022": {
+       "voted": 3341,
+       "electors": 5237,
+       "turnout": 63.8
+      }
+     }
+    },
+    {
+     "no": 11,
+     "name": "第11選區（平地原住民）",
+     "scope": "東河、綠島、成功、長濱",
+     "council": {
+      "2014": {
+       "voted": 8963,
+       "electors": 14469,
+       "turnout": 61.95
+      },
+      "2018": {
+       "voted": 8725,
+       "electors": 13969,
+       "turnout": 62.46
+      },
+      "2022": {
+       "voted": 8335,
+       "electors": 13303,
+       "turnout": 62.66
+      }
+     }
+    },
+    {
+     "no": 12,
+     "name": "第12選區（山地原住民）",
+     "scope": "延平、卑南、東河、成功、長濱",
+     "council": {
+      "2014": {
+       "voted": 2307,
+       "electors": 2902,
+       "turnout": 79.5
+      },
+      "2018": {
+       "voted": 2439,
+       "electors": 2997,
+       "turnout": 81.38
+      },
+      "2022": {
+       "voted": 2351,
+       "electors": 3120,
+       "turnout": 75.35
+      }
+     }
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "scope": "海端、鹿野、關山、池上",
+     "council": {
+      "2014": {
+       "voted": 2312,
+       "electors": 3222,
+       "turnout": 71.76
+      },
+      "2018": {
+       "voted": 2368,
+       "electors": 3260,
+       "turnout": 72.64
+      },
+      "2022": {
+       "voted": 2297,
+       "electors": 3320,
+       "turnout": 69.19
+      }
+     }
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "scope": "金峰、太麻里、臺東市、綠島",
+     "council": {
+      "2014": {
+       "voted": 3012,
+       "electors": 3941,
+       "turnout": 76.43
+      },
+      "2018": {
+       "voted": 3348,
+       "electors": 4364,
+       "turnout": 76.72
+      },
+      "2022": {
+       "voted": 3378,
+       "electors": 4749,
+       "turnout": 71.13
+      }
+     }
+    },
+    {
+     "no": 15,
+     "name": "第15選區（山地原住民）",
+     "scope": "達仁、大武",
+     "council": {
+      "2014": {
+       "voted": 2464,
+       "electors": 2972,
+       "turnout": 82.91
+      },
+      "2018": {
+       "voted": 2514,
+       "electors": 3000,
+       "turnout": 83.8
+      },
+      "2022": {
+       "voted": 2418,
+       "electors": 2979,
+       "turnout": 81.17
+      }
+     }
+    },
+    {
+     "no": 16,
+     "name": "第16選區（山地原住民）",
+     "scope": "蘭嶼",
+     "council": {
+      "2014": {
+       "voted": 1937,
+       "electors": 2909,
+       "turnout": 66.59
+      },
+      "2018": {
+       "voted": 1903,
+       "electors": 3094,
+       "turnout": 61.51
+      },
+      "2022": {
+       "voted": 1896,
+       "electors": 3267,
+       "turnout": 58.03
+      }
+     }
+    }
+   ]
+  },
+  "10015": {
+   "code": "10015",
+   "name": "花蓮縣",
+   "mayor": {
+    "2014": {
+     "voted": 164031,
+     "electors": 265571,
+     "turnout": 61.77
+    },
+    "2018": {
+     "voted": 174376,
+     "electors": 268817,
+     "turnout": 64.87
+    },
+    "2022": {
+     "voted": 153138,
+     "electors": 266058,
+     "turnout": 57.56
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "花蓮市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 47158,
+       "electors": 81562,
+       "turnout": 57.82
+      },
+      "2018": {
+       "voted": 50565,
+       "electors": 81917,
+       "turnout": 61.73
+      },
+      "2022": {
+       "voted": 41484,
+       "electors": 80094,
+       "turnout": 51.79
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 43086,
+       "electors": 73632,
+       "turnout": 58.52
+      },
+      "2018": {
+       "voted": 45791,
+       "electors": 73361,
+       "turnout": 62.42
+      },
+      "2022": {
+       "voted": 37498,
+       "electors": 70984,
+       "turnout": 52.83
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "秀林鄉",
+      "新城鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 18279,
+       "electors": 27339,
+       "turnout": 66.86
+      },
+      "2018": {
+       "voted": 19900,
+       "electors": 28381,
+       "turnout": 70.12
+      },
+      "2022": {
+       "voted": 19213,
+       "electors": 30035,
+       "turnout": 63.97
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 8140,
+       "electors": 13221,
+       "turnout": 61.57
+      },
+      "2018": {
+       "voted": 8926,
+       "electors": 13334,
+       "turnout": 66.94
+      },
+      "2022": {
+       "voted": 8146,
+       "electors": 13751,
+       "turnout": 59.24
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "萬榮鄉",
+      "豐濱鄉",
+      "光復鄉",
+      "吉安鄉",
+      "鳳林鎮",
+      "壽豐鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 69511,
+       "electors": 111980,
+       "turnout": 62.07
+      },
+      "2018": {
+       "voted": 75038,
+       "electors": 114921,
+       "turnout": 65.3
+      },
+      "2022": {
+       "voted": 65868,
+       "electors": 113979,
+       "turnout": 57.79
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 49983,
+       "electors": 81242,
+       "turnout": 61.52
+      },
+      "2018": {
+       "voted": 53390,
+       "electors": 82862,
+       "turnout": 64.43
+      },
+      "2022": {
+       "voted": 46102,
+       "electors": 81746,
+       "turnout": 56.4
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "瑞穗鄉",
+      "玉里鎮",
+      "卓溪鄉",
+      "富里鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 29083,
+       "electors": 44690,
+       "turnout": 65.08
+      },
+      "2018": {
+       "voted": 28873,
+       "electors": 43598,
+       "turnout": 66.23
+      },
+      "2022": {
+       "voted": 26573,
+       "electors": 41950,
+       "turnout": 63.34
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 18831,
+       "electors": 29017,
+       "turnout": 64.9
+      },
+      "2018": {
+       "voted": 18547,
+       "electors": 27835,
+       "turnout": 66.63
+      },
+      "2022": {
+       "voted": 16466,
+       "electors": 26268,
+       "turnout": 62.68
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 5,
+     "name": "第5選區（平地原住民）",
+     "scope": "花蓮市、新城、秀林、吉安",
+     "council": {
+      "2014": {
+       "voted": 9926,
+       "electors": 18360,
+       "turnout": 54.06
+      },
+      "2018": {
+       "voted": 11557,
+       "electors": 19629,
+       "turnout": 58.88
+      },
+      "2022": {
+       "voted": 10460,
+       "electors": 20748,
+       "turnout": 50.41
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區（平地原住民）",
+     "scope": "壽豐、鳳林、萬榮、光復、豐濱",
+     "council": {
+      "2014": {
+       "voted": 9805,
+       "electors": 14381,
+       "turnout": 68.18
+      },
+      "2018": {
+       "voted": 10555,
+       "electors": 14849,
+       "turnout": 71.08
+      },
+      "2022": {
+       "voted": 9661,
+       "electors": 14550,
+       "turnout": 66.4
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "scope": "瑞穗、玉里、富里、卓溪",
+     "council": {
+      "2014": {
+       "voted": 6308,
+       "electors": 10175,
+       "turnout": 62.0
+      },
+      "2018": {
+       "voted": 6398,
+       "electors": 10172,
+       "turnout": 62.9
+      },
+      "2022": {
+       "voted": 6224,
+       "electors": 10147,
+       "turnout": 61.34
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "scope": "秀林鄉及花蓮市、新城、吉安、壽豐",
+     "council": {
+      "2014": {
+       "voted": 9982,
+       "electors": 14177,
+       "turnout": 70.41
+      },
+      "2018": {
+       "voted": 10977,
+       "electors": 15377,
+       "turnout": 71.39
+      },
+      "2022": {
+       "voted": 10781,
+       "electors": 16632,
+       "turnout": 64.82
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區（山地原住民）",
+     "scope": "萬榮鄉及鳳林、光復、豐濱、瑞穗",
+     "council": {
+      "2014": {
+       "voted": 3968,
+       "electors": 5335,
+       "turnout": 74.38
+      },
+      "2018": {
+       "voted": 4254,
+       "electors": 5563,
+       "turnout": 76.47
+      },
+      "2022": {
+       "voted": 3938,
+       "electors": 5474,
+       "turnout": 71.94
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區（山地原住民）",
+     "scope": "卓溪鄉及玉里、富里",
+     "council": {
+      "2014": {
+       "voted": 3708,
+       "electors": 5113,
+       "turnout": 72.52
+      },
+      "2018": {
+       "voted": 3692,
+       "electors": 5179,
+       "turnout": 71.29
+      },
+      "2022": {
+       "voted": 3638,
+       "electors": 5108,
+       "turnout": 71.22
+      }
+     }
+    }
+   ]
+  },
+  "10016": {
+   "code": "10016",
+   "name": "澎湖縣",
+   "mayor": {
+    "2014": {
+     "voted": 54516,
+     "electors": 82269,
+     "turnout": 66.27
+    },
+    "2018": {
+     "voted": 54456,
+     "electors": 86603,
+     "turnout": 62.88
+    },
+    "2022": {
+     "voted": 52870,
+     "electors": 90360,
+     "turnout": 58.51
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "馬公市"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 31984,
+       "electors": 47843,
+       "turnout": 66.85
+      },
+      "2018": {
+       "voted": 31939,
+       "electors": 50939,
+       "turnout": 62.7
+      },
+      "2022": {
+       "voted": 30603,
+       "electors": 52839,
+       "turnout": 57.92
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 31959,
+       "electors": 47794,
+       "turnout": 66.87
+      },
+      "2018": {
+       "voted": 31929,
+       "electors": 50901,
+       "turnout": 62.73
+      },
+      "2022": {
+       "voted": 30588,
+       "electors": 52801,
+       "turnout": 57.93
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "湖西鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 7615,
+       "electors": 11780,
+       "turnout": 64.64
+      },
+      "2018": {
+       "voted": 8025,
+       "electors": 12346,
+       "turnout": 65.0
+      },
+      "2022": {
+       "voted": 7897,
+       "electors": 13505,
+       "turnout": 58.47
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 7607,
+       "electors": 11762,
+       "turnout": 64.67
+      },
+      "2018": {
+       "voted": 8017,
+       "electors": 12318,
+       "turnout": 65.08
+      },
+      "2022": {
+       "voted": 7875,
+       "electors": 13457,
+       "turnout": 58.52
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "白沙鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 5304,
+       "electors": 8107,
+       "turnout": 65.42
+      },
+      "2018": {
+       "voted": 5262,
+       "electors": 8355,
+       "turnout": 62.98
+      },
+      "2022": {
+       "voted": 5087,
+       "electors": 8622,
+       "turnout": 59.0
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 5302,
+       "electors": 8098,
+       "turnout": 65.47
+      },
+      "2018": {
+       "voted": 5253,
+       "electors": 8343,
+       "turnout": 62.96
+      },
+      "2022": {
+       "voted": 5083,
+       "electors": 8610,
+       "turnout": 59.04
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "西嶼鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 4732,
+       "electors": 7067,
+       "turnout": 66.96
+      },
+      "2018": {
+       "voted": 4211,
+       "electors": 7197,
+       "turnout": 58.51
+      },
+      "2022": {
+       "voted": 4128,
+       "electors": 7261,
+       "turnout": 56.85
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 4728,
+       "electors": 7060,
+       "turnout": 66.97
+      },
+      "2018": {
+       "voted": 4210,
+       "electors": 7194,
+       "turnout": 58.52
+      },
+      "2022": {
+       "voted": 4125,
+       "electors": 7257,
+       "turnout": 56.84
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "望安鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 2850,
+       "electors": 4338,
+       "turnout": 65.7
+      },
+      "2018": {
+       "voted": 3031,
+       "electors": 4500,
+       "turnout": 67.36
+      },
+      "2022": {
+       "voted": 3072,
+       "electors": 4777,
+       "turnout": 64.31
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 2846,
+       "electors": 4326,
+       "turnout": 65.79
+      },
+      "2018": {
+       "voted": 3023,
+       "electors": 4484,
+       "turnout": 67.42
+      },
+      "2022": {
+       "voted": 3066,
+       "electors": 4763,
+       "turnout": 64.37
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "七美鄉"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 2031,
+       "electors": 3134,
+       "turnout": 64.81
+      },
+      "2018": {
+       "voted": 1988,
+       "electors": 3266,
+       "turnout": 60.87
+      },
+      "2022": {
+       "voted": 2083,
+       "electors": 3356,
+       "turnout": 62.07
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 2030,
+       "electors": 3125,
+       "turnout": 64.96
+      },
+      "2018": {
+       "voted": 1986,
+       "electors": 3257,
+       "turnout": 60.98
+      },
+      "2022": {
+       "voted": 2078,
+       "electors": 3347,
+       "turnout": 62.09
+      }
+     }
+    }
+   ],
+   "indigenous": []
+  },
+  "10017": {
+   "code": "10017",
+   "name": "基隆市",
+   "mayor": {
+    "2014": {
+     "voted": 193899,
+     "electors": 303329,
+     "turnout": 63.92
+    },
+    "2018": {
+     "voted": 193251,
+     "electors": 309428,
+     "turnout": 62.45
+    },
+    "2022": {
+     "voted": 185241,
+     "electors": 307913,
+     "turnout": 60.16
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "中正區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 27394,
+       "electors": 44041,
+       "turnout": 62.2
+      },
+      "2018": {
+       "voted": 26115,
+       "electors": 44128,
+       "turnout": 59.18
+      },
+      "2022": {
+       "voted": 25306,
+       "electors": 43912,
+       "turnout": 57.63
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 25646,
+       "electors": 41246,
+       "turnout": 62.18
+      },
+      "2018": {
+       "voted": 24533,
+       "electors": 41306,
+       "turnout": 59.39
+      },
+      "2022": {
+       "voted": 23760,
+       "electors": 41018,
+       "turnout": 57.93
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "信義區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 27080,
+       "electors": 42546,
+       "turnout": 63.65
+      },
+      "2018": {
+       "voted": 27745,
+       "electors": 44475,
+       "turnout": 62.38
+      },
+      "2022": {
+       "voted": 27500,
+       "electors": 45564,
+       "turnout": 60.35
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 26677,
+       "electors": 41869,
+       "turnout": 63.72
+      },
+      "2018": {
+       "voted": 27352,
+       "electors": 43719,
+       "turnout": 62.56
+      },
+      "2022": {
+       "voted": 27108,
+       "electors": 44830,
+       "turnout": 60.47
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "仁愛區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 24327,
+       "electors": 36922,
+       "turnout": 65.89
+      },
+      "2018": {
+       "voted": 22920,
+       "electors": 35764,
+       "turnout": 64.09
+      },
+      "2022": {
+       "voted": 21171,
+       "electors": 33955,
+       "turnout": 62.35
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 24158,
+       "electors": 36587,
+       "turnout": 66.03
+      },
+      "2018": {
+       "voted": 22811,
+       "electors": 35476,
+       "turnout": 64.3
+      },
+      "2022": {
+       "voted": 21005,
+       "electors": 33626,
+       "turnout": 62.47
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "中山區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 26083,
+       "electors": 40498,
+       "turnout": 64.41
+      },
+      "2018": {
+       "voted": 25775,
+       "electors": 40558,
+       "turnout": 63.55
+      },
+      "2022": {
+       "voted": 24341,
+       "electors": 39334,
+       "turnout": 61.88
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 25934,
+       "electors": 40164,
+       "turnout": 64.57
+      },
+      "2018": {
+       "voted": 25626,
+       "electors": 40219,
+       "turnout": 63.72
+      },
+      "2022": {
+       "voted": 24212,
+       "electors": 38999,
+       "turnout": 62.08
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "安樂區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 40931,
+       "electors": 65095,
+       "turnout": 62.88
+      },
+      "2018": {
+       "voted": 42094,
+       "electors": 67884,
+       "turnout": 62.01
+      },
+      "2022": {
+       "voted": 41059,
+       "electors": 67779,
+       "turnout": 60.58
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 40536,
+       "electors": 64327,
+       "turnout": 63.02
+      },
+      "2018": {
+       "voted": 41690,
+       "electors": 67110,
+       "turnout": 62.12
+      },
+      "2022": {
+       "voted": 40677,
+       "electors": 66943,
+       "turnout": 60.76
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "暖暖區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 19455,
+       "electors": 30697,
+       "turnout": 63.38
+      },
+      "2018": {
+       "voted": 20274,
+       "electors": 31996,
+       "turnout": 63.36
+      },
+      "2022": {
+       "voted": 19110,
+       "electors": 32476,
+       "turnout": 58.84
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 19206,
+       "electors": 30206,
+       "turnout": 63.58
+      },
+      "2018": {
+       "voted": 20006,
+       "electors": 31491,
+       "turnout": 63.53
+      },
+      "2022": {
+       "voted": 18848,
+       "electors": 31978,
+       "turnout": 58.94
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "七堵區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 28629,
+       "electors": 43530,
+       "turnout": 65.77
+      },
+      "2018": {
+       "voted": 28328,
+       "electors": 44623,
+       "turnout": 63.48
+      },
+      "2022": {
+       "voted": 26754,
+       "electors": 44893,
+       "turnout": 59.6
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 27885,
+       "electors": 42280,
+       "turnout": 65.95
+      },
+      "2018": {
+       "voted": 27626,
+       "electors": 43352,
+       "turnout": 63.72
+      },
+      "2022": {
+       "voted": 26063,
+       "electors": 43573,
+       "turnout": 59.81
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 8,
+     "name": "第8選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 3271,
+       "electors": 5407,
+       "turnout": 60.5
+      },
+      "2018": {
+       "voted": 3167,
+       "electors": 5760,
+       "turnout": 54.98
+      },
+      "2022": {
+       "voted": 3118,
+       "electors": 5962,
+       "turnout": 52.3
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": null,
+      "2018": null,
+      "2022": null
+     }
+    }
+   ]
+  },
+  "10018": {
+   "code": "10018",
+   "name": "新竹市",
+   "mayor": {
+    "2014": {
+     "voted": 202851,
+     "electors": 322472,
+     "turnout": 62.9
+    },
+    "2018": {
+     "voted": 221402,
+     "electors": 338323,
+     "turnout": 65.44
+    },
+    "2022": {
+     "voted": 220783,
+     "electors": 350758,
+     "turnout": 62.94
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "東區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 66193,
+       "electors": 106864,
+       "turnout": 61.94
+      },
+      "2018": {
+       "voted": 74151,
+       "electors": 114361,
+       "turnout": 64.84
+      },
+      "2022": {
+       "voted": 77157,
+       "electors": 121413,
+       "turnout": 63.55
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 65893,
+       "electors": 106201,
+       "turnout": 62.05
+      },
+      "2018": {
+       "voted": 73828,
+       "electors": 113748,
+       "turnout": 64.9
+      },
+      "2022": {
+       "voted": 76822,
+       "electors": 120775,
+       "turnout": 63.61
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "東區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 25932,
+       "electors": 41941,
+       "turnout": 61.83
+      },
+      "2018": {
+       "voted": 27492,
+       "electors": 42665,
+       "turnout": 64.44
+      },
+      "2022": {
+       "voted": 25848,
+       "electors": 42613,
+       "turnout": 60.66
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 25780,
+       "electors": 41620,
+       "turnout": 61.94
+      },
+      "2018": {
+       "voted": 27301,
+       "electors": 42363,
+       "turnout": 64.45
+      },
+      "2022": {
+       "voted": 25704,
+       "electors": 42293,
+       "turnout": 60.78
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "北區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 16766,
+       "electors": 26609,
+       "turnout": 63.01
+      },
+      "2018": {
+       "voted": 17501,
+       "electors": 27272,
+       "turnout": 64.17
+      },
+      "2022": {
+       "voted": 16640,
+       "electors": 26730,
+       "turnout": 62.25
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 16618,
+       "electors": 26341,
+       "turnout": 63.09
+      },
+      "2018": {
+       "voted": 17353,
+       "electors": 27014,
+       "turnout": 64.24
+      },
+      "2022": {
+       "voted": 16519,
+       "electors": 26483,
+       "turnout": 62.38
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "北區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 55571,
+       "electors": 87561,
+       "turnout": 63.47
+      },
+      "2018": {
+       "voted": 59924,
+       "electors": 91506,
+       "turnout": 65.49
+      },
+      "2022": {
+       "voted": 60169,
+       "electors": 95304,
+       "turnout": 63.13
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 55250,
+       "electors": 86880,
+       "turnout": 63.59
+      },
+      "2018": {
+       "voted": 59555,
+       "electors": 90784,
+       "turnout": 65.6
+      },
+      "2022": {
+       "voted": 59809,
+       "electors": 94480,
+       "turnout": 63.3
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "香山區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 38389,
+       "electors": 59497,
+       "turnout": 64.52
+      },
+      "2018": {
+       "voted": 42334,
+       "electors": 62519,
+       "turnout": 67.71
+      },
+      "2022": {
+       "voted": 40969,
+       "electors": 64698,
+       "turnout": 63.32
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 38078,
+       "electors": 58895,
+       "turnout": 64.65
+      },
+      "2018": {
+       "voted": 41997,
+       "electors": 61923,
+       "turnout": 67.82
+      },
+      "2022": {
+       "voted": 40639,
+       "electors": 63991,
+       "turnout": 63.51
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 6,
+     "name": "第6選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 598,
+       "electors": 1099,
+       "turnout": 54.41
+      },
+      "2018": {
+       "voted": 717,
+       "electors": 1304,
+       "turnout": 54.98
+      },
+      "2022": {
+       "voted": 623,
+       "electors": 1502,
+       "turnout": 41.48
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": null,
+      "2018": null,
+      "2022": null
+     }
+    }
+   ]
+  },
+  "10020": {
+   "code": "10020",
+   "name": "嘉義市",
+   "mayor": {
+    "2014": {
+     "voted": 147658,
+     "electors": 208099,
+     "turnout": 70.96
+    },
+    "2018": {
+     "voted": 144534,
+     "electors": 212843,
+     "turnout": 67.91
+    },
+    "2022": {
+     "voted": 94188,
+     "electors": 214130,
+     "turnout": 43.99
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "東區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 65835,
+       "electors": 95317,
+       "turnout": 69.07
+      },
+      "2018": {
+       "voted": 64151,
+       "electors": 96780,
+       "turnout": 66.29
+      },
+      "2022": {
+       "voted": 42798,
+       "electors": 96706,
+       "turnout": 44.26
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 65767,
+       "electors": 95157,
+       "turnout": 69.11
+      },
+      "2018": {
+       "voted": 64068,
+       "electors": 96647,
+       "turnout": 66.29
+      },
+      "2022": {
+       "voted": 51401,
+       "electors": 96538,
+       "turnout": 53.24
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "西區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 81823,
+       "electors": 112782,
+       "turnout": 72.55
+      },
+      "2018": {
+       "voted": 80383,
+       "electors": 116063,
+       "turnout": 69.26
+      },
+      "2022": {
+       "voted": 51390,
+       "electors": 117424,
+       "turnout": 43.76
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 81719,
+       "electors": 112568,
+       "turnout": 72.6
+      },
+      "2018": {
+       "voted": 80257,
+       "electors": 115881,
+       "turnout": 69.26
+      },
+      "2022": {
+       "voted": 64888,
+       "electors": 117102,
+       "turnout": 55.41
+      }
+     }
+    }
+   ],
+   "indigenous": []
+  },
+  "63000": {
+   "code": "63000",
+   "name": "臺北市",
+   "mayor": {
+    "2014": {
+     "voted": 1512724,
+     "electors": 2146939,
+     "turnout": 70.46
+    },
+    "2018": {
+     "voted": 1427225,
+     "electors": 2164155,
+     "turnout": 65.95
+    },
+    "2022": {
+     "voted": 1372179,
+     "electors": 2026769,
+     "turnout": 67.7
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "士林區",
+      "北投區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 313327,
+       "electors": 438076,
+       "turnout": 71.52
+      },
+      "2018": {
+       "voted": 290107,
+       "electors": 442269,
+       "turnout": 65.6
+      },
+      "2022": {
+       "voted": 283065,
+       "electors": 416884,
+       "turnout": 67.9
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 311555,
+       "electors": 435215,
+       "turnout": 71.59
+      },
+      "2018": {
+       "voted": 288415,
+       "electors": 439225,
+       "turnout": 65.66
+      },
+      "2022": {
+       "voted": 281265,
+       "electors": 413790,
+       "turnout": 67.97
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "內湖區",
+      "南港區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 226317,
+       "electors": 318993,
+       "turnout": 70.95
+      },
+      "2018": {
+       "voted": 218781,
+       "electors": 328034,
+       "turnout": 66.69
+      },
+      "2022": {
+       "voted": 213039,
+       "electors": 314907,
+       "turnout": 67.65
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 224085,
+       "electors": 315213,
+       "turnout": 71.09
+      },
+      "2018": {
+       "voted": 216602,
+       "electors": 324266,
+       "turnout": 66.8
+      },
+      "2022": {
+       "voted": 210706,
+       "electors": 311073,
+       "turnout": 67.74
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "信義區",
+      "松山區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 248035,
+       "electors": 351441,
+       "turnout": 70.58
+      },
+      "2018": {
+       "voted": 231214,
+       "electors": 349923,
+       "turnout": 66.08
+      },
+      "2022": {
+       "voted": 219937,
+       "electors": 322066,
+       "turnout": 68.29
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 246412,
+       "electors": 348933,
+       "turnout": 70.62
+      },
+      "2018": {
+       "voted": 229538,
+       "electors": 347392,
+       "turnout": 66.07
+      },
+      "2022": {
+       "voted": 218240,
+       "electors": 319364,
+       "turnout": 68.34
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "中山區",
+      "大同區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 205408,
+       "electors": 292355,
+       "turnout": 70.26
+      },
+      "2018": {
+       "voted": 193625,
+       "electors": 294606,
+       "turnout": 65.72
+      },
+      "2022": {
+       "voted": 184788,
+       "electors": 274480,
+       "turnout": 67.32
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 203657,
+       "electors": 289729,
+       "turnout": 70.29
+      },
+      "2018": {
+       "voted": 191967,
+       "electors": 292063,
+       "turnout": 65.73
+      },
+      "2022": {
+       "voted": 183233,
+       "electors": 271792,
+       "turnout": 67.42
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "中正區",
+      "萬華區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 201117,
+       "electors": 286223,
+       "turnout": 70.27
+      },
+      "2018": {
+       "voted": 187150,
+       "electors": 284200,
+       "turnout": 65.85
+      },
+      "2022": {
+       "voted": 176783,
+       "electors": 264566,
+       "turnout": 66.82
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 199639,
+       "electors": 284055,
+       "turnout": 70.28
+      },
+      "2018": {
+       "voted": 185768,
+       "electors": 281973,
+       "turnout": 65.88
+      },
+      "2022": {
+       "voted": 175381,
+       "electors": 262278,
+       "turnout": 66.87
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "文山區",
+      "大安區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 318520,
+       "electors": 459851,
+       "turnout": 69.27
+      },
+      "2018": {
+       "voted": 306348,
+       "electors": 465123,
+       "turnout": 65.86
+      },
+      "2022": {
+       "voted": 294567,
+       "electors": 433866,
+       "turnout": 67.89
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 316298,
+       "electors": 456545,
+       "turnout": 69.28
+      },
+      "2018": {
+       "voted": 304158,
+       "electors": 461613,
+       "turnout": 65.89
+      },
+      "2022": {
+       "voted": 292673,
+       "electors": 430492,
+       "turnout": 67.99
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 3793,
+       "electors": 6491,
+       "turnout": 58.43
+      },
+      "2018": {
+       "voted": 3835,
+       "electors": 6964,
+       "turnout": 55.07
+      },
+      "2022": {
+       "voted": 3846,
+       "electors": 7178,
+       "turnout": 53.58
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 2615,
+       "electors": 4007,
+       "turnout": 65.26
+      },
+      "2018": {
+       "voted": 2844,
+       "electors": 4646,
+       "turnout": 61.21
+      },
+      "2022": {
+       "voted": 2889,
+       "electors": 4886,
+       "turnout": 59.13
+      }
+     }
+    }
+   ]
+  },
+  "64000": {
+   "code": "64000",
+   "name": "高雄市",
+   "mayor": {
+    "2014": {
+     "voted": 1482425,
+     "electors": 2231225,
+     "turnout": 66.44
+    },
+    "2018": {
+     "voted": 1677650,
+     "electors": 2281338,
+     "turnout": 73.54
+    },
+    "2022": {
+     "voted": 1337819,
+     "electors": 2282623,
+     "turnout": 58.61
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "美濃區",
+      "桃源區",
+      "內門區",
+      "甲仙區",
+      "旗山區",
+      "那瑪夏區",
+      "茂林區",
+      "六龜區",
+      "杉林區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 80179,
+       "electors": 114196,
+       "turnout": 70.21
+      },
+      "2018": {
+       "voted": 85551,
+       "electors": 112263,
+       "turnout": 76.21
+      },
+      "2022": {
+       "voted": 71109,
+       "electors": 108369,
+       "turnout": 65.62
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 74038,
+       "electors": 106663,
+       "turnout": 69.41
+      },
+      "2018": {
+       "voted": 78867,
+       "electors": 104394,
+       "turnout": 75.55
+      },
+      "2022": {
+       "voted": 64629,
+       "electors": 100139,
+       "turnout": 64.54
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "阿蓮區",
+      "茄萣區",
+      "田寮區",
+      "路竹區",
+      "湖內區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 83476,
+       "electors": 121566,
+       "turnout": 68.67
+      },
+      "2018": {
+       "voted": 92633,
+       "electors": 123030,
+       "turnout": 75.29
+      },
+      "2022": {
+       "voted": 74083,
+       "electors": 121774,
+       "turnout": 60.84
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 83244,
+       "electors": 121089,
+       "turnout": 68.75
+      },
+      "2018": {
+       "voted": 92300,
+       "electors": 122525,
+       "turnout": 75.33
+      },
+      "2022": {
+       "voted": 73865,
+       "electors": 121238,
+       "turnout": 60.93
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "燕巢區",
+      "梓官區",
+      "彌陀區",
+      "橋頭區",
+      "岡山區",
+      "永安區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 137288,
+       "electors": 189703,
+       "turnout": 72.37
+      },
+      "2018": {
+       "voted": 148573,
+       "electors": 193065,
+       "turnout": 76.95
+      },
+      "2022": {
+       "voted": 125167,
+       "electors": 195541,
+       "turnout": 64.01
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 136484,
+       "electors": 188182,
+       "turnout": 72.53
+      },
+      "2018": {
+       "voted": 147444,
+       "electors": 191440,
+       "turnout": 77.02
+      },
+      "2022": {
+       "voted": 124348,
+       "electors": 193616,
+       "turnout": 64.22
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "楠梓區",
+      "左營區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 180974,
+       "electors": 288053,
+       "turnout": 62.83
+      },
+      "2018": {
+       "voted": 217488,
+       "electors": 303403,
+       "turnout": 71.68
+      },
+      "2022": {
+       "voted": 171951,
+       "electors": 312768,
+       "turnout": 54.98
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 179069,
+       "electors": 284010,
+       "turnout": 63.05
+      },
+      "2018": {
+       "voted": 214372,
+       "electors": 299016,
+       "turnout": 71.69
+      },
+      "2022": {
+       "voted": 169991,
+       "electors": 307854,
+       "turnout": 55.22
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "鳥松區",
+      "大社區",
+      "仁武區",
+      "大樹區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 112676,
+       "electors": 164298,
+       "turnout": 68.58
+      },
+      "2018": {
+       "voted": 129013,
+       "electors": 174138,
+       "turnout": 74.09
+      },
+      "2022": {
+       "voted": 105048,
+       "electors": 181448,
+       "turnout": 57.89
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 111531,
+       "electors": 162113,
+       "turnout": 68.8
+      },
+      "2018": {
+       "voted": 127333,
+       "electors": 171788,
+       "turnout": 74.12
+      },
+      "2022": {
+       "voted": 103939,
+       "electors": 178895,
+       "turnout": 58.1
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "鹽埕區",
+      "鼓山區",
+      "旗津區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 97931,
+       "electors": 152643,
+       "turnout": 64.16
+      },
+      "2018": {
+       "voted": 114982,
+       "electors": 156798,
+       "turnout": 73.33
+      },
+      "2022": {
+       "voted": 88393,
+       "electors": 155025,
+       "turnout": 57.02
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 97240,
+       "electors": 151075,
+       "turnout": 64.37
+      },
+      "2018": {
+       "voted": 113897,
+       "electors": 155270,
+       "turnout": 73.35
+      },
+      "2022": {
+       "voted": 87770,
+       "electors": 153513,
+       "turnout": 57.17
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "三民區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 180618,
+       "electors": 279341,
+       "turnout": 64.66
+      },
+      "2018": {
+       "voted": 201672,
+       "electors": 280861,
+       "turnout": 71.8
+      },
+      "2022": {
+       "voted": 156334,
+       "electors": 276533,
+       "turnout": 56.53
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 179647,
+       "electors": 277098,
+       "turnout": 64.83
+      },
+      "2018": {
+       "voted": 200354,
+       "electors": 278810,
+       "turnout": 71.86
+      },
+      "2022": {
+       "voted": 155423,
+       "electors": 274188,
+       "turnout": 56.68
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "towns": [
+      "苓雅區",
+      "前金區",
+      "新興區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 137470,
+       "electors": 213454,
+       "turnout": 64.4
+      },
+      "2018": {
+       "voted": 154808,
+       "electors": 209826,
+       "turnout": 73.78
+      },
+      "2022": {
+       "voted": 118984,
+       "electors": 202508,
+       "turnout": 58.76
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 136736,
+       "electors": 211841,
+       "turnout": 64.55
+      },
+      "2018": {
+       "voted": 153722,
+       "electors": 208349,
+       "turnout": 73.78
+      },
+      "2022": {
+       "voted": 118286,
+       "electors": 200713,
+       "turnout": 58.93
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "towns": [
+      "鳳山區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 181626,
+       "electors": 279981,
+       "turnout": 64.87
+      },
+      "2018": {
+       "voted": 211995,
+       "electors": 291036,
+       "turnout": 72.84
+      },
+      "2022": {
+       "voted": 166744,
+       "electors": 293753,
+       "turnout": 56.76
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 180042,
+       "electors": 276755,
+       "turnout": 65.05
+      },
+      "2018": {
+       "voted": 209848,
+       "electors": 287829,
+       "turnout": 72.91
+      },
+      "2022": {
+       "voted": 165284,
+       "electors": 290142,
+       "turnout": 56.97
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "towns": [
+      "前鎮區",
+      "小港區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 188579,
+       "electors": 281265,
+       "turnout": 67.05
+      },
+      "2018": {
+       "voted": 208450,
+       "electors": 285526,
+       "turnout": 73.01
+      },
+      "2022": {
+       "voted": 166386,
+       "electors": 282234,
+       "turnout": 58.95
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 185894,
+       "electors": 276416,
+       "turnout": 67.25
+      },
+      "2018": {
+       "voted": 205122,
+       "electors": 280611,
+       "turnout": 73.1
+      },
+      "2022": {
+       "voted": 164078,
+       "electors": 277130,
+       "turnout": 59.21
+      }
+     }
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "towns": [
+      "大寮區",
+      "林園區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 101608,
+       "electors": 146725,
+       "turnout": 69.25
+      },
+      "2018": {
+       "voted": 112485,
+       "electors": 151392,
+       "turnout": 74.3
+      },
+      "2022": {
+       "voted": 93620,
+       "electors": 152670,
+       "turnout": 61.32
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 100365,
+       "electors": 144529,
+       "turnout": 69.44
+      },
+      "2018": {
+       "voted": 111107,
+       "electors": 149134,
+       "turnout": 74.5
+      },
+      "2022": {
+       "voted": 92406,
+       "electors": 150102,
+       "turnout": 61.56
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 12,
+     "name": "第12選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 4419,
+       "electors": 7917,
+       "turnout": 55.82
+      },
+      "2018": {
+       "voted": 5898,
+       "electors": 8927,
+       "turnout": 66.07
+      },
+      "2022": {
+       "voted": 4483,
+       "electors": 9842,
+       "turnout": 45.55
+      }
+     }
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "scope": "那瑪夏、甲仙、杉林、內門、旗山、茄萣、湖內、路竹、永安、彌陀、梓官、楠梓、左營區",
+     "council": {
+      "2014": {
+       "voted": 2901,
+       "electors": 4097,
+       "turnout": 70.81
+      },
+      "2018": {
+       "voted": 3440,
+       "electors": 4418,
+       "turnout": 77.86
+      },
+      "2022": {
+       "voted": 3052,
+       "electors": 4801,
+       "turnout": 63.57
+      }
+     }
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "scope": "桃源、六龜、美濃、阿蓮、田寮、岡山、燕巢、橋頭、鼓山、鹽埕、前金區",
+     "council": {
+      "2014": {
+       "voted": 3115,
+       "electors": 4143,
+       "turnout": 75.19
+      },
+      "2018": {
+       "voted": 3518,
+       "electors": 4381,
+       "turnout": 80.3
+      },
+      "2022": {
+       "voted": 3215,
+       "electors": 4527,
+       "turnout": 71.02
+      }
+     }
+    },
+    {
+     "no": 15,
+     "name": "第15選區（山地原住民）",
+     "scope": "茂林、大社、大樹、仁武、鳥松、鳳山、大寮、苓雅、前鎮、小港、林園區",
+     "council": {
+      "2014": {
+       "voted": 3254,
+       "electors": 4722,
+       "turnout": 68.91
+      },
+      "2018": {
+       "voted": 4072,
+       "electors": 5340,
+       "turnout": 76.25
+      },
+      "2022": {
+       "voted": 3551,
+       "electors": 5871,
+       "turnout": 60.48
+      }
+     }
+    }
+   ]
+  },
+  "65000": {
+   "code": "65000",
+   "name": "新北市",
+   "mayor": {
+    "2014": {
+     "voted": 1946063,
+     "electors": 3156402,
+     "turnout": 61.65
+    },
+    "2018": {
+     "voted": 2089127,
+     "electors": 3264128,
+     "turnout": 64.0
+    },
+    "2022": {
+     "voted": 1877186,
+     "electors": 3316517,
+     "turnout": 56.6
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "石門區",
+      "三芝區",
+      "淡水區",
+      "八里區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 112094,
+       "electors": 186098,
+       "turnout": 60.23
+      },
+      "2018": {
+       "voted": 126886,
+       "electors": 203743,
+       "turnout": 62.28
+      },
+      "2022": {
+       "voted": 120291,
+       "electors": 218996,
+       "turnout": 54.93
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 111049,
+       "electors": 183603,
+       "turnout": 60.48
+      },
+      "2018": {
+       "voted": 125514,
+       "electors": 200988,
+       "turnout": 62.45
+      },
+      "2022": {
+       "voted": 119034,
+       "electors": 215770,
+       "turnout": 55.17
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "林口區",
+      "五股區",
+      "泰山區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 117502,
+       "electors": 195420,
+       "turnout": 60.13
+      },
+      "2018": {
+       "voted": 135387,
+       "electors": 214413,
+       "turnout": 63.14
+      },
+      "2022": {
+       "voted": 128147,
+       "electors": 234384,
+       "turnout": 54.67
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 115956,
+       "electors": 191860,
+       "turnout": 60.44
+      },
+      "2018": {
+       "voted": 133396,
+       "electors": 210442,
+       "turnout": 63.39
+      },
+      "2022": {
+       "voted": 126320,
+       "electors": 229451,
+       "turnout": 55.05
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "新莊區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 197038,
+       "electors": 319336,
+       "turnout": 61.7
+      },
+      "2018": {
+       "voted": 214650,
+       "electors": 333283,
+       "turnout": 64.4
+      },
+      "2022": {
+       "voted": 189941,
+       "electors": 340775,
+       "turnout": 55.74
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 195198,
+       "electors": 315182,
+       "turnout": 61.93
+      },
+      "2018": {
+       "voted": 212163,
+       "electors": 328997,
+       "turnout": 64.49
+      },
+      "2022": {
+       "voted": 188091,
+       "electors": 336090,
+       "turnout": 55.96
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "三重區",
+      "蘆洲區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 298788,
+       "electors": 468950,
+       "turnout": 63.71
+      },
+      "2018": {
+       "voted": 303669,
+       "electors": 480508,
+       "turnout": 63.2
+      },
+      "2022": {
+       "voted": 274972,
+       "electors": 484060,
+       "turnout": 56.81
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 297195,
+       "electors": 465367,
+       "turnout": 63.86
+      },
+      "2018": {
+       "voted": 301819,
+       "electors": 476783,
+       "turnout": 63.3
+      },
+      "2022": {
+       "voted": 273211,
+       "electors": 480074,
+       "turnout": 56.91
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "板橋區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 281381,
+       "electors": 441533,
+       "turnout": 63.73
+      },
+      "2018": {
+       "voted": 293851,
+       "electors": 448450,
+       "turnout": 65.53
+      },
+      "2022": {
+       "voted": 264132,
+       "electors": 451072,
+       "turnout": 58.56
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 279620,
+       "electors": 437664,
+       "turnout": 63.89
+      },
+      "2018": {
+       "voted": 291573,
+       "electors": 443963,
+       "turnout": 65.68
+      },
+      "2022": {
+       "voted": 262252,
+       "electors": 446836,
+       "turnout": 58.69
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "中和區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 212474,
+       "electors": 341552,
+       "turnout": 62.21
+      },
+      "2018": {
+       "voted": 224885,
+       "electors": 345768,
+       "turnout": 65.04
+      },
+      "2022": {
+       "voted": 201199,
+       "electors": 342192,
+       "turnout": 58.8
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 210906,
+       "electors": 338184,
+       "turnout": 62.36
+      },
+      "2018": {
+       "voted": 223245,
+       "electors": 342563,
+       "turnout": 65.17
+      },
+      "2022": {
+       "voted": 199616,
+       "electors": 338747,
+       "turnout": 58.93
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "永和區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 109756,
+       "electors": 182439,
+       "turnout": 60.16
+      },
+      "2018": {
+       "voted": 120497,
+       "electors": 182276,
+       "turnout": 66.11
+      },
+      "2022": {
+       "voted": 102767,
+       "electors": 175828,
+       "turnout": 58.45
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 109174,
+       "electors": 181218,
+       "turnout": 60.24
+      },
+      "2018": {
+       "voted": 119891,
+       "electors": 181124,
+       "turnout": 66.19
+      },
+      "2022": {
+       "voted": 102188,
+       "electors": 174497,
+       "turnout": 58.56
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "towns": [
+      "鶯歌區",
+      "土城區",
+      "樹林區",
+      "三峽區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 296101,
+       "electors": 484746,
+       "turnout": 61.08
+      },
+      "2018": {
+       "voted": 315638,
+       "electors": 500536,
+       "turnout": 63.06
+      },
+      "2022": {
+       "voted": 280981,
+       "electors": 510568,
+       "turnout": 55.03
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 290538,
+       "electors": 472751,
+       "turnout": 61.46
+      },
+      "2018": {
+       "voted": 309400,
+       "electors": 488148,
+       "turnout": 63.38
+      },
+      "2022": {
+       "voted": 275938,
+       "electors": 497438,
+       "turnout": 55.47
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "towns": [
+      "坪林區",
+      "新店區",
+      "石碇區",
+      "烏來區",
+      "深坑區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 168509,
+       "electors": 282981,
+       "turnout": 59.55
+      },
+      "2018": {
+       "voted": 189994,
+       "electors": 293421,
+       "turnout": 64.75
+      },
+      "2022": {
+       "voted": 168507,
+       "electors": 292618,
+       "turnout": 57.59
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 165273,
+       "electors": 277846,
+       "turnout": 59.48
+      },
+      "2018": {
+       "voted": 186495,
+       "electors": 288056,
+       "turnout": 64.74
+      },
+      "2022": {
+       "voted": 165360,
+       "electors": 287083,
+       "turnout": 57.6
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "towns": [
+      "貢寮區",
+      "平溪區",
+      "瑞芳區",
+      "雙溪區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 39765,
+       "electors": 58193,
+       "turnout": 68.33
+      },
+      "2018": {
+       "voted": 37781,
+       "electors": 57079,
+       "turnout": 66.19
+      },
+      "2022": {
+       "voted": 31425,
+       "electors": 54584,
+       "turnout": 57.57
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 39226,
+       "electors": 57149,
+       "turnout": 68.64
+      },
+      "2018": {
+       "voted": 37186,
+       "electors": 55986,
+       "turnout": 66.42
+      },
+      "2022": {
+       "voted": 30934,
+       "electors": 53503,
+       "turnout": 57.82
+      }
+     }
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "towns": [
+      "萬里區",
+      "汐止區",
+      "金山區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 112655,
+       "electors": 195154,
+       "turnout": 57.73
+      },
+      "2018": {
+       "voted": 125889,
+       "electors": 204651,
+       "turnout": 61.51
+      },
+      "2022": {
+       "voted": 114824,
+       "electors": 211440,
+       "turnout": 54.31
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 110719,
+       "electors": 191425,
+       "turnout": 57.84
+      },
+      "2018": {
+       "voted": 123764,
+       "electors": 200813,
+       "turnout": 61.63
+      },
+      "2022": {
+       "voted": 113043,
+       "electors": 207494,
+       "turnout": 54.48
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 12,
+     "name": "第12選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 12440,
+       "electors": 25094,
+       "turnout": 49.57
+      },
+      "2018": {
+       "voted": 14031,
+       "electors": 27083,
+       "turnout": 51.81
+      },
+      "2022": {
+       "voted": 11784,
+       "electors": 28713,
+       "turnout": 41.04
+      }
+     }
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 5496,
+       "electors": 10217,
+       "turnout": 53.79
+      },
+      "2018": {
+       "voted": 6649,
+       "electors": 11417,
+       "turnout": 58.24
+      },
+      "2022": {
+       "voted": 5967,
+       "electors": 12516,
+       "turnout": 47.67
+      }
+     }
+    }
+   ]
+  },
+  "66000": {
+   "code": "66000",
+   "name": "臺中市",
+   "mayor": {
+    "2014": {
+     "voted": 1506023,
+     "electors": 2093689,
+     "turnout": 71.93
+    },
+    "2018": {
+     "voted": 1493365,
+     "electors": 2213789,
+     "turnout": 67.46
+    },
+    "2022": {
+     "voted": 1364629,
+     "electors": 2274107,
+     "turnout": 60.01
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "大安區",
+      "大甲區",
+      "外埔區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 77105,
+       "electors": 100587,
+       "turnout": 76.66
+      },
+      "2018": {
+       "voted": 73966,
+       "electors": 102986,
+       "turnout": 71.82
+      },
+      "2022": {
+       "voted": 67229,
+       "electors": 102035,
+       "turnout": 65.89
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 76834,
+       "electors": 100162,
+       "turnout": 76.71
+      },
+      "2018": {
+       "voted": 73700,
+       "electors": 102506,
+       "turnout": 71.9
+      },
+      "2022": {
+       "voted": 66962,
+       "electors": 101498,
+       "turnout": 65.97
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "沙鹿區",
+      "清水區",
+      "梧棲區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 133789,
+       "electors": 175865,
+       "turnout": 76.07
+      },
+      "2018": {
+       "voted": 130865,
+       "electors": 186083,
+       "turnout": 70.33
+      },
+      "2022": {
+       "voted": 125091,
+       "electors": 195554,
+       "turnout": 63.97
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 132808,
+       "electors": 174045,
+       "turnout": 76.31
+      },
+      "2018": {
+       "voted": 129699,
+       "electors": 184069,
+       "turnout": 70.46
+      },
+      "2022": {
+       "voted": 124039,
+       "electors": 193116,
+       "turnout": 64.23
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "烏日區",
+      "龍井區",
+      "大肚區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 118583,
+       "electors": 157306,
+       "turnout": 75.38
+      },
+      "2018": {
+       "voted": 116022,
+       "electors": 166636,
+       "turnout": 69.63
+      },
+      "2022": {
+       "voted": 106333,
+       "electors": 172182,
+       "turnout": 61.76
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 117079,
+       "electors": 154737,
+       "turnout": 75.66
+      },
+      "2018": {
+       "voted": 114549,
+       "electors": 163975,
+       "turnout": 69.86
+      },
+      "2022": {
+       "voted": 104885,
+       "electors": 169220,
+       "turnout": 61.98
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "后里區",
+      "豐原區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 124413,
+       "electors": 170000,
+       "turnout": 73.18
+      },
+      "2018": {
+       "voted": 123284,
+       "electors": 175538,
+       "turnout": 70.23
+      },
+      "2022": {
+       "voted": 111529,
+       "electors": 175964,
+       "turnout": 63.38
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 123469,
+       "electors": 168326,
+       "turnout": 73.35
+      },
+      "2018": {
+       "voted": 122361,
+       "electors": 173758,
+       "turnout": 70.42
+      },
+      "2022": {
+       "voted": 110670,
+       "electors": 174017,
+       "turnout": 63.6
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "潭子區",
+      "大雅區",
+      "神岡區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 146173,
+       "electors": 201166,
+       "turnout": 72.66
+      },
+      "2018": {
+       "voted": 145275,
+       "electors": 213186,
+       "turnout": 68.14
+      },
+      "2022": {
+       "voted": 131255,
+       "electors": 217851,
+       "turnout": 60.25
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 144180,
+       "electors": 197711,
+       "turnout": 72.92
+      },
+      "2018": {
+       "voted": 143209,
+       "electors": 209391,
+       "turnout": 68.39
+      },
+      "2022": {
+       "voted": 129429,
+       "electors": 213890,
+       "turnout": 60.51
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "西屯區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 112737,
+       "electors": 163500,
+       "turnout": 68.95
+      },
+      "2018": {
+       "voted": 114080,
+       "electors": 176557,
+       "turnout": 64.61
+      },
+      "2022": {
+       "voted": 103103,
+       "electors": 183033,
+       "turnout": 56.33
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 111496,
+       "electors": 161351,
+       "turnout": 69.1
+      },
+      "2018": {
+       "voted": 112964,
+       "electors": 174522,
+       "turnout": 64.73
+      },
+      "2022": {
+       "voted": 102231,
+       "electors": 180777,
+       "turnout": 56.55
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "南屯區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 84089,
+       "electors": 118485,
+       "turnout": 70.97
+      },
+      "2018": {
+       "voted": 86183,
+       "electors": 129479,
+       "turnout": 66.56
+      },
+      "2022": {
+       "voted": 80521,
+       "electors": 138694,
+       "turnout": 58.06
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 83270,
+       "electors": 117059,
+       "turnout": 71.14
+      },
+      "2018": {
+       "voted": 85360,
+       "electors": 128029,
+       "turnout": 66.67
+      },
+      "2022": {
+       "voted": 79759,
+       "electors": 136910,
+       "turnout": 58.26
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "towns": [
+      "北屯區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 138983,
+       "electors": 199578,
+       "turnout": 69.64
+      },
+      "2018": {
+       "voted": 141629,
+       "electors": 219576,
+       "turnout": 64.5
+      },
+      "2022": {
+       "voted": 133552,
+       "electors": 235986,
+       "turnout": 56.59
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 137315,
+       "electors": 196736,
+       "turnout": 69.8
+      },
+      "2018": {
+       "voted": 139847,
+       "electors": 216524,
+       "turnout": 64.59
+      },
+      "2022": {
+       "voted": 131917,
+       "electors": 232089,
+       "turnout": 56.84
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "towns": [
+      "北區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 80254,
+       "electors": 117776,
+       "turnout": 68.14
+      },
+      "2018": {
+       "voted": 78181,
+       "electors": 120796,
+       "turnout": 64.72
+      },
+      "2022": {
+       "voted": 68589,
+       "electors": 118882,
+       "turnout": 57.7
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 79373,
+       "electors": 116234,
+       "turnout": 68.29
+      },
+      "2018": {
+       "voted": 77422,
+       "electors": 119362,
+       "turnout": 64.86
+      },
+      "2022": {
+       "voted": 67946,
+       "electors": 117315,
+       "turnout": 57.92
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "towns": [
+      "西區",
+      "中區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 72294,
+       "electors": 104216,
+       "turnout": 69.37
+      },
+      "2018": {
+       "voted": 70272,
+       "electors": 106158,
+       "turnout": 66.2
+      },
+      "2022": {
+       "voted": 61123,
+       "electors": 103607,
+       "turnout": 59.0
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 71704,
+       "electors": 103211,
+       "turnout": 69.47
+      },
+      "2018": {
+       "voted": 69741,
+       "electors": 105201,
+       "turnout": 66.29
+      },
+      "2022": {
+       "voted": 60705,
+       "electors": 102516,
+       "turnout": 59.22
+      }
+     }
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "towns": [
+      "東區",
+      "南區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 108455,
+       "electors": 152677,
+       "turnout": 71.04
+      },
+      "2018": {
+       "voted": 109987,
+       "electors": 161808,
+       "turnout": 67.97
+      },
+      "2022": {
+       "voted": 99338,
+       "electors": 165590,
+       "turnout": 59.99
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 107281,
+       "electors": 150688,
+       "turnout": 71.19
+      },
+      "2018": {
+       "voted": 108839,
+       "electors": 159956,
+       "turnout": 68.04
+      },
+      "2022": {
+       "voted": 98490,
+       "electors": 163586,
+       "turnout": 60.21
+      }
+     }
+    },
+    {
+     "no": 12,
+     "name": "第12選區",
+     "towns": [
+      "太平區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 98474,
+       "electors": 141280,
+       "turnout": 69.7
+      },
+      "2018": {
+       "voted": 96463,
+       "electors": 152349,
+       "turnout": 63.32
+      },
+      "2022": {
+       "voted": 88445,
+       "electors": 159004,
+       "turnout": 55.62
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 97020,
+       "electors": 138729,
+       "turnout": 69.93
+      },
+      "2018": {
+       "voted": 95065,
+       "electors": 149645,
+       "turnout": 63.53
+      },
+      "2022": {
+       "voted": 87120,
+       "electors": 155954,
+       "turnout": 55.86
+      }
+     }
+    },
+    {
+     "no": 13,
+     "name": "第13選區",
+     "towns": [
+      "大里區",
+      "霧峰區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 148060,
+       "electors": 207943,
+       "turnout": 71.2
+      },
+      "2018": {
+       "voted": 145324,
+       "electors": 218889,
+       "turnout": 66.39
+      },
+      "2022": {
+       "voted": 133432,
+       "electors": 223458,
+       "turnout": 59.71
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 146859,
+       "electors": 205794,
+       "turnout": 71.36
+      },
+      "2018": {
+       "voted": 144054,
+       "electors": 216656,
+       "turnout": 66.49
+      },
+      "2022": {
+       "voted": 132492,
+       "electors": 220964,
+       "turnout": 59.96
+      }
+     }
+    },
+    {
+     "no": 14,
+     "name": "第14選區",
+     "towns": [
+      "新社區",
+      "和平區",
+      "東勢區",
+      "石岡區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 62614,
+       "electors": 83310,
+       "turnout": 75.16
+      },
+      "2018": {
+       "voted": 61834,
+       "electors": 83748,
+       "turnout": 73.83
+      },
+      "2022": {
+       "voted": 55089,
+       "electors": 82267,
+       "turnout": 66.96
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 59510,
+       "electors": 79448,
+       "turnout": 74.9
+      },
+      "2018": {
+       "voted": 58641,
+       "electors": 79643,
+       "turnout": 73.63
+      },
+      "2022": {
+       "voted": 52008,
+       "electors": 78014,
+       "turnout": 66.66
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 15,
+     "name": "第15選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 4643,
+       "electors": 7986,
+       "turnout": 58.14
+      },
+      "2018": {
+       "voted": 5211,
+       "electors": 9211,
+       "turnout": 56.57
+      },
+      "2022": {
+       "voted": 4872,
+       "electors": 10364,
+       "turnout": 47.01
+      }
+     }
+    },
+    {
+     "no": 16,
+     "name": "第16選區（山地原住民）",
+     "scope": "和平區及大甲、大安、外埔、清水、后里、豐原、神岡、大雅、潭子、東勢、石岡、新社區",
+     "council": {
+      "2014": {
+       "voted": 4173,
+       "electors": 5798,
+       "turnout": 71.97
+      },
+      "2018": {
+       "voted": 4494,
+       "electors": 6494,
+       "turnout": 69.2
+      },
+      "2022": {
+       "voted": 4315,
+       "electors": 6907,
+       "turnout": 62.47
+      }
+     }
+    },
+    {
+     "no": 17,
+     "name": "第17選區（山地原住民）",
+     "scope": "梧棲、沙鹿、龍井、大肚、烏日、西屯、南屯、北屯、北區、中區、西區、東區、南區、太平、大里、霧峰區",
+     "council": {
+      "2014": {
+       "voted": 3149,
+       "electors": 5595,
+       "turnout": 56.28
+      },
+      "2018": {
+       "voted": 4068,
+       "electors": 6742,
+       "turnout": 60.34
+      },
+      "2022": {
+       "voted": 3448,
+       "electors": 7701,
+       "turnout": 44.77
+      }
+     }
+    }
+   ]
+  },
+  "67000": {
+   "code": "67000",
+   "name": "臺南市",
+   "mayor": {
+    "2014": {
+     "voted": 996688,
+     "electors": 1512778,
+     "turnout": 65.88
+    },
+    "2018": {
+     "voted": 990204,
+     "electors": 1546862,
+     "turnout": 64.01
+    },
+    "2022": {
+     "voted": 908533,
+     "electors": 1548203,
+     "turnout": 58.68
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "鹽水區",
+      "東山區",
+      "新營區",
+      "白河區",
+      "後壁區",
+      "柳營區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 111821,
+       "electors": 166321,
+       "turnout": 67.23
+      },
+      "2018": {
+       "voted": 108252,
+       "electors": 165077,
+       "turnout": 65.58
+      },
+      "2022": {
+       "voted": 95616,
+       "electors": 160835,
+       "turnout": 59.45
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 111549,
+       "electors": 165766,
+       "turnout": 67.29
+      },
+      "2018": {
+       "voted": 107958,
+       "electors": 164551,
+       "turnout": 65.61
+      },
+      "2022": {
+       "voted": 95323,
+       "electors": 160263,
+       "turnout": 59.48
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "北門區",
+      "佳里區",
+      "將軍區",
+      "西港區",
+      "學甲區",
+      "七股區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 96803,
+       "electors": 138671,
+       "turnout": 69.81
+      },
+      "2018": {
+       "voted": 93270,
+       "electors": 138439,
+       "turnout": 67.37
+      },
+      "2022": {
+       "voted": 81539,
+       "electors": 136397,
+       "turnout": 59.78
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 96542,
+       "electors": 138132,
+       "turnout": 69.89
+      },
+      "2018": {
+       "voted": 93033,
+       "electors": 138009,
+       "turnout": 67.41
+      },
+      "2022": {
+       "voted": 81272,
+       "electors": 135832,
+       "turnout": 59.83
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "官田區",
+      "下營區",
+      "麻豆區",
+      "大內區",
+      "六甲區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 72908,
+       "electors": 102966,
+       "turnout": 70.81
+      },
+      "2018": {
+       "voted": 69315,
+       "electors": 102386,
+       "turnout": 67.7
+      },
+      "2022": {
+       "voted": 63062,
+       "electors": 100442,
+       "turnout": 62.78
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 72646,
+       "electors": 102531,
+       "turnout": 70.85
+      },
+      "2018": {
+       "voted": 69060,
+       "electors": 101945,
+       "turnout": 67.74
+      },
+      "2022": {
+       "voted": 62846,
+       "electors": 99947,
+       "turnout": 62.88
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "玉井區",
+      "南化區",
+      "楠西區",
+      "左鎮區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 22749,
+       "electors": 33032,
+       "turnout": 68.87
+      },
+      "2018": {
+       "voted": 22646,
+       "electors": 32234,
+       "turnout": 70.26
+      },
+      "2022": {
+       "voted": 19808,
+       "electors": 30778,
+       "turnout": 64.36
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 22672,
+       "electors": 32877,
+       "turnout": 68.96
+      },
+      "2018": {
+       "voted": 22573,
+       "electors": 32116,
+       "turnout": 70.29
+      },
+      "2022": {
+       "voted": 19742,
+       "electors": 30622,
+       "turnout": 64.47
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "善化區",
+      "新市區",
+      "新化區",
+      "山上區",
+      "安定區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 90732,
+       "electors": 130308,
+       "turnout": 69.63
+      },
+      "2018": {
+       "voted": 89450,
+       "electors": 135883,
+       "turnout": 65.83
+      },
+      "2022": {
+       "voted": 83307,
+       "electors": 139211,
+       "turnout": 59.84
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 90384,
+       "electors": 129585,
+       "turnout": 69.75
+      },
+      "2018": {
+       "voted": 89055,
+       "electors": 135148,
+       "turnout": 65.89
+      },
+      "2022": {
+       "voted": 82958,
+       "electors": 138353,
+       "turnout": 59.96
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "安南區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 100159,
+       "electors": 146915,
+       "turnout": 68.17
+      },
+      "2018": {
+       "voted": 98128,
+       "electors": 154682,
+       "turnout": 63.44
+      },
+      "2022": {
+       "voted": 97554,
+       "electors": 161423,
+       "turnout": 60.43
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 99703,
+       "electors": 145986,
+       "turnout": 68.3
+      },
+      "2018": {
+       "voted": 97630,
+       "electors": 153747,
+       "turnout": 63.5
+      },
+      "2022": {
+       "voted": 96995,
+       "electors": 160064,
+       "turnout": 60.6
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "永康區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 111643,
+       "electors": 178619,
+       "turnout": 62.5
+      },
+      "2018": {
+       "voted": 113885,
+       "electors": 188508,
+       "turnout": 60.41
+      },
+      "2022": {
+       "voted": 108381,
+       "electors": 192041,
+       "turnout": 56.44
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 110629,
+       "electors": 176609,
+       "turnout": 62.64
+      },
+      "2018": {
+       "voted": 112829,
+       "electors": 186411,
+       "turnout": 60.53
+      },
+      "2022": {
+       "voted": 107367,
+       "electors": 189911,
+       "turnout": 56.54
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "towns": [
+      "中西區",
+      "北區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 103126,
+       "electors": 169112,
+       "turnout": 60.98
+      },
+      "2018": {
+       "voted": 107499,
+       "electors": 171237,
+       "turnout": 62.78
+      },
+      "2022": {
+       "voted": 94178,
+       "electors": 167566,
+       "turnout": 56.2
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 102440,
+       "electors": 167660,
+       "turnout": 61.1
+      },
+      "2018": {
+       "voted": 106832,
+       "electors": 169839,
+       "turnout": 62.9
+      },
+      "2022": {
+       "voted": 93639,
+       "electors": 166295,
+       "turnout": 56.31
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "towns": [
+      "南區",
+      "安平區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 93932,
+       "electors": 154412,
+       "turnout": 60.83
+      },
+      "2018": {
+       "voted": 95566,
+       "electors": 159185,
+       "turnout": 60.03
+      },
+      "2022": {
+       "voted": 89927,
+       "electors": 160502,
+       "turnout": 56.03
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 93369,
+       "electors": 153151,
+       "turnout": 60.97
+      },
+      "2018": {
+       "voted": 95029,
+       "electors": 158064,
+       "turnout": 60.12
+      },
+      "2022": {
+       "voted": 89412,
+       "electors": 159245,
+       "turnout": 56.15
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "towns": [
+      "東區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 88699,
+       "electors": 146511,
+       "turnout": 60.54
+      },
+      "2018": {
+       "voted": 90294,
+       "electors": 148136,
+       "turnout": 60.95
+      },
+      "2022": {
+       "voted": 82960,
+       "electors": 145871,
+       "turnout": 56.87
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 88202,
+       "electors": 145412,
+       "turnout": 60.66
+      },
+      "2018": {
+       "voted": 89632,
+       "electors": 146900,
+       "turnout": 61.02
+      },
+      "2022": {
+       "voted": 82471,
+       "electors": 144677,
+       "turnout": 57.0
+      }
+     }
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "towns": [
+      "仁德區",
+      "關廟區",
+      "歸仁區",
+      "龍崎區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 104116,
+       "electors": 145911,
+       "turnout": 71.36
+      },
+      "2018": {
+       "voted": 101899,
+       "electors": 151095,
+       "turnout": 67.44
+      },
+      "2022": {
+       "voted": 92201,
+       "electors": 153137,
+       "turnout": 60.21
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 103670,
+       "electors": 144956,
+       "turnout": 71.52
+      },
+      "2018": {
+       "voted": 101380,
+       "electors": 150127,
+       "turnout": 67.53
+      },
+      "2022": {
+       "voted": 91739,
+       "electors": 152052,
+       "turnout": 60.33
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 12,
+     "name": "第12選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 1244,
+       "electors": 2087,
+       "turnout": 59.61
+      },
+      "2018": {
+       "voted": 1385,
+       "electors": 2401,
+       "turnout": 57.68
+      },
+      "2022": {
+       "voted": 1395,
+       "electors": 2755,
+       "turnout": 50.64
+      }
+     }
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 1435,
+       "electors": 2325,
+       "turnout": 61.72
+      },
+      "2018": {
+       "voted": 1747,
+       "electors": 2812,
+       "turnout": 62.13
+      },
+      "2022": {
+       "voted": 1730,
+       "electors": 3202,
+       "turnout": 54.03
+      }
+     }
+    }
+   ]
+  },
+  "68000": {
+   "code": "68000",
+   "name": "桃園市",
+   "mayor": {
+    "2014": {
+     "voted": 984099,
+     "electors": 1568713,
+     "turnout": 62.73
+    },
+    "2018": {
+     "voted": 1050527,
+     "electors": 1732591,
+     "turnout": 60.63
+    },
+    "2022": {
+     "voted": 1085225,
+     "electors": 1825127,
+     "turnout": 59.46
+    }
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "towns": [
+      "桃園區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 185040,
+       "electors": 313670,
+       "turnout": 58.99
+      },
+      "2018": {
+       "voted": 196942,
+       "electors": 345100,
+       "turnout": 57.07
+      },
+      "2022": {
+       "voted": 214769,
+       "electors": 366627,
+       "turnout": 58.58
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 182534,
+       "electors": 308376,
+       "turnout": 59.19
+      },
+      "2018": {
+       "voted": 194083,
+       "electors": 338918,
+       "turnout": 57.27
+      },
+      "2022": {
+       "voted": 211634,
+       "electors": 359433,
+       "turnout": 58.88
+      }
+     }
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "towns": [
+      "龜山區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 64845,
+       "electors": 109434,
+       "turnout": 59.25
+      },
+      "2018": {
+       "voted": 73848,
+       "electors": 126483,
+       "turnout": 58.39
+      },
+      "2022": {
+       "voted": 76941,
+       "electors": 138494,
+       "turnout": 55.56
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 62500,
+       "electors": 104907,
+       "turnout": 59.58
+      },
+      "2018": {
+       "voted": 71068,
+       "electors": 121350,
+       "turnout": 58.56
+      },
+      "2022": {
+       "voted": 74632,
+       "electors": 132781,
+       "turnout": 56.21
+      }
+     }
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "towns": [
+      "八德區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 89972,
+       "electors": 141109,
+       "turnout": 63.76
+      },
+      "2018": {
+       "voted": 95723,
+       "electors": 158975,
+       "turnout": 60.21
+      },
+      "2022": {
+       "voted": 99935,
+       "electors": 168451,
+       "turnout": 59.33
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 87424,
+       "electors": 136107,
+       "turnout": 64.23
+      },
+      "2018": {
+       "voted": 92759,
+       "electors": 153272,
+       "turnout": 60.52
+      },
+      "2022": {
+       "voted": 97093,
+       "electors": 162085,
+       "turnout": 59.9
+      }
+     }
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "towns": [
+      "蘆竹區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 66846,
+       "electors": 110212,
+       "turnout": 60.65
+      },
+      "2018": {
+       "voted": 73348,
+       "electors": 123701,
+       "turnout": 59.29
+      },
+      "2022": {
+       "voted": 79486,
+       "electors": 130434,
+       "turnout": 60.94
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 65402,
+       "electors": 107240,
+       "turnout": 60.99
+      },
+      "2018": {
+       "voted": 71592,
+       "electors": 120285,
+       "turnout": 59.52
+      },
+      "2022": {
+       "voted": 77736,
+       "electors": 126539,
+       "turnout": 61.43
+      }
+     }
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "towns": [
+      "大園區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 43064,
+       "electors": 64354,
+       "turnout": 66.92
+      },
+      "2018": {
+       "voted": 45894,
+       "electors": 71054,
+       "turnout": 64.59
+      },
+      "2022": {
+       "voted": 39758,
+       "electors": 69701,
+       "turnout": 57.04
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 41846,
+       "electors": 61944,
+       "turnout": 67.55
+      },
+      "2018": {
+       "voted": 44501,
+       "electors": 68327,
+       "turnout": 65.13
+      },
+      "2022": {
+       "voted": 38724,
+       "electors": 67040,
+       "turnout": 57.76
+      }
+     }
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "towns": [
+      "大溪區",
+      "復興區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 52314,
+       "electors": 79523,
+       "turnout": 65.78
+      },
+      "2018": {
+       "voted": 55851,
+       "electors": 84846,
+       "turnout": 65.83
+      },
+      "2022": {
+       "voted": 52854,
+       "electors": 87352,
+       "turnout": 60.51
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 45274,
+       "electors": 69244,
+       "turnout": 65.38
+      },
+      "2018": {
+       "voted": 47995,
+       "electors": 73546,
+       "turnout": 65.26
+      },
+      "2022": {
+       "voted": 45350,
+       "electors": 75398,
+       "turnout": 60.15
+      }
+     }
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "towns": [
+      "中壢區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 185550,
+       "electors": 292742,
+       "turnout": 63.38
+      },
+      "2018": {
+       "voted": 195935,
+       "electors": 322272,
+       "turnout": 60.8
+      },
+      "2022": {
+       "voted": 203743,
+       "electors": 338619,
+       "turnout": 60.17
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 182693,
+       "electors": 286526,
+       "turnout": 63.76
+      },
+      "2018": {
+       "voted": 192171,
+       "electors": 315143,
+       "turnout": 60.98
+      },
+      "2022": {
+       "voted": 200215,
+       "electors": 330519,
+       "turnout": 60.58
+      }
+     }
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "towns": [
+      "平鎮區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 103204,
+       "electors": 162143,
+       "turnout": 63.65
+      },
+      "2018": {
+       "voted": 109043,
+       "electors": 176688,
+       "turnout": 61.72
+      },
+      "2022": {
+       "voted": 110886,
+       "electors": 182430,
+       "turnout": 60.78
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 100791,
+       "electors": 157287,
+       "turnout": 64.08
+      },
+      "2018": {
+       "voted": 106318,
+       "electors": 171460,
+       "turnout": 62.01
+      },
+      "2022": {
+       "voted": 108200,
+       "electors": 176716,
+       "turnout": 61.23
+      }
+     }
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "towns": [
+      "楊梅區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 74553,
+       "electors": 118823,
+       "turnout": 62.74
+      },
+      "2018": {
+       "voted": 78989,
+       "electors": 132599,
+       "turnout": 59.57
+      },
+      "2022": {
+       "voted": 81380,
+       "electors": 141846,
+       "turnout": 57.37
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 73259,
+       "electors": 116114,
+       "turnout": 63.09
+      },
+      "2018": {
+       "voted": 77416,
+       "electors": 129329,
+       "turnout": 59.86
+      },
+      "2022": {
+       "voted": 79788,
+       "electors": 137958,
+       "turnout": 57.83
+      }
+     }
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "towns": [
+      "龍潭區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 56205,
+       "electors": 89895,
+       "turnout": 62.52
+      },
+      "2018": {
+       "voted": 60967,
+       "electors": 97846,
+       "turnout": 62.31
+      },
+      "2022": {
+       "voted": 61341,
+       "electors": 101501,
+       "turnout": 60.43
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 54883,
+       "electors": 87298,
+       "turnout": 62.87
+      },
+      "2018": {
+       "voted": 59375,
+       "electors": 94861,
+       "turnout": 62.59
+      },
+      "2022": {
+       "voted": 59822,
+       "electors": 98152,
+       "turnout": 60.95
+      }
+     }
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "towns": [
+      "新屋區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 28104,
+       "electors": 38224,
+       "turnout": 73.52
+      },
+      "2018": {
+       "voted": 29254,
+       "electors": 40084,
+       "turnout": 72.98
+      },
+      "2022": {
+       "voted": 27578,
+       "electors": 41069,
+       "turnout": 67.15
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 27798,
+       "electors": 37708,
+       "turnout": 73.72
+      },
+      "2018": {
+       "voted": 28931,
+       "electors": 39510,
+       "turnout": 73.22
+      },
+      "2022": {
+       "voted": 27226,
+       "electors": 40320,
+       "turnout": 67.52
+      }
+     }
+    },
+    {
+     "no": 12,
+     "name": "第12選區",
+     "towns": [
+      "觀音區"
+     ],
+     "mayor": {
+      "2014": {
+       "voted": 34402,
+       "electors": 48584,
+       "turnout": 70.81
+      },
+      "2018": {
+       "voted": 34733,
+       "electors": 52943,
+       "turnout": 65.6
+      },
+      "2022": {
+       "voted": 36554,
+       "electors": 58603,
+       "turnout": 62.38
+      }
+     },
+     "council": {
+      "2014": {
+       "voted": 33827,
+       "electors": 47545,
+       "turnout": 71.15
+      },
+      "2018": {
+       "voted": 34056,
+       "electors": 51611,
+       "turnout": 65.99
+      },
+      "2022": {
+       "voted": 35739,
+       "electors": 56541,
+       "turnout": 63.21
+      }
+     }
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 13,
+     "name": "第13選區（平地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 12421,
+       "electors": 23725,
+       "turnout": 52.35
+      },
+      "2018": {
+       "voted": 14388,
+       "electors": 27744,
+       "turnout": 51.86
+      },
+      "2022": {
+       "voted": 13358,
+       "electors": 31164,
+       "turnout": 42.86
+      }
+     }
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "scope": "全縣市",
+     "council": {
+      "2014": {
+       "voted": 10708,
+       "electors": 18291,
+       "turnout": 58.54
+      },
+      "2018": {
+       "voted": 13072,
+       "electors": 21479,
+       "turnout": 60.86
+      },
+      "2022": {
+       "voted": 12921,
+       "electors": 24121,
+       "turnout": 53.57
+      }
+     }
+    }
+   ]
+  }
+ }
+}
