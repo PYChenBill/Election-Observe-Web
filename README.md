@@ -8,6 +8,7 @@
 - `js/api.js`：資料存取層，`API.config.mode` 改為 `"http"` 即改接後端
 - `js/mock-api.js`：暫時後端。讀 `data/real/elections.json` 與 `data/predictions.json` 組出 API 回應；回傳格式即為正式 API 規格
 - `data/candidates_2026/<縣市代碼>.txt`：2026 登記參選人（選區|姓名|政黨，縣市長以「市長」為選區），取自島民觀察室 formosaobservatory.com（中選會登記名冊，截至 2026-10-08），再扣除中選會 2026-10-16 資格審定未通過的 10 名議員參選人（見 `data/candidates_2026/REMOVED.md`）。目前議員 1,492 人、縣市長 81 人，與中選會審定通過人數相符
+- `data/electors_2026.json`、`data/electors_2026.csv`：2026 各縣市與各議員選區選舉人數。含 2022 實際、2024 實際（依 2026 選區範圍重新加總）與 2026 估計；中選會 11/25 公告正式數字後填入 `official2026`。由 `tools/build_electors.py` 產生（方法寫在檔頭）
 - `data/predictions.json`：你的預測（見下方格式）
 - `data/real/elections.json`：由中選會開票檔整理（2014/2018/2022 縣市長，含各選區彙整；2022 議員當選人；2026 選區與應選名額）
 - `data/districts.topo.json`：2026 議員選區邊界，由內政部村里界圖（taiwan-atlas）依選區所屬村里合併

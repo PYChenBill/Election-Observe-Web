@@ -1,0 +1,3059 @@
+{
+ "_note": "2026 選舉人數：中選會依法於投票日前 3 日（2026-11-25）公告，公告前 official2026 為 null。estimate2026 為估計值，方法見 tools/build_electors.py。electors2022 為 2022 地方選舉實際選舉人數（依 2026 選區範圍重新加總），electors2024 為 2024 總統／原住民立委選舉實際選舉人數（依 2026 選區範圍加總；區域選區已扣除原住民選舉人）。",
+ "source": "中選會選舉資料庫開票檔（github.com/kiang/db.cec.gov.tw 鏡像）；全國估計 1,965 萬人：中選會 2026-08-20 新聞稿",
+ "updatedAt": "2026-11-17",
+ "totals": {
+  "electors2022": 19181411,
+  "electors2024": 19548531,
+  "estimate2026": 19649998,
+  "cecEstimate2026": 19650000
+ },
+ "counties": {
+  "09007": {
+   "code": "09007",
+   "name": "連江縣",
+   "mayor": {
+    "electors2022": 11810,
+    "electors2024": 12083,
+    "estimate2026": 12145,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 5,
+     "towns": [
+      "南竿鄉"
+     ],
+     "electors2022": 6465,
+     "electors2024": 6593,
+     "estimate2026": 6627,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 2,
+     "towns": [
+      "北竿鄉"
+     ],
+     "electors2022": 2742,
+     "electors2024": 2758,
+     "estimate2026": 2772,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 1,
+     "towns": [
+      "莒光鄉"
+     ],
+     "electors2022": 1320,
+     "electors2024": 1377,
+     "estimate2026": 1384,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 1,
+     "towns": [
+      "東引鄉"
+     ],
+     "electors2022": 1277,
+     "electors2024": 1355,
+     "estimate2026": 1362,
+     "official2026": null
+    }
+   ],
+   "indigenous": []
+  },
+  "09020": {
+   "code": "09020",
+   "name": "金門縣",
+   "mayor": {
+    "electors2022": 122294,
+    "electors2024": 126422,
+    "estimate2026": 127079,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 10,
+     "towns": [
+      "金城鎮",
+      "金寧鄉",
+      "烏坵鄉"
+     ],
+     "electors2022": 66019,
+     "electors2024": 68701,
+     "estimate2026": 69058,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 7,
+     "towns": [
+      "金沙鎮",
+      "金湖鎮"
+     ],
+     "electors2022": 44758,
+     "electors2024": 46064,
+     "estimate2026": 46303,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 2,
+     "towns": [
+      "烈嶼鄉"
+     ],
+     "electors2022": 11417,
+     "electors2024": 11657,
+     "estimate2026": 11718,
+     "official2026": null
+    }
+   ],
+   "indigenous": []
+  },
+  "10002": {
+   "code": "10002",
+   "name": "宜蘭縣",
+   "mayor": {
+    "electors2022": 374779,
+    "electors2024": 379026,
+    "estimate2026": 380993,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 7,
+     "towns": [
+      "宜蘭市"
+     ],
+     "electors2022": 75588,
+     "electors2024": 76548,
+     "estimate2026": 76945,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 2,
+     "towns": [
+      "頭城鎮"
+     ],
+     "electors2022": 24027,
+     "electors2024": 24230,
+     "estimate2026": 24356,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 3,
+     "towns": [
+      "礁溪鄉"
+     ],
+     "electors2022": 29610,
+     "electors2024": 30137,
+     "estimate2026": 30293,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 2,
+     "towns": [
+      "員山鄉"
+     ],
+     "electors2022": 27157,
+     "electors2024": 27773,
+     "estimate2026": 27917,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 2,
+     "towns": [
+      "壯圍鄉"
+     ],
+     "electors2022": 21049,
+     "electors2024": 21240,
+     "estimate2026": 21350,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 5,
+     "towns": [
+      "羅東鎮"
+     ],
+     "electors2022": 54050,
+     "electors2024": 54695,
+     "estimate2026": 54979,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 3,
+     "towns": [
+      "五結鄉"
+     ],
+     "electors2022": 34293,
+     "electors2024": 35112,
+     "estimate2026": 35294,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "seats": 4,
+     "towns": [
+      "冬山鄉"
+     ],
+     "electors2022": 43744,
+     "electors2024": 44547,
+     "estimate2026": 44778,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "seats": 1,
+     "towns": [
+      "三星鄉",
+      "大同鄉"
+     ],
+     "electors2022": 19177,
+     "electors2024": 19412,
+     "estimate2026": 19513,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "seats": 2,
+     "towns": [
+      "南澳鄉",
+      "蘇澳鎮"
+     ],
+     "electors2022": 32441,
+     "electors2024": 32544,
+     "estimate2026": 32713,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 11,
+     "name": "第11選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 2004,
+     "electors2024": 2076,
+     "estimate2026": 2087,
+     "official2026": null
+    },
+    {
+     "no": 12,
+     "name": "第12選區（山地原住民）",
+     "seats": 1,
+     "scope": "大同鄉及宜蘭市、頭城、礁溪、員山、壯圍、三星",
+     "electors2022": 5104,
+     "electors2024": 5185,
+     "estimate2026": 5212,
+     "official2026": null
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "seats": 1,
+     "scope": "南澳鄉及羅東、五結、冬山、蘇澳",
+     "electors2022": 5375,
+     "electors2024": 5527,
+     "estimate2026": 5556,
+     "official2026": null
+    }
+   ]
+  },
+  "10004": {
+   "code": "10004",
+   "name": "新竹縣",
+   "mayor": {
+    "electors2022": 452720,
+    "electors2024": 466558,
+    "estimate2026": 468980,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 4,
+     "towns": [
+      "竹北市"
+     ],
+     "electors2022": 49784,
+     "electors2024": 52026,
+     "estimate2026": 52296,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 9,
+     "towns": [
+      "竹北市"
+     ],
+     "electors2022": 97750,
+     "electors2024": 103865,
+     "estimate2026": 104404,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 5,
+     "towns": [
+      "湖口鄉"
+     ],
+     "electors2022": 63890,
+     "electors2024": 65964,
+     "estimate2026": 66306,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 3,
+     "towns": [
+      "新豐鄉"
+     ],
+     "electors2022": 45555,
+     "electors2024": 46611,
+     "estimate2026": 46853,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 2,
+     "towns": [
+      "關西鎮"
+     ],
+     "electors2022": 22844,
+     "electors2024": 22857,
+     "estimate2026": 22976,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 2,
+     "towns": [
+      "新埔鎮"
+     ],
+     "electors2022": 28194,
+     "electors2024": 28881,
+     "estimate2026": 29031,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 1,
+     "towns": [
+      "橫山鄉",
+      "尖石鄉"
+     ],
+     "electors2022": 11507,
+     "electors2024": 11617,
+     "estimate2026": 11677,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "seats": 1,
+     "towns": [
+      "芎林鄉"
+     ],
+     "electors2022": 16893,
+     "electors2024": 17466,
+     "estimate2026": 17557,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "seats": 5,
+     "towns": [
+      "竹東鎮",
+      "五峰鄉"
+     ],
+     "electors2022": 75286,
+     "electors2024": 76516,
+     "estimate2026": 76913,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "seats": 1,
+     "towns": [
+      "寶山鄉"
+     ],
+     "electors2022": 12403,
+     "electors2024": 12725,
+     "estimate2026": 12791,
+     "official2026": null
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "seats": 1,
+     "towns": [
+      "北埔鄉",
+      "峨眉鄉"
+     ],
+     "electors2022": 12296,
+     "electors2024": 12169,
+     "estimate2026": 12232,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 12,
+     "name": "第12選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 2170,
+     "electors2024": 2257,
+     "estimate2026": 2269,
+     "official2026": null
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "seats": 1,
+     "scope": "尖石鄉及竹北、湖口、新豐、關西、新埔、橫山",
+     "electors2022": 7544,
+     "electors2024": 7695,
+     "estimate2026": 7735,
+     "official2026": null
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "seats": 1,
+     "scope": "五峰鄉及芎林、竹東、寶山、北埔、峨眉",
+     "electors2022": 5794,
+     "electors2024": 5909,
+     "estimate2026": 5940,
+     "official2026": null
+    }
+   ]
+  },
+  "10005": {
+   "code": "10005",
+   "name": "苗栗縣",
+   "mayor": {
+    "electors2022": 443908,
+    "electors2024": 447767,
+    "estimate2026": 450090,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 9,
+     "towns": [
+      "公館鄉",
+      "頭屋鄉",
+      "苗栗市"
+     ],
+     "electors2022": 105970,
+     "electors2024": 106792,
+     "estimate2026": 107346,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 3,
+     "towns": [
+      "三義鄉",
+      "銅鑼鄉",
+      "西湖鄉"
+     ],
+     "electors2022": 32864,
+     "electors2024": 32613,
+     "estimate2026": 32782,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 5,
+     "towns": [
+      "苑裡鎮",
+      "通霄鎮"
+     ],
+     "electors2022": 64754,
+     "electors2024": 64616,
+     "estimate2026": 64951,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 9,
+     "towns": [
+      "後龍鎮",
+      "造橋鄉",
+      "竹南鎮"
+     ],
+     "electors2022": 107214,
+     "electors2024": 109491,
+     "estimate2026": 110059,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 8,
+     "towns": [
+      "南庄鄉",
+      "頭份市",
+      "三灣鄉"
+     ],
+     "electors2022": 94361,
+     "electors2024": 96133,
+     "estimate2026": 96632,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 2,
+     "towns": [
+      "卓蘭鎮",
+      "獅潭鄉",
+      "大湖鄉",
+      "泰安鄉"
+     ],
+     "electors2022": 30010,
+     "electors2024": 29669,
+     "estimate2026": 29823,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 3239,
+     "electors2024": 3343,
+     "estimate2026": 3360,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 5014,
+     "electors2024": 5110,
+     "estimate2026": 5137,
+     "official2026": null
+    }
+   ]
+  },
+  "10007": {
+   "code": "10007",
+   "name": "彰化縣",
+   "mayor": {
+    "electors2022": 1028606,
+    "electors2024": 1032636,
+    "estimate2026": 1037996,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 12,
+     "towns": [
+      "芬園鄉",
+      "彰化市",
+      "花壇鄉"
+     ],
+     "electors2022": 239225,
+     "electors2024": 240167,
+     "estimate2026": 241414,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 7,
+     "towns": [
+      "福興鄉",
+      "秀水鄉",
+      "鹿港鎮"
+     ],
+     "electors2022": 137432,
+     "electors2024": 137717,
+     "estimate2026": 138432,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 6,
+     "towns": [
+      "和美鎮",
+      "伸港鄉",
+      "線西鄉"
+     ],
+     "electors2022": 116691,
+     "electors2024": 117329,
+     "estimate2026": 117938,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 9,
+     "towns": [
+      "員林市",
+      "永靖鄉",
+      "大村鄉"
+     ],
+     "electors2022": 160987,
+     "electors2024": 162572,
+     "estimate2026": 163416,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 5,
+     "towns": [
+      "埔鹽鄉",
+      "溪湖鎮",
+      "埔心鄉"
+     ],
+     "electors2022": 98717,
+     "electors2024": 98845,
+     "estimate2026": 99358,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 4,
+     "towns": [
+      "二水鄉",
+      "社頭鄉",
+      "田中鎮"
+     ],
+     "electors2022": 80732,
+     "electors2024": 80702,
+     "estimate2026": 81121,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 5,
+     "towns": [
+      "北斗鎮",
+      "埤頭鄉",
+      "溪州鄉",
+      "田尾鄉"
+     ],
+     "electors2022": 97768,
+     "electors2024": 97936,
+     "estimate2026": 98444,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "seats": 5,
+     "towns": [
+      "二林鎮",
+      "大城鄉",
+      "芳苑鄉",
+      "竹塘鄉"
+     ],
+     "electors2022": 93776,
+     "electors2024": 93056,
+     "estimate2026": 93539,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 9,
+     "name": "第9選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 2120,
+     "electors2024": 2205,
+     "estimate2026": 2216,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區（山地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": null,
+     "electors2024": 2107,
+     "estimate2026": 2118,
+     "official2026": null
+    }
+   ]
+  },
+  "10008": {
+   "code": "10008",
+   "name": "南投縣",
+   "mayor": {
+    "electors2022": 406195,
+    "electors2024": 407149,
+    "estimate2026": 409263,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 10,
+     "towns": [
+      "名間鄉",
+      "南投市"
+     ],
+     "electors2022": 111482,
+     "electors2024": 111920,
+     "estimate2026": 112501,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 9,
+     "towns": [
+      "中寮鄉",
+      "草屯鎮"
+     ],
+     "electors2022": 92587,
+     "electors2024": 93500,
+     "estimate2026": 93985,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 3,
+     "towns": [
+      "水里鄉",
+      "信義鄉",
+      "集集鎮",
+      "魚池鄉"
+     ],
+     "electors2022": 41022,
+     "electors2024": 40754,
+     "estimate2026": 40966,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 5,
+     "towns": [
+      "竹山鎮",
+      "鹿谷鄉"
+     ],
+     "electors2022": 58852,
+     "electors2024": 58744,
+     "estimate2026": 59049,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 7,
+     "towns": [
+      "埔里鎮",
+      "國姓鄉",
+      "仁愛鄉"
+     ],
+     "electors2022": 80708,
+     "electors2024": 80714,
+     "estimate2026": 81133,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 6,
+     "name": "第6選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 1312,
+     "electors2024": 1345,
+     "estimate2026": 1352,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區（山地原住民）",
+     "seats": 1,
+     "scope": "信義鄉及南投、竹山、集集、名間、鹿谷、水里",
+     "electors2022": 7887,
+     "electors2024": 7908,
+     "estimate2026": 7949,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "seats": 1,
+     "scope": "仁愛鄉及草屯、中寮、魚池、國姓、埔里",
+     "electors2022": 12091,
+     "electors2024": 12264,
+     "estimate2026": 12328,
+     "official2026": null
+    }
+   ]
+  },
+  "10009": {
+   "code": "10009",
+   "name": "雲林縣",
+   "mayor": {
+    "electors2022": 559273,
+    "electors2024": 560296,
+    "estimate2026": 563205,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 10,
+     "towns": [
+      "林內鄉",
+      "斗六市",
+      "莿桐鄉"
+     ],
+     "electors2022": 125373,
+     "electors2024": 126123,
+     "estimate2026": 126778,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 6,
+     "towns": [
+      "斗南鎮",
+      "大埤鄉",
+      "古坑鄉"
+     ],
+     "electors2022": 78434,
+     "electors2024": 78538,
+     "estimate2026": 78946,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 9,
+     "towns": [
+      "褒忠鄉",
+      "元長鄉",
+      "虎尾鎮",
+      "土庫鎮"
+     ],
+     "electors2022": 111385,
+     "electors2024": 111670,
+     "estimate2026": 112250,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 6,
+     "towns": [
+      "西螺鎮",
+      "二崙鄉",
+      "崙背鄉"
+     ],
+     "electors2022": 78213,
+     "electors2024": 78040,
+     "estimate2026": 78445,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 7,
+     "towns": [
+      "麥寮鄉",
+      "臺西鄉",
+      "東勢鄉",
+      "四湖鄉"
+     ],
+     "electors2022": 90306,
+     "electors2024": 89759,
+     "estimate2026": 90225,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 5,
+     "towns": [
+      "口湖鄉",
+      "北港鎮",
+      "水林鄉"
+     ],
+     "electors2022": 75169,
+     "electors2024": 74257,
+     "estimate2026": 74642,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": null,
+     "electors2024": 1008,
+     "estimate2026": 1013,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": null,
+     "electors2024": 901,
+     "estimate2026": 906,
+     "official2026": null
+    }
+   ]
+  },
+  "10010": {
+   "code": "10010",
+   "name": "嘉義縣",
+   "mayor": {
+    "electors2022": 422568,
+    "electors2024": 423199,
+    "estimate2026": 425395,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 8,
+     "towns": [
+      "水上鄉",
+      "太保市",
+      "鹿草鄉"
+     ],
+     "electors2022": 86490,
+     "electors2024": 87197,
+     "estimate2026": 87650,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 8,
+     "towns": [
+      "新港鄉",
+      "民雄鄉"
+     ],
+     "electors2022": 85478,
+     "electors2024": 86279,
+     "estimate2026": 86727,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 4,
+     "towns": [
+      "梅山鄉",
+      "大林鎮",
+      "溪口鄉"
+     ],
+     "electors2022": 53552,
+     "electors2024": 53587,
+     "estimate2026": 53865,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 6,
+     "towns": [
+      "東石鄉",
+      "六腳鄉",
+      "朴子市"
+     ],
+     "electors2022": 73583,
+     "electors2024": 73449,
+     "estimate2026": 73830,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 3,
+     "towns": [
+      "義竹鄉",
+      "布袋鎮"
+     ],
+     "electors2022": 37688,
+     "electors2024": 37232,
+     "estimate2026": 37425,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 7,
+     "towns": [
+      "竹崎鄉",
+      "番路鄉",
+      "阿里山鄉",
+      "中埔鄉",
+      "大埔鄉"
+     ],
+     "electors2022": 81681,
+     "electors2024": 81546,
+     "estimate2026": 81969,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（山地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 3864,
+     "electors2024": 3909,
+     "estimate2026": 3929,
+     "official2026": null
+    }
+   ]
+  },
+  "10013": {
+   "code": "10013",
+   "name": "屏東縣",
+   "mayor": {
+    "electors2022": 679330,
+    "electors2024": 681631,
+    "estimate2026": 685167,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 12,
+     "towns": [
+      "屏東市"
+     ],
+     "electors2022": 158453,
+     "electors2024": 159721,
+     "estimate2026": 160550,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 8,
+     "towns": [
+      "里港鄉",
+      "三地門鄉",
+      "麟洛鄉",
+      "鹽埔鄉",
+      "瑪家鄉",
+      "九如鄉",
+      "長治鄉",
+      "霧臺鄉",
+      "高樹鄉"
+     ],
+     "electors2022": 116049,
+     "electors2024": 116424,
+     "estimate2026": 117028,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 10,
+     "towns": [
+      "內埔鄉",
+      "來義鄉",
+      "潮州鎮",
+      "新埤鄉",
+      "萬巒鄉",
+      "竹田鄉",
+      "春日鄉",
+      "枋寮鄉",
+      "泰武鄉"
+     ],
+     "electors2022": 146490,
+     "electors2024": 147024,
+     "estimate2026": 147787,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 8,
+     "towns": [
+      "新園鄉",
+      "東港鎮",
+      "萬丹鄉"
+     ],
+     "electors2022": 108077,
+     "electors2024": 108697,
+     "estimate2026": 109261,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 4,
+     "towns": [
+      "佳冬鄉",
+      "林邊鄉",
+      "崁頂鄉",
+      "南州鄉"
+     ],
+     "electors2022": 50769,
+     "electors2024": 50608,
+     "estimate2026": 50871,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 3,
+     "towns": [
+      "滿州鄉",
+      "恆春鎮",
+      "獅子鄉",
+      "枋山鄉",
+      "車城鄉",
+      "牡丹鄉"
+     ],
+     "electors2022": 40786,
+     "electors2024": 40631,
+     "estimate2026": 40842,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 1,
+     "towns": [
+      "琉球鄉"
+     ],
+     "electors2022": 10507,
+     "electors2024": 10633,
+     "estimate2026": 10688,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 8,
+     "name": "第8選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 3777,
+     "electors2024": 3854,
+     "estimate2026": 3874,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區（山地原住民）",
+     "seats": 1,
+     "scope": "三地門鄉及九如、里港、鹽埔、高樹",
+     "electors2022": 6319,
+     "electors2024": 6356,
+     "estimate2026": 6389,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區（山地原住民）",
+     "seats": 1,
+     "scope": "瑪家鄉及屏東市、長治、麟洛、內埔",
+     "electors2022": 9362,
+     "electors2024": 9650,
+     "estimate2026": 9700,
+     "official2026": null
+    },
+    {
+     "no": 11,
+     "name": "第11選區（山地原住民）",
+     "seats": 1,
+     "scope": "泰武鄉及萬丹、萬巒、竹田",
+     "electors2022": 4831,
+     "electors2024": 4864,
+     "estimate2026": 4889,
+     "official2026": null
+    },
+    {
+     "no": 12,
+     "name": "第12選區（山地原住民）",
+     "seats": 1,
+     "scope": "來義鄉及潮州、新埤、新園、崁頂、南州",
+     "electors2022": 7490,
+     "electors2024": 7572,
+     "estimate2026": 7611,
+     "official2026": null
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "seats": 1,
+     "scope": "春日鄉及東港、枋寮、林邊、佳冬、琉球",
+     "electors2022": 4218,
+     "electors2024": 4290,
+     "estimate2026": 4312,
+     "official2026": null
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "seats": 1,
+     "scope": "獅子鄉及枋山",
+     "electors2022": 3906,
+     "electors2024": 3882,
+     "estimate2026": 3902,
+     "official2026": null
+    },
+    {
+     "no": 15,
+     "name": "第15選區（山地原住民）",
+     "seats": 1,
+     "scope": "牡丹鄉及恆春、車城、滿州",
+     "electors2022": 4746,
+     "electors2024": 4694,
+     "estimate2026": 4718,
+     "official2026": null
+    },
+    {
+     "no": 16,
+     "name": "第16選區（山地原住民）",
+     "seats": 1,
+     "scope": "霧臺鄉",
+     "electors2022": 2796,
+     "electors2024": 2731,
+     "estimate2026": 2745,
+     "official2026": null
+    }
+   ]
+  },
+  "10014": {
+   "code": "10014",
+   "name": "臺東縣",
+   "mayor": {
+    "electors2022": 177853,
+    "electors2024": 178728,
+    "estimate2026": 179656,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 10,
+     "towns": [
+      "臺東市",
+      "蘭嶼鄉"
+     ],
+     "electors2022": 68700,
+     "electors2024": 69102,
+     "estimate2026": 69461,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 1,
+     "towns": [
+      "延平鄉",
+      "卑南鄉"
+     ],
+     "electors2022": 9417,
+     "electors2024": 9531,
+     "estimate2026": 9580,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 2,
+     "towns": [
+      "成功鎮",
+      "長濱鄉",
+      "東河鄉"
+     ],
+     "electors2022": 11347,
+     "electors2024": 11314,
+     "estimate2026": 11373,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 2,
+     "towns": [
+      "鹿野鄉",
+      "池上鄉",
+      "海端鄉",
+      "關山鎮"
+     ],
+     "electors2022": 15091,
+     "electors2024": 14957,
+     "estimate2026": 15035,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 1,
+     "towns": [
+      "金峰鄉",
+      "大武鄉",
+      "太麻里鄉",
+      "達仁鄉"
+     ],
+     "electors2022": 7245,
+     "electors2024": 7226,
+     "estimate2026": 7264,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 1,
+     "towns": [
+      "綠島鄉"
+     ],
+     "electors2022": 3511,
+     "electors2024": 3652,
+     "estimate2026": 3671,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "seats": 3,
+     "scope": "臺東市",
+     "electors2022": 14718,
+     "electors2024": 14932,
+     "estimate2026": 15010,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區（平地原住民）",
+     "seats": 1,
+     "scope": "卑南、蘭嶼",
+     "electors2022": 4927,
+     "electors2024": 4971,
+     "estimate2026": 4997,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區（平地原住民）",
+     "seats": 1,
+     "scope": "太麻里、金峰、達仁、大武",
+     "electors2022": 6745,
+     "electors2024": 6835,
+     "estimate2026": 6870,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區（平地原住民）",
+     "seats": 1,
+     "scope": "鹿野、延平、關山、海端、池上",
+     "electors2022": 5237,
+     "electors2024": 5297,
+     "estimate2026": 5324,
+     "official2026": null
+    },
+    {
+     "no": 11,
+     "name": "第11選區（平地原住民）",
+     "seats": 2,
+     "scope": "東河、綠島、成功、長濱",
+     "electors2022": 13303,
+     "electors2024": 13236,
+     "estimate2026": 13305,
+     "official2026": null
+    },
+    {
+     "no": 12,
+     "name": "第12選區（山地原住民）",
+     "seats": 1,
+     "scope": "延平、卑南、東河、成功、長濱",
+     "electors2022": 3120,
+     "electors2024": 3160,
+     "estimate2026": 3176,
+     "official2026": null
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "seats": 1,
+     "scope": "海端、鹿野、關山、池上",
+     "electors2022": 3320,
+     "electors2024": 3404,
+     "estimate2026": 3422,
+     "official2026": null
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "seats": 1,
+     "scope": "金峰、太麻里、臺東市、綠島",
+     "electors2022": 4749,
+     "electors2024": 4820,
+     "estimate2026": 4845,
+     "official2026": null
+    },
+    {
+     "no": 15,
+     "name": "第15選區（山地原住民）",
+     "seats": 1,
+     "scope": "達仁、大武",
+     "electors2022": 2979,
+     "electors2024": 2963,
+     "estimate2026": 2978,
+     "official2026": null
+    },
+    {
+     "no": 16,
+     "name": "第16選區（山地原住民）",
+     "seats": 1,
+     "scope": "蘭嶼",
+     "electors2022": 3267,
+     "electors2024": 3328,
+     "estimate2026": 3345,
+     "official2026": null
+    }
+   ]
+  },
+  "10015": {
+   "code": "10015",
+   "name": "花蓮縣",
+   "mayor": {
+    "electors2022": 266058,
+    "electors2024": 267824,
+    "estimate2026": 269215,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 9,
+     "towns": [
+      "花蓮市"
+     ],
+     "electors2022": 70984,
+     "electors2024": 71736,
+     "estimate2026": 72108,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 1,
+     "towns": [
+      "秀林鄉",
+      "新城鄉"
+     ],
+     "electors2022": 13751,
+     "electors2024": 14061,
+     "estimate2026": 14134,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 10,
+     "towns": [
+      "萬榮鄉",
+      "豐濱鄉",
+      "光復鄉",
+      "吉安鄉",
+      "鳳林鎮",
+      "壽豐鄉"
+     ],
+     "electors2022": 81746,
+     "electors2024": 82458,
+     "estimate2026": 82886,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 3,
+     "towns": [
+      "瑞穗鄉",
+      "玉里鎮",
+      "卓溪鄉",
+      "富里鄉"
+     ],
+     "electors2022": 26268,
+     "electors2024": 26103,
+     "estimate2026": 26238,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 5,
+     "name": "第5選區（平地原住民）",
+     "seats": 4,
+     "scope": "花蓮市、新城、秀林、吉安",
+     "electors2022": 20748,
+     "electors2024": 21183,
+     "estimate2026": 21293,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區（平地原住民）",
+     "seats": 2,
+     "scope": "壽豐、鳳林、萬榮、光復、豐濱",
+     "electors2022": 14550,
+     "electors2024": 14471,
+     "estimate2026": 14546,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "seats": 1,
+     "scope": "瑞穗、玉里、富里、卓溪",
+     "electors2022": 10147,
+     "electors2024": 10115,
+     "estimate2026": 10168,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "seats": 1,
+     "scope": "秀林鄉及花蓮市、新城、吉安、壽豐",
+     "electors2022": 16632,
+     "electors2024": 17070,
+     "estimate2026": 17159,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區（山地原住民）",
+     "seats": 1,
+     "scope": "萬榮鄉及鳳林、光復、豐濱、瑞穗",
+     "electors2022": 5474,
+     "electors2024": 5494,
+     "estimate2026": 5523,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區（山地原住民）",
+     "seats": 1,
+     "scope": "卓溪鄉及玉里、富里",
+     "electors2022": 5108,
+     "electors2024": 5133,
+     "estimate2026": 5160,
+     "official2026": null
+    }
+   ]
+  },
+  "10016": {
+   "code": "10016",
+   "name": "澎湖縣",
+   "mayor": {
+    "electors2022": 90360,
+    "electors2024": 92642,
+    "estimate2026": 93122,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 11,
+     "towns": [
+      "馬公市"
+     ],
+     "electors2022": 52801,
+     "electors2024": 53963,
+     "estimate2026": 54243,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 3,
+     "towns": [
+      "湖西鄉"
+     ],
+     "electors2022": 13457,
+     "electors2024": 14151,
+     "estimate2026": 14224,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 2,
+     "towns": [
+      "白沙鄉"
+     ],
+     "electors2022": 8610,
+     "electors2024": 8919,
+     "estimate2026": 8965,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 1,
+     "towns": [
+      "西嶼鄉"
+     ],
+     "electors2022": 7257,
+     "electors2024": 7366,
+     "estimate2026": 7404,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 1,
+     "towns": [
+      "望安鄉"
+     ],
+     "electors2022": 4763,
+     "electors2024": 4808,
+     "estimate2026": 4833,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 1,
+     "towns": [
+      "七美鄉"
+     ],
+     "electors2022": 3347,
+     "electors2024": 3435,
+     "estimate2026": 3453,
+     "official2026": null
+    }
+   ],
+   "indigenous": []
+  },
+  "10017": {
+   "code": "10017",
+   "name": "基隆市",
+   "mayor": {
+    "electors2022": 307913,
+    "electors2024": 312207,
+    "estimate2026": 313828,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 4,
+     "towns": [
+      "中正區"
+     ],
+     "electors2022": 41018,
+     "electors2024": 41724,
+     "estimate2026": 41941,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 5,
+     "towns": [
+      "信義區"
+     ],
+     "electors2022": 44830,
+     "electors2024": 45559,
+     "estimate2026": 45795,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 3,
+     "towns": [
+      "仁愛區"
+     ],
+     "electors2022": 33626,
+     "electors2024": 33891,
+     "estimate2026": 34067,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 4,
+     "towns": [
+      "中山區"
+     ],
+     "electors2022": 38999,
+     "electors2024": 39702,
+     "estimate2026": 39908,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 7,
+     "towns": [
+      "安樂區"
+     ],
+     "electors2022": 66943,
+     "electors2024": 67842,
+     "estimate2026": 68194,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 3,
+     "towns": [
+      "暖暖區"
+     ],
+     "electors2022": 31978,
+     "electors2024": 32490,
+     "estimate2026": 32659,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 4,
+     "towns": [
+      "七堵區"
+     ],
+     "electors2022": 43573,
+     "electors2024": 43793,
+     "estimate2026": 44020,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 8,
+     "name": "第8選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 5962,
+     "electors2024": 6126,
+     "estimate2026": 6158,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區（山地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": null,
+     "electors2024": 1080,
+     "estimate2026": 1086,
+     "official2026": null
+    }
+   ]
+  },
+  "10018": {
+   "code": "10018",
+   "name": "新竹市",
+   "mayor": {
+    "electors2022": 350758,
+    "electors2024": 359465,
+    "estimate2026": 361332,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 12,
+     "towns": [
+      "東區"
+     ],
+     "electors2022": 120775,
+     "electors2024": 124239,
+     "estimate2026": 124884,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 4,
+     "towns": [
+      "東區"
+     ],
+     "electors2022": 42293,
+     "electors2024": 43098,
+     "estimate2026": 43322,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 2,
+     "towns": [
+      "北區"
+     ],
+     "electors2022": 26483,
+     "electors2024": 27027,
+     "estimate2026": 27167,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 9,
+     "towns": [
+      "北區"
+     ],
+     "electors2022": 94480,
+     "electors2024": 97210,
+     "estimate2026": 97715,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 6,
+     "towns": [
+      "香山區"
+     ],
+     "electors2022": 63991,
+     "electors2024": 64886,
+     "estimate2026": 65223,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 6,
+     "name": "第6選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 1502,
+     "electors2024": 1528,
+     "estimate2026": 1536,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區（山地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": null,
+     "electors2024": 1477,
+     "estimate2026": 1485,
+     "official2026": null
+    }
+   ]
+  },
+  "10020": {
+   "code": "10020",
+   "name": "嘉義市",
+   "mayor": {
+    "electors2022": 213640,
+    "electors2024": 217549,
+    "estimate2026": 218678,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 10,
+     "towns": [
+      "東區"
+     ],
+     "electors2022": 96538,
+     "electors2024": 98138,
+     "estimate2026": 98647,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 13,
+     "towns": [
+      "西區"
+     ],
+     "electors2022": 117102,
+     "electors2024": 119411,
+     "estimate2026": 120031,
+     "official2026": null
+    }
+   ],
+   "indigenous": []
+  },
+  "63000": {
+   "code": "63000",
+   "name": "臺北市",
+   "mayor": {
+    "electors2022": 2026769,
+    "electors2024": 2090062,
+    "estimate2026": 2100911,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 12,
+     "towns": [
+      "士林區",
+      "北投區"
+     ],
+     "electors2022": 413790,
+     "electors2024": 424186,
+     "estimate2026": 426388,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 9,
+     "towns": [
+      "內湖區",
+      "南港區"
+     ],
+     "electors2022": 311073,
+     "electors2024": 319608,
+     "estimate2026": 321267,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 9,
+     "towns": [
+      "信義區",
+      "松山區"
+     ],
+     "electors2022": 319364,
+     "electors2024": 332541,
+     "estimate2026": 334267,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 8,
+     "towns": [
+      "中山區",
+      "大同區"
+     ],
+     "electors2022": 271792,
+     "electors2024": 282212,
+     "estimate2026": 283677,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 8,
+     "towns": [
+      "中正區",
+      "萬華區"
+     ],
+     "electors2022": 262278,
+     "electors2024": 270013,
+     "estimate2026": 271415,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 13,
+     "towns": [
+      "文山區",
+      "大安區"
+     ],
+     "electors2022": 430492,
+     "electors2024": 449102,
+     "estimate2026": 451433,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 7,
+     "name": "第7選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 7178,
+     "electors2024": 7360,
+     "estimate2026": 7398,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區（山地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 4886,
+     "electors2024": 5040,
+     "estimate2026": 5066,
+     "official2026": null
+    }
+   ]
+  },
+  "64000": {
+   "code": "64000",
+   "name": "高雄市",
+   "mayor": {
+    "electors2022": 2282623,
+    "electors2024": 2312303,
+    "estimate2026": 2324305,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 3,
+     "towns": [
+      "美濃區",
+      "桃源區",
+      "內門區",
+      "甲仙區",
+      "旗山區",
+      "那瑪夏區",
+      "茂林區",
+      "六龜區",
+      "杉林區"
+     ],
+     "electors2022": 100139,
+     "electors2024": 99595,
+     "estimate2026": 100112,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 3,
+     "towns": [
+      "阿蓮區",
+      "茄萣區",
+      "田寮區",
+      "路竹區",
+      "湖內區"
+     ],
+     "electors2022": 121238,
+     "electors2024": 121632,
+     "estimate2026": 122263,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 5,
+     "towns": [
+      "燕巢區",
+      "梓官區",
+      "彌陀區",
+      "橋頭區",
+      "岡山區",
+      "永安區"
+     ],
+     "electors2022": 193616,
+     "electors2024": 196892,
+     "estimate2026": 197914,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 9,
+     "towns": [
+      "楠梓區",
+      "左營區"
+     ],
+     "electors2022": 307854,
+     "electors2024": 315946,
+     "estimate2026": 317586,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 5,
+     "towns": [
+      "鳥松區",
+      "大社區",
+      "仁武區",
+      "大樹區"
+     ],
+     "electors2022": 178895,
+     "electors2024": 183513,
+     "estimate2026": 184466,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 4,
+     "towns": [
+      "鹽埕區",
+      "鼓山區",
+      "旗津區"
+     ],
+     "electors2022": 153513,
+     "electors2024": 156284,
+     "estimate2026": 157095,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 8,
+     "towns": [
+      "三民區"
+     ],
+     "electors2022": 274188,
+     "electors2024": 279821,
+     "estimate2026": 281273,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "seats": 5,
+     "towns": [
+      "苓雅區",
+      "前金區",
+      "新興區"
+     ],
+     "electors2022": 200713,
+     "electors2024": 205838,
+     "estimate2026": 206906,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "seats": 8,
+     "towns": [
+      "鳳山區"
+     ],
+     "electors2022": 290142,
+     "electors2024": 294572,
+     "estimate2026": 296101,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "seats": 7,
+     "towns": [
+      "前鎮區",
+      "小港區"
+     ],
+     "electors2022": 277130,
+     "electors2024": 280431,
+     "estimate2026": 281887,
+     "official2026": null
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "seats": 4,
+     "towns": [
+      "大寮區",
+      "林園區"
+     ],
+     "electors2022": 150102,
+     "electors2024": 151965,
+     "estimate2026": 152754,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 12,
+     "name": "第12選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 9842,
+     "electors2024": 10192,
+     "estimate2026": 10245,
+     "official2026": null
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "seats": 1,
+     "scope": "那瑪夏、甲仙、杉林、內門、旗山、茄萣、湖內、路竹、永安、彌陀、梓官、楠梓、左營區",
+     "electors2022": 5389,
+     "electors2024": 5011,
+     "estimate2026": 5037,
+     "official2026": null
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "seats": 1,
+     "scope": "桃源、六龜、美濃、阿蓮、田寮、岡山、燕巢、橋頭、鼓山、鹽埕、前金區",
+     "electors2022": 4607,
+     "electors2024": 4585,
+     "estimate2026": 4609,
+     "official2026": null
+    },
+    {
+     "no": 15,
+     "name": "第15選區（山地原住民）",
+     "seats": 1,
+     "scope": "茂林、大社、大樹、仁武、鳥松、鳳山、大寮、苓雅、前鎮、小港、林園區",
+     "electors2022": 5943,
+     "electors2024": 6026,
+     "estimate2026": 6057,
+     "official2026": null
+    }
+   ]
+  },
+  "65000": {
+   "code": "65000",
+   "name": "新北市",
+   "mayor": {
+    "electors2022": 3316517,
+    "electors2024": 3402064,
+    "estimate2026": 3419722,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 4,
+     "towns": [
+      "石門區",
+      "三芝區",
+      "淡水區",
+      "八里區"
+     ],
+     "electors2022": 215770,
+     "electors2024": 227132,
+     "estimate2026": 228311,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 5,
+     "towns": [
+      "林口區",
+      "五股區",
+      "泰山區"
+     ],
+     "electors2022": 229451,
+     "electors2024": 239979,
+     "estimate2026": 241225,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 7,
+     "towns": [
+      "新莊區"
+     ],
+     "electors2022": 336090,
+     "electors2024": 344101,
+     "estimate2026": 345887,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 9,
+     "towns": [
+      "三重區",
+      "蘆洲區"
+     ],
+     "electors2022": 480074,
+     "electors2024": 489846,
+     "estimate2026": 492389,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 9,
+     "towns": [
+      "板橋區"
+     ],
+     "electors2022": 446836,
+     "electors2024": 457254,
+     "estimate2026": 459627,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 6,
+     "towns": [
+      "中和區"
+     ],
+     "electors2022": 338747,
+     "electors2024": 348054,
+     "estimate2026": 349861,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 3,
+     "towns": [
+      "永和區"
+     ],
+     "electors2022": 174497,
+     "electors2024": 180029,
+     "estimate2026": 180963,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "seats": 9,
+     "towns": [
+      "鶯歌區",
+      "土城區",
+      "樹林區",
+      "三峽區"
+     ],
+     "electors2022": 497438,
+     "electors2024": 508562,
+     "estimate2026": 511202,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "seats": 5,
+     "towns": [
+      "坪林區",
+      "新店區",
+      "石碇區",
+      "烏來區",
+      "深坑區"
+     ],
+     "electors2022": 287083,
+     "electors2024": 298109,
+     "estimate2026": 299656,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "seats": 1,
+     "towns": [
+      "貢寮區",
+      "平溪區",
+      "瑞芳區",
+      "雙溪區"
+     ],
+     "electors2022": 53503,
+     "electors2024": 53015,
+     "estimate2026": 53290,
+     "official2026": null
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "seats": 4,
+     "towns": [
+      "萬里區",
+      "汐止區",
+      "金山區"
+     ],
+     "electors2022": 207494,
+     "electors2024": 213552,
+     "estimate2026": 214660,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 12,
+     "name": "第12選區（平地原住民）",
+     "seats": 4,
+     "scope": "全縣市",
+     "electors2022": 28713,
+     "electors2024": 29434,
+     "estimate2026": 29587,
+     "official2026": null
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "seats": 2,
+     "scope": "全縣市",
+     "electors2022": 12516,
+     "electors2024": 12997,
+     "estimate2026": 13064,
+     "official2026": null
+    }
+   ]
+  },
+  "66000": {
+   "code": "66000",
+   "name": "臺中市",
+   "mayor": {
+    "electors2022": 2274107,
+    "electors2024": 2328896,
+    "estimate2026": 2340985,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 3,
+     "towns": [
+      "大安區",
+      "大甲區",
+      "外埔區"
+     ],
+     "electors2022": 101498,
+     "electors2024": 102200,
+     "estimate2026": 102730,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 5,
+     "towns": [
+      "沙鹿區",
+      "清水區",
+      "梧棲區"
+     ],
+     "electors2022": 193116,
+     "electors2024": 198859,
+     "estimate2026": 199891,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 5,
+     "towns": [
+      "烏日區",
+      "龍井區",
+      "大肚區"
+     ],
+     "electors2022": 169220,
+     "electors2024": 173826,
+     "estimate2026": 174728,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 5,
+     "towns": [
+      "后里區",
+      "豐原區"
+     ],
+     "electors2022": 174017,
+     "electors2024": 176464,
+     "estimate2026": 177380,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 6,
+     "towns": [
+      "潭子區",
+      "大雅區",
+      "神岡區"
+     ],
+     "electors2022": 213890,
+     "electors2024": 217229,
+     "estimate2026": 218357,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 5,
+     "towns": [
+      "西屯區"
+     ],
+     "electors2022": 180777,
+     "electors2024": 187772,
+     "estimate2026": 188747,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 4,
+     "towns": [
+      "南屯區"
+     ],
+     "electors2022": 136910,
+     "electors2024": 143502,
+     "estimate2026": 144247,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "seats": 7,
+     "towns": [
+      "北屯區"
+     ],
+     "electors2022": 232089,
+     "electors2024": 244411,
+     "estimate2026": 245680,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "seats": 3,
+     "towns": [
+      "北區"
+     ],
+     "electors2022": 117315,
+     "electors2024": 120903,
+     "estimate2026": 121531,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "seats": 3,
+     "towns": [
+      "西區",
+      "中區"
+     ],
+     "electors2022": 102516,
+     "electors2024": 106068,
+     "estimate2026": 106619,
+     "official2026": null
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "seats": 4,
+     "towns": [
+      "東區",
+      "南區"
+     ],
+     "electors2022": 163586,
+     "electors2024": 168907,
+     "estimate2026": 169784,
+     "official2026": null
+    },
+    {
+     "no": 12,
+     "name": "第12選區",
+     "seats": 4,
+     "towns": [
+      "太平區"
+     ],
+     "electors2022": 155954,
+     "electors2024": 160178,
+     "estimate2026": 161009,
+     "official2026": null
+    },
+    {
+     "no": 13,
+     "name": "第13選區",
+     "seats": 6,
+     "towns": [
+      "大里區",
+      "霧峰區"
+     ],
+     "electors2022": 220964,
+     "electors2024": 224296,
+     "estimate2026": 225460,
+     "official2026": null
+    },
+    {
+     "no": 14,
+     "name": "第14選區",
+     "seats": 2,
+     "towns": [
+      "新社區",
+      "和平區",
+      "東勢區",
+      "石岡區"
+     ],
+     "electors2022": 78014,
+     "electors2024": 78230,
+     "estimate2026": 78636,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 15,
+     "name": "第15選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 10364,
+     "electors2024": 10825,
+     "estimate2026": 10881,
+     "official2026": null
+    },
+    {
+     "no": 16,
+     "name": "第16選區（山地原住民）",
+     "seats": 1,
+     "scope": "和平區及大甲、大安、外埔、清水、后里、豐原、神岡、大雅、潭子、東勢、石岡、新社區",
+     "electors2022": 6907,
+     "electors2024": 7120,
+     "estimate2026": 7157,
+     "official2026": null
+    },
+    {
+     "no": 17,
+     "name": "第17選區（山地原住民）",
+     "seats": 1,
+     "scope": "梧棲、沙鹿、龍井、大肚、烏日、西屯、南屯、北屯、北區、中區、西區、東區、南區、太平、大里、霧峰區",
+     "electors2022": 7701,
+     "electors2024": 8106,
+     "estimate2026": 8148,
+     "official2026": null
+    }
+   ]
+  },
+  "67000": {
+   "code": "67000",
+   "name": "臺南市",
+   "mayor": {
+    "electors2022": 1548203,
+    "electors2024": 1567432,
+    "estimate2026": 1575567,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 5,
+     "towns": [
+      "鹽水區",
+      "東山區",
+      "新營區",
+      "白河區",
+      "後壁區",
+      "柳營區"
+     ],
+     "electors2022": 160263,
+     "electors2024": 160760,
+     "estimate2026": 161594,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 5,
+     "towns": [
+      "北門區",
+      "佳里區",
+      "將軍區",
+      "西港區",
+      "學甲區",
+      "七股區"
+     ],
+     "electors2022": 135832,
+     "electors2024": 136470,
+     "estimate2026": 137178,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 3,
+     "towns": [
+      "官田區",
+      "下營區",
+      "麻豆區",
+      "大內區",
+      "六甲區"
+     ],
+     "electors2022": 99947,
+     "electors2024": 100399,
+     "estimate2026": 100920,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 1,
+     "towns": [
+      "玉井區",
+      "南化區",
+      "楠西區",
+      "左鎮區"
+     ],
+     "electors2022": 30622,
+     "electors2024": 30451,
+     "estimate2026": 30609,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 5,
+     "towns": [
+      "善化區",
+      "新市區",
+      "新化區",
+      "山上區",
+      "安定區"
+     ],
+     "electors2022": 138353,
+     "electors2024": 140592,
+     "estimate2026": 141322,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 6,
+     "towns": [
+      "安南區"
+     ],
+     "electors2022": 160064,
+     "electors2024": 164740,
+     "estimate2026": 165595,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 7,
+     "towns": [
+      "永康區"
+     ],
+     "electors2022": 189911,
+     "electors2024": 193278,
+     "estimate2026": 194281,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "seats": 6,
+     "towns": [
+      "中西區",
+      "北區"
+     ],
+     "electors2022": 166295,
+     "electors2024": 169641,
+     "estimate2026": 170522,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "seats": 6,
+     "towns": [
+      "南區",
+      "安平區"
+     ],
+     "electors2022": 159245,
+     "electors2024": 162427,
+     "estimate2026": 163270,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "seats": 5,
+     "towns": [
+      "東區"
+     ],
+     "electors2022": 144677,
+     "electors2024": 147841,
+     "estimate2026": 148608,
+     "official2026": null
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "seats": 6,
+     "towns": [
+      "仁德區",
+      "關廟區",
+      "歸仁區",
+      "龍崎區"
+     ],
+     "electors2022": 152052,
+     "electors2024": 154517,
+     "estimate2026": 155319,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 12,
+     "name": "第12選區（平地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 2755,
+     "electors2024": 2927,
+     "estimate2026": 2942,
+     "official2026": null
+    },
+    {
+     "no": 13,
+     "name": "第13選區（山地原住民）",
+     "seats": 1,
+     "scope": "全縣市",
+     "electors2022": 3202,
+     "electors2024": 3389,
+     "estimate2026": 3407,
+     "official2026": null
+    }
+   ]
+  },
+  "68000": {
+   "code": "68000",
+   "name": "桃園市",
+   "mayor": {
+    "electors2022": 1825127,
+    "electors2024": 1882592,
+    "estimate2026": 1892364,
+    "official2026": null
+   },
+   "districts": [
+    {
+     "no": 1,
+     "name": "第1選區",
+     "seats": 12,
+     "towns": [
+      "桃園區"
+     ],
+     "electors2022": 359433,
+     "electors2024": 373099,
+     "estimate2026": 375036,
+     "official2026": null
+    },
+    {
+     "no": 2,
+     "name": "第2選區",
+     "seats": 5,
+     "towns": [
+      "龜山區"
+     ],
+     "electors2022": 132781,
+     "electors2024": 142041,
+     "estimate2026": 142778,
+     "official2026": null
+    },
+    {
+     "no": 3,
+     "name": "第3選區",
+     "seats": 5,
+     "towns": [
+      "八德區"
+     ],
+     "electors2022": 162085,
+     "electors2024": 167292,
+     "estimate2026": 168160,
+     "official2026": null
+    },
+    {
+     "no": 4,
+     "name": "第4選區",
+     "seats": 4,
+     "towns": [
+      "蘆竹區"
+     ],
+     "electors2022": 126539,
+     "electors2024": 130950,
+     "estimate2026": 131630,
+     "official2026": null
+    },
+    {
+     "no": 5,
+     "name": "第5選區",
+     "seats": 2,
+     "towns": [
+      "大園區"
+     ],
+     "electors2022": 67040,
+     "electors2024": 68075,
+     "estimate2026": 68428,
+     "official2026": null
+    },
+    {
+     "no": 6,
+     "name": "第6選區",
+     "seats": 2,
+     "towns": [
+      "大溪區",
+      "復興區"
+     ],
+     "electors2022": 75398,
+     "electors2024": 76866,
+     "estimate2026": 77265,
+     "official2026": null
+    },
+    {
+     "no": 7,
+     "name": "第7選區",
+     "seats": 11,
+     "towns": [
+      "中壢區"
+     ],
+     "electors2022": 330519,
+     "electors2024": 342430,
+     "estimate2026": 344207,
+     "official2026": null
+    },
+    {
+     "no": 8,
+     "name": "第8選區",
+     "seats": 6,
+     "towns": [
+      "平鎮區"
+     ],
+     "electors2022": 176716,
+     "electors2024": 180713,
+     "estimate2026": 181651,
+     "official2026": null
+    },
+    {
+     "no": 9,
+     "name": "第9選區",
+     "seats": 4,
+     "towns": [
+      "楊梅區"
+     ],
+     "electors2022": 137958,
+     "electors2024": 142122,
+     "estimate2026": 142860,
+     "official2026": null
+    },
+    {
+     "no": 10,
+     "name": "第10選區",
+     "seats": 3,
+     "towns": [
+      "龍潭區"
+     ],
+     "electors2022": 98152,
+     "electors2024": 101127,
+     "estimate2026": 101652,
+     "official2026": null
+    },
+    {
+     "no": 11,
+     "name": "第11選區",
+     "seats": 1,
+     "towns": [
+      "新屋區"
+     ],
+     "electors2022": 40320,
+     "electors2024": 40952,
+     "estimate2026": 41165,
+     "official2026": null
+    },
+    {
+     "no": 12,
+     "name": "第12選區",
+     "seats": 2,
+     "towns": [
+      "觀音區"
+     ],
+     "electors2022": 56541,
+     "electors2024": 59211,
+     "estimate2026": 59518,
+     "official2026": null
+    }
+   ],
+   "indigenous": [
+    {
+     "no": 13,
+     "name": "第13選區（平地原住民）",
+     "seats": 4,
+     "scope": "全縣市",
+     "electors2022": 31164,
+     "electors2024": 32525,
+     "estimate2026": 32694,
+     "official2026": null
+    },
+    {
+     "no": 14,
+     "name": "第14選區（山地原住民）",
+     "seats": 4,
+     "scope": "全縣市",
+     "electors2022": 24121,
+     "electors2024": 25189,
+     "estimate2026": 25320,
+     "official2026": null
+    }
+   ]
+  }
+ }
+}
