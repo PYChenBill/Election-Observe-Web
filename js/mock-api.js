@@ -134,7 +134,7 @@
     // GET /api/meta
     async getMeta() {
       const [d, preds] = await data();
-      return { election: "2026 地方公職人員選舉", voteDate: "2026-11-28", updatedAt: "2026-11-01",
+      return { election: "2026 地方公職人員選舉", voteDate: "2026-11-28", updatedAt: "2026-11-17",
         parties: PARTIES, hasPredictions: Object.keys(preds).length > 0, source: d.source };
     },
     // GET /api/counties
