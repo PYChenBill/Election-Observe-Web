@@ -20,7 +20,7 @@
 
   const load = (globalName, url) => (window[globalName]
     ? Promise.resolve(window[globalName])
-    : fetch(url).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
+    : fetch(url, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
   let dataPromise;
   const data = () => (dataPromise ||= Promise.all([
     load("REAL_ELECTIONS", "data/real/elections.json"),
