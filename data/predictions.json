@@ -273,13 +273,42 @@
     }
   },
   "09020": {
+    "mayor": {
+      "陳玉珍": 55.0,
+      "其他": 45.0
+    },
     "mayorTurnout": 41.0,
     "mayorElectors": 127079,
-    "mayorVoted": 52102
+    "mayorVoted": 52102,
+    "mayorVotes": {
+      "陳玉珍": 28656,
+      "其他": 23446
+    }
   },
   "09007": {
+    "mayor": {
+      "王忠銘": 55.0,
+      "曹爾元": 45.0
+    },
     "mayorTurnout": 70.0,
     "mayorElectors": 12145,
-    "mayorVoted": 8502
+    "mayorVoted": 8502,
+    "mayorVotes": {
+      "王忠銘": 4676,
+      "曹爾元": 3826
+    }
+  },
+  "10008": {
+    "mayor": {
+      "許淑華": 54.0,
+      "温世政": 46.0
+    },
+    "mayorTurnout": 70.0,
+    "mayorElectors": 409263,
+    "mayorVoted": 286484,
+    "mayorVotes": {
+      "許淑華": 154701,
+      "温世政": 131783
+    }
   }
 }
