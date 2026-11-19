@@ -42,14 +42,6 @@ body {
 .top { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding-block: 18px 12px; max-width: 1280px; margin: 0 auto; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .stampmark { width: 46px; height: 46px; flex: none; color: var(--stamp); transform: rotate(-10deg); }
-.modeswitch { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; padding: 4px 2px; cursor: pointer; }
-.modeswitch .lbl { transition: color .2s; }
-.modeswitch[aria-checked="false"] .lbl-l, .modeswitch[aria-checked="true"] .lbl-r { color: var(--ink); font-weight: 700; }
-.modeswitch .track { position: relative; width: 44px; height: 24px; border-radius: 12px; background: var(--line); transition: background .2s; flex: none; }
-.modeswitch .knob { position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--surface); box-shadow: 0 1px 3px var(--shadow); transition: transform .2s; }
-.modeswitch[aria-checked="false"] .track { background: var(--stamp); }
-.modeswitch[aria-checked="true"] .knob { transform: translateX(20px); }
-.modeswitch:focus-visible .track { outline: 2px solid var(--ink); outline-offset: 2px; }
 #map path.region.is-blank { stroke: var(--muted); stroke-opacity: .45; }
 
 .brand h1 { margin: 0; font-family: var(--display); font-weight: 900; font-size: 24px; letter-spacing: .04em; text-wrap: balance; }
@@ -226,6 +218,74 @@ body {
 .foot p { margin: 0 0 6px; max-width: 80ch; }
 .tip-hint { margin: 2px 0 0; color: var(--stamp); font-size: 12px; }
 
+/* 地圖模式：預測／開票／歷史 */
+.modeseg { display: inline-flex; padding: 3px; gap: 2px; border-radius: 9px; background: color-mix(in srgb, var(--ink) 8%, transparent); }
+.modeseg button, .subseg button { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; border-radius: 7px; padding: 4px 14px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.modeseg button[aria-checked="true"] { background: var(--surface); color: var(--ink); font-weight: 700; box-shadow: 0 1px 3px var(--shadow); }
+.modeseg button:focus-visible, .subseg button:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+.modeseg button[hidden] { display: none; }
+.livedot { width: 7px; height: 7px; border-radius: 50%; background: var(--stamp); animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .25; } }
+.subseg { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin: 8px 0 0; }
+.subseg > span { margin-right: 4px; }
+.subseg button { font-size: 12px; padding: 2px 10px; border: 1px solid var(--line); }
+.subseg button[aria-checked="true"] { border-color: var(--stamp); color: var(--stamp); font-weight: 700; }
+
+/* 模擬開票播放列 */
+.simbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; max-width: 1280px; margin: 0 auto 10px; padding: 8px 12px;
+  border: 1px dashed var(--stamp); border-radius: 10px; background: var(--surface); font-size: 13px; }
+.simbar-tag { color: var(--stamp); font-weight: 700; letter-spacing: .06em; }
+.simbar-play { font: inherit; width: 34px; height: 28px; border-radius: 7px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer; }
+.simbar input[type=range] { flex: 1 1 180px; accent-color: var(--stamp); }
+.simbar-clock { font-size: 15px; min-width: 3em; }
+.simbar-speed { display: inline-flex; gap: 2px; }
+.simbar-speed button { font: inherit; font-size: 12px; border: 1px solid var(--line); background: none; color: var(--muted); border-radius: 6px; padding: 1px 8px; cursor: pointer; }
+.simbar-speed button[aria-pressed="true"] { color: var(--ink); border-color: var(--ink); }
+.simbar-note { color: var(--muted); font-size: 11.5px; flex-basis: 100%; }
+
+/* 開票 */
+.prog { height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--ink) 10%, transparent); overflow: hidden; margin-top: 6px; }
+.prog span { display: block; height: 100%; background: var(--ink); transition: width .6s ease; }
+.prog-note { margin: 3px 0 6px; font-size: 11.5px; color: var(--muted); }
+.bar-track { position: relative; }
+.bar-fill { transition: width .6s ease; }
+.pred-tick { position: absolute; top: -2px; bottom: -2px; width: 2px; margin-left: -1px; background: var(--ink); opacity: .75; }
+.bars .bar-track { overflow: visible; }
+.bars .bar-fill { border-radius: 4px; }
+.gapline { margin: 6px 0 0; font-size: 12px; }
+.gap0 { color: var(--muted); }
+.gap1 { color: var(--ink); font-weight: 700; }
+.gap2 { color: var(--stamp); font-weight: 700; }
+.flip { display: inline-block; font-size: 10.5px; font-weight: 700; color: var(--surface); background: var(--stamp); border-radius: 3px; padding: 0 4px; margin-right: 6px; }
+.row .flip { margin: 0; }
+.ok { color: var(--stamp); margin-right: 3px; }
+.ok.lead { color: var(--muted); font-weight: 400; }
+.row.lrow, .crow-head.lrow { grid-template-columns: minmax(44px, .8fr) 62px minmax(0, 1.5fr) 44px 50px; gap: 6px; }
+.lrow .num { text-align: right; font-size: 12px; }
+.lrow .row-who { color: var(--ink); overflow: hidden; text-overflow: ellipsis; }
+.crow-head.lrow span { text-align: right; }
+.lprog { position: relative; height: 14px; border-radius: 3px; background: color-mix(in srgb, var(--ink) 8%, transparent); overflow: hidden; }
+.lprog i { position: absolute; inset: 0 auto 0 0; background: color-mix(in srgb, var(--ink) 30%, transparent); transition: width .6s ease; }
+.lprog small { position: relative; display: block; text-align: center; font-size: 10px; line-height: 14px; color: var(--ink); }
+.row.drow { grid-template-columns: minmax(0, 1fr) auto 52px; }
+.seatstrip.mini { gap: 2px; max-width: 120px; justify-content: flex-end; }
+.seatstrip.mini i { width: 8px; height: 8px; }
+.seatstrip i.lead { opacity: .38; }
+.seat.is-lead { fill-opacity: .4; stroke-dasharray: 2 1.6; }
+.seatbar-wrap { display: grid; gap: 4px; margin: 4px 0 8px; }
+.seatbar-row { display: grid; grid-template-columns: 2.6em 1fr; align-items: center; gap: 6px; font-size: 11.5px; color: var(--muted); }
+.seatbar { display: flex; height: 12px; border-radius: 3px; overflow: hidden; gap: 1px; background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.seatbar span { transition: flex-grow .6s ease; min-width: 0; }
+.seatbar .lead { opacity: .4; }
+.seatbar .rest { background: transparent; }
+.score { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.score th, .score td { padding: 3px 4px; border-top: 1px solid var(--line); }
+.score thead th { border-top: 0; font-size: 10.5px; color: var(--muted); font-weight: 400; text-align: right; }
+.score thead th:first-child, .score tbody th { text-align: left; font-weight: 500; }
+.score td { text-align: right; width: 3.4em; }
+.score td.up { color: var(--stamp); }
+.score td.down { color: var(--muted); }
+
 .foot { max-width: 1280px; margin: 0 auto; padding-block: 0 24px; color: var(--muted); font-size: 12px; }
 .error { color: var(--stamp); }
 
@@ -260,9 +320,11 @@ body {
       <p>2026 九合一選舉 · 個人觀點與預測</p>
     </div>
   </div>
-  <button type="button" class="modeswitch" id="modeswitch" role="switch" aria-checked="false" aria-label="切換預測地圖與歷史紀錄">
-    <span class="lbl lbl-l">預測地圖</span><span class="track"><span class="knob"></span></span><span class="lbl lbl-r">歷史紀錄</span>
-  </button>
+  <div class="modeseg" id="modeseg" role="radiogroup" aria-label="地圖模式">
+    <button type="button" role="radio" data-mode="forecast" aria-checked="true">預測</button>
+    <button type="button" role="radio" data-mode="live" aria-checked="false" hidden><i class="livedot" aria-hidden="true"></i>開票</button>
+    <button type="button" role="radio" data-mode="history" aria-checked="false">歷史</button>
+  </div>
   <div class="meta"><span id="mockflag" class="mock" hidden>尚未填入預測</span><span id="updated"></span></div>
 </header>
 
@@ -288,6 +350,7 @@ body {
 <!-- build:app -->
 <script src="js/mock-api.js"></script>
 <script src="js/api.js"></script>
+<script src="js/live.js"></script>
 <script src="js/app.js"></script>
 <!-- /build:app -->
 </body>

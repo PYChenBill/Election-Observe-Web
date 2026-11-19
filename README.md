@@ -6,6 +6,8 @@
 - `index.html`：頁面與樣式
 - `js/app.js`：互動地圖（全臺縣市 → 議員選區、席次圓點、對話框、側欄）
 - `js/api.js`：資料存取層，`API.config.mode` 改為 `"http"` 即改接後端
+- `js/live.js`：即時開票。每分鐘讀 `data/live.json`；網址加 `?sim=1` 改播模擬開票（見下方）
+- `data/live.json`：開票資料（投票日前為空，網站不顯示「開票」分頁）；`data/live.sample.json` 為格式範例
 - `js/mock-api.js`：暫時後端。讀 `data/real/elections.json` 與 `data/predictions.json` 組出 API 回應；回傳格式即為正式 API 規格
 - `data/candidates_2026/<縣市代碼>.txt`：2026 登記參選人（選區|姓名|政黨，縣市長以「市長」為選區），取自島民觀察室 formosaobservatory.com（中選會登記名冊，截至 2026-10-08），再扣除中選會 2026-10-16 資格審定未通過的 10 名議員參選人（見 `data/candidates_2026/REMOVED.md`）。目前議員 1,492 人、縣市長 81 人，與中選會審定通過人數相符
 - `data/electors_2026.json`、`data/electors_2026.csv`：2026 各縣市與各議員選區選舉人數。含 2022 實際、2024 實際（依 2026 選區範圍重新加總）與 2026 估計；中選會 11/25 公告正式數字後填入 `official2026`。由 `tools/build_electors.py` 產生（方法寫在檔頭）
@@ -48,7 +50,7 @@
 - 現任議員 = 2022 年當選人，未反映之後的補選、出缺或退黨。新竹縣 2026 年把竹北市拆成兩區，兩區都列出 2022 竹北選區的議員。
 - 各選區歷次縣市長結果是把鄉鎮（以村里切分的選區則用村里）開票數加總而得；2014 竹北市中崙里當時尚未設立，對不上屬正常。
 - 2022 嘉義市長採 12/18 重行選舉結果。
-- 地圖分兩頁，用標題旁的開關切換：「預測地圖」（預設）只有在 data/predictions.json 填了預測的縣市／選區才依預測領先陣營與幅度上色，其餘白色；「歷史紀錄」以該區 2022 縣市長得票領先者上色。深淺代表領先幅度（0–20 個百分點）。
+- 地圖模式用標題旁的分段按鈕切換「預測／開票／歷史」；「開票」只在 `data/live.json` 有資料（或模擬）時出現，出現時自動切過去。「預測」（預設）只有在 data/predictions.json 填了預測的縣市／選區才依預測領先陣營與幅度上色，其餘白色；「歷史紀錄」以該區 2022 縣市長得票領先者上色。深淺代表領先幅度（0–20 個百分點）。
 
 ## 網站發布（GitHub Pages）
 網址：https://pychenbill.github.io/Election-Observe-Web/ ，由 `main` 分支根目錄直接發布（`.nojekyll` 讓 GitHub 不做 Jekyll 處理）。
@@ -58,3 +60,29 @@
 tools/publish_predictions.sh 你的預測檔.json
 ```
 腳本會檢查 JSON、複製成 `data/predictions.json`、commit 並 push，約 1–3 分鐘後網站更新。若已直接改好 `data/predictions.json`，不帶參數執行即可。Windows 請在 Git Bash 執行。
+
+## 即時開票資料格式（data/live.json）
+開票當晚由你的電腦每 1–2 分鐘把中選會資料轉成以下格式，覆寫 `data/live.json` 後 push。網站每 60 秒重新讀一次（網址帶時間參數，避開 GitHub Pages 的快取）。
+
+```json
+{
+  "schema": 1,
+  "source": "cec",
+  "updatedAt": "2026-11-28T19:00:00+08:00",
+  "mayor": {
+    "63000": { "reported": 1146, "stations": 1556, "votes": { "蔣萬安": 543572, "沈伯洋": 508328 }, "elected": null }
+  },
+  "council": {
+    "63000": { "1": { "reported": 224, "stations": 320, "votes": { "鍾佩玲": 19722 }, "elected": ["鍾佩玲"] } }
+  }
+}
+```
+- 鍵與 `data/predictions.json` 相同：縣市代碼、議員選區編號（原住民選區用它自己的編號，例如臺北市 7、8）。
+- `reported` / `stations`：已開票所數 / 總投開票所數，用來畫開票進度。
+- `votes`：候選人目前得票，姓名須與登記名冊相同；沒列到的候選人當 0 票。
+- `elected`：當選確定。縣市長為姓名（尚未確定為 `null`），議員為姓名陣列。網站只依這個欄位打 ✓，不自行推算。
+- `source` 為 `"simulation"` 時頁面會標示「模擬資料」。完整範例見 `data/live.sample.json`。
+
+模擬：網址加 `?sim=1`（例如 https://pychenbill.github.io/Election-Observe-Web/?sim=1 ）會出現播放列，以我的預測為中心加上隨機誤差產生一場模擬開票（16:00 → 22:00），可播放、暫停、拖曳時間、調速度。`?sim=2`、`?sim=3` 換另一組亂數；`&t=0.5` 從中途開始、`&paused` 不自動播放。模擬只在瀏覽器裡算，不會寫入任何檔案。`python3 tools/build_preview.py --sim` 產生可直接播放的單檔預覽 `dist/preview_live.html`。
+
+開票模式的地圖著色可在側欄切換：「目前領先」（深淺＝開票進度，當選確定最深）或「與預測差距」（縣市：比我的預測表現更好的陣營，深淺＝領先幅度差距，滿 10 個百分點最深；議員選區：比預測多拿最多席的政黨）。議員尚未填入預測時，議員「預測」席次以 2022 政黨得票推估的基準比較。
