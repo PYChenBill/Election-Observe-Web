@@ -131,6 +131,8 @@
   const clone = (v) => JSON.parse(JSON.stringify(v));
 
   window.MockBackend = {
+    // 原始資料（模擬開票用）：[elections.json, predictions.json]
+    raw: () => data(),
     // GET /api/meta
     async getMeta() {
       const [d, preds] = await data();

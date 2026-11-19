@@ -10,7 +10,8 @@
   const crumb = document.getElementById("crumb");
 
   const state = { meta: null, counties: [], byId: {}, detail: {}, view: null, fillDots: false, transform: { k: 1, x: 0, y: 0 },
-    pinned: null, neighbors: {}, mode: "forecast" };
+    pinned: null, neighbors: {}, mode: "forecast",
+    live: null, liveCache: {}, liveColor: "leader", liveReady: false };
   let unpinTimer = null;
 
   let topo, projection, path, countyFeatures, districtGeo = {};
@@ -25,20 +26,67 @@
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const BLANK = "var(--blank)";
   const forecastMode = () => state.mode === "forecast";
-  // 底色：預測頁只有填了預測的地方上色，其餘白底；歷史頁看最近一次縣市長選舉
+  const liveMode = () => state.mode === "live";
+
+  // ---------- 開票資料 ----------
+  // 每一筆新資料清空快取；縣市長、議員選區的整理結果在同一筆資料內重複使用
+  function liveMayor(c) {
+    if (!state.live) return null;
+    const k = "m" + c.id;
+    if (!(k in state.liveCache)) state.liveCache[k] = Live.summarizeMayor(c, state.live.mayor[c.id]);
+    return state.liveCache[k];
+  }
+  function liveDistrict(d, countyId) {
+    if (!state.live) return null;
+    const k = "d" + d.id;
+    if (!(k in state.liveCache)) state.liveCache[k] = Live.summarizeDistrict(d, ((state.live.council || {})[countyId] || {})[d.no]);
+    return state.liveCache[k];
+  }
+  const countyOfDistrict = (d) => d.id.split("-")[0];
+  // 開票中：深淺代表開票進度，當選確定為最深
+  const progressOpacity = (s) => (s.done || s.winner ? 1 : 0.16 + 0.6 * s.progress);
+  const gapOpacity = (g) => 0.25 + Math.min(Math.abs(g), 10) / 10 * 0.75;
+  function liveCountyFill(c) {
+    const s = liveMayor(c);
+    if (!s || !s.leader) return null;
+    if (state.liveColor === "gap") return s.gap == null ? null : { leader: s.gapParty, opacity: gapOpacity(s.gap) };
+    return { leader: s.leader.party, opacity: progressOpacity(s) };
+  }
+  // 議員選區：領先（含已當選）席次最多的政黨；差異模式看哪一黨比預測多拿最多席
+  function districtSeatsNow(s) {
+    const n = {};
+    [s.electedSeats, s.leadSeats].forEach((o) => Object.entries(o).forEach(([k, v]) => (n[k] = (n[k] || 0) + v)));
+    return n;
+  }
+  function liveDistrictFill(d) {
+    const s = liveDistrict(d, countyOfDistrict(d));
+    if (!s || !s.total) return null;
+    const now = districtSeatsNow(s);
+    if (state.liveColor === "gap") {
+      let best = null, diff = 0;
+      Object.keys(state.meta.parties).forEach((k) => { const x = (now[k] || 0) - (d.seatsByParty[k] || 0); if (x > diff) { diff = x; best = k; } });
+      return best ? { leader: best, opacity: 0.35 + Math.min(diff / Math.max(2, d.seats / 3), 1) * 0.65 } : null;
+    }
+    const top = Object.entries(now).sort((a, b) => b[1] - a[1] || (a[0] === s.list[0].party ? -1 : 1))[0];
+    return { leader: top ? top[0] : s.list[0].party, opacity: progressOpacity(s) };
+  }
+
+  // 底色：預測頁只有填了預測的地方上色，其餘白底；歷史頁看最近一次縣市長選舉；開票頁看開票資料
   function countyFill(c) {
+    if (liveMode()) return liveCountyFill(c);
     if (forecastMode()) return c.mayor.basis === "prediction" ? { leader: c.mayor.leader, margin: c.mayor.margin } : null;
     const h = c.mayorHistory[c.mayorHistory.length - 1];
     return { leader: h.results[0].party, margin: h.results[0].share - (h.results[1] ? h.results[1].share : 0) };
   }
   function districtFill(d) {
+    if (liveMode()) return liveDistrictFill(d);
     if (forecastMode()) return d.mayorForecast ? { leader: d.mayorForecast.leader, margin: d.mayorForecast.margin } : null;
     return districtMayor(d);
   }
   function applyFill(sel, fillOf, ms) {
     sel.classed("is-blank", (x) => !fillOf(x));
     (ms ? sel.transition().duration(ms) : sel).attr("fill", (x) => { const f = fillOf(x); return f ? party(f.leader).color : BLANK; })
-      .attr("fill-opacity", (x) => { const f = fillOf(x); return f ? strength(f.margin) : 1; });
+      .attr("fill-opacity", (x) => { const f = fillOf(x); return f ? (f.opacity ?? strength(f.margin)) : 1; });
   }
   const seatsOf = (c) => (forecastMode() ? c.seatPredicted || {} : c.seatForecast);
   const dotSeats = (d) => (forecastMode() && d.forecast.basis !== "prediction" ? {} : d.seatsByParty);
@@ -63,8 +111,7 @@
     counties.forEach((c) => (state.byId[c.id] = c));
     document.getElementById("updated").textContent = `資料更新 ${meta.updatedAt}`;
     document.getElementById("mockflag").hidden = !!meta.hasPredictions;
-    const sw = document.getElementById("modeswitch");
-    sw.addEventListener("click", () => setMode(state.mode === "forecast" ? "history" : "forecast"));
+    document.querySelectorAll("#modeseg [data-mode]").forEach((b) => b.addEventListener("click", () => setMode(b.dataset.mode)));
 
     drawCounties();
     gComp.append("path").attr("class", "comp").attr("d", path(topojson.mesh(topo, topo.objects.compBorders)));
@@ -82,6 +129,28 @@
       if (!tip.hidden && state.pinned) hideTip(); else { hideTip(); if (state.view) closeCounty(); }
     });
     svg.on("click", (e) => { if (e.target === svg.node()) hideTip(); });
+    Live.start(onLiveFrame).catch((err) => console.error(err));
+  }
+
+  // 新的開票資料：第一次收到時打開「開票」分頁並切過去，之後只更新顏色、圓點與側欄
+  async function onLiveFrame(frame) {
+    state.live = frame;
+    state.liveCache = {};
+    if (!state.liveReady) {
+      // 議員席次總表需要每個縣市的選區與候選人
+      await Promise.all(state.counties.map(async (c) => (state.detail[c.id] ||= await API.getCounty(c.id))));
+      state.liveReady = true;
+      document.querySelector('#modeseg [data-mode="live"]').hidden = false;
+      setMode("live");
+      return;
+    }
+    if (!liveMode()) return;
+    applyFill(gCounties.selectAll("path"), (d) => countyFill(state.byId[d.properties.COUNTYCODE]), 600);
+    applyFill(gDistricts.selectAll("path"), (s) => districtFill(s.d), 600);
+    refreshDots();
+    const top = panel.scrollTop;
+    if (state.view) renderCountyPanel(state.detail[state.view]); else renderNationPanel();
+    panel.scrollTop = top;
   }
 
   function countyFromHash() {
@@ -129,8 +198,8 @@
 
   function setMode(mode) {
     state.mode = mode;
-    document.getElementById("modeswitch").setAttribute("aria-checked", String(mode === "history"));
-    document.getElementById("mockflag").hidden = mode === "history" || !!state.meta.hasPredictions;
+    document.querySelectorAll("#modeseg [data-mode]").forEach((b) => b.setAttribute("aria-checked", String(b.dataset.mode === mode)));
+    document.getElementById("mockflag").hidden = mode !== "forecast" || !!state.meta.hasPredictions;
     hideTip();
     applyFill(gCounties.selectAll("path"), (d) => countyFill(state.byId[d.properties.COUNTYCODE]), 300);
     applyFill(gDistricts.selectAll("path"), (s) => districtFill(s.d), 300);
@@ -302,8 +371,7 @@
       }
     });
     dotNodes = nodes;
-    nodes.forEach(({ d, cols, rows, x: cx, y: cy }) => {
-      const seatParties = Object.keys(state.meta.parties).flatMap((k) => Array(dotSeats(d)[k] || 0).fill(k));
+    nodes.forEach(({ d, cols, rows }) => {
       const g = gDots.append("g").attr("class", "seat-group").attr("data-id", d.id);
       nodes.find((n) => n.d === d).g = g;
       g.append("rect").attr("class", "seat-plate")
@@ -316,11 +384,10 @@
         g.append("circle").attr("class", "seat")
           .attr("r", r)
           .attr("cx", (col - (inRow - 1) / 2) * step)
-          .attr("cy", (row - (rows - 1) / 2) * step)
-          .attr("data-color", seatParties[i] ? party(seatParties[i]).color : "")
-          .style("fill", state.fillDots && seatParties[i] ? party(seatParties[i]).color : null);
+          .attr("cy", (row - (rows - 1) / 2) * step);
       }
     });
+    refreshDots();
     positionDots(state.transform);
     gDots.style("opacity", 0).transition().duration(250).style("opacity", 1);
   }
@@ -336,6 +403,28 @@
   }
 
   function liftDots(id, on) { gDots.selectAll(`.seat-group[data-id="${id}"]`).classed("is-hover", on); }
+
+  // 每個席次圓點代表的政黨：開票中依序放已當選（實心）、領先中（淡色虛線）；其他模式依預測或基準
+  const PARTY_ORDER = ["DPP", "NPP", "TPP", "IND", "KMT"];
+  function seatList(d) {
+    if (!liveMode()) return Object.keys(state.meta.parties).flatMap((k) => Array(dotSeats(d)[k] || 0).fill({ party: k }));
+    const s = liveDistrict(d, countyOfDistrict(d));
+    if (!s) return [];
+    return [...PARTY_ORDER.flatMap((k) => Array(s.electedSeats[k] || 0).fill({ party: k, kind: "won" })),
+      ...PARTY_ORDER.flatMap((k) => Array(s.leadSeats[k] || 0).fill({ party: k, kind: "lead" }))];
+  }
+  function refreshDots() {
+    const live = liveMode();
+    dotNodes.forEach((n) => {
+      const list = seatList(n.d);
+      n.g.selectAll("circle.seat").each(function (_, i) {
+        const x = list[i], color = x ? party(x.party).color : "";
+        this.dataset.color = color;
+        d3.select(this).classed("is-lead", live && !!x && x.kind === "lead")
+          .style("fill", (live || state.fillDots) && x ? color : null);
+      });
+    });
+  }
 
   function setFillDots(on) {
     state.fillDots = on;
@@ -442,7 +531,7 @@
     return `
       <button class="tip-close" type="button" data-close aria-label="關閉">×</button>
       <header class="tip-head"><h3>${esc(c.name)}</h3><span class="tip-sub">2026 縣市長 · ${m.candidates.length} 位候選人</span></header>
-      ${mayorList(m)}
+      ${liveMode() ? liveMayorBlock(c) : mayorList(m)}
       <p class="tip-pin"><span class="tip-pin-off">點右側清單可固定明細</span><span class="tip-pin-on">明細已固定，滑到地圖縣市或按 × 關閉</span></p>
       <section>
         <h4>歷次縣市長選舉 <span class="h4-note">中選會開票結果</span></h4>
@@ -512,6 +601,7 @@
         <span class="tip-sub">${esc(where)} · 應選 <b>${d.seats}</b> 席</span>
       </header>
       <p class="tip-pin"><span class="tip-pin-off">點擊選區可固定明細</span><span class="tip-pin-on">明細已固定，滑到其他選區或按 × 關閉</span></p>
+      ${liveMode() ? `<section><h4>開票中 <span class="h4-note">應選 ${d.seats} 席</span></h4>${liveDistrictBlock(d)}</section>` : ""}
       <section>
         <h4>現任議員 <span class="h4-note">2022 年得票，含落選前 2 名</span></h4>
         ${peopleList(d.result2022 || d.incumbents)}
@@ -612,11 +702,146 @@
       .map((k) => `${party(k).short} ${sf[k]}`).join("、");
   }
 
+
+  // ---------- 開票：共用小元件 ----------
+  const signed = (x, digits = 1) => `${x >= 0 ? "+" : "−"}${Math.abs(x).toFixed(digits)}`;
+  const liveClock = () => (state.live && state.live.updatedAt ? state.live.updatedAt.slice(11, 16) : "");
+  function progressBar(s, unitLabel = "所") {
+    const pct = s.progress * 100;
+    return `<div class="prog" role="progressbar" aria-valuenow="${pct.toFixed(0)}" aria-valuemin="0" aria-valuemax="100"><span style="width:${pct}%"></span></div>
+      <p class="prog-note"><span class="num">${s.reported.toLocaleString()} / ${s.stations.toLocaleString()}</span> ${unitLabel}已開（<span class="num">${pct.toFixed(1)}%</span>）${liveClock() ? ` · 更新 <span class="num">${liveClock()}</span>` : ""}</p>`;
+  }
+  // 開票長條：實心為目前得票率，細線為我的預測得票率
+  function liveBarRow(c, max, predShare, tag = "") {
+    return `<li><span class="bar-label">${c.elected ? '<b class="ok">✓</b>' : tag ? '<b class="ok lead" title="領先">○</b>' : '<b class="ok"></b>'}${ballot(c)}${esc(c.name)}</span>
+      <span class="bar-track"><span class="bar-fill" style="width:${(c.share / max) * 100}%;background:${party(c.party).color}"></span>${predShare != null ? `<i class="pred-tick" style="left:${Math.min(predShare / max, 1) * 100}%" title="我的預測 ${predShare.toFixed(1)}%"></i>` : ""}</span>
+      <span class="num">${c.share.toFixed(1)}%</span><span class="num pred-votes">${c.votes.toLocaleString("zh-TW")} 票</span></li>`;
+  }
+  function liveMayorBlock(c) {
+    const s = liveMayor(c);
+    if (!s || !s.total) return `<p class="tip-note">尚未開出票數</p>${s ? progressBar(s) : ""}`;
+    const pred = {};
+    if (c.mayor.basis === "prediction") c.mayor.candidates.forEach((x) => (pred[x.name] = x.share));
+    const max = Math.max(60, ...s.list.map((x) => x.share), ...Object.values(pred).filter((v) => v != null));
+    const shown = s.list.filter((x, i) => i < 3 || x.share >= 1);
+    return `${progressBar(s)}
+      <ol class="bars with-votes">${shown.map((x) => liveBarRow(x, max, pred[x.name])).join("")}</ol>
+      ${s.list.length > shown.length ? `<p class="tip-note">另 ${s.list.length - shown.length} 位候選人得票率不到 1%</p>` : ""}
+      ${s.pred ? `<p class="gapline">${s.flipped ? '<span class="flip">與預測不同</span>' : ""}我預測 ${partyDot(s.pred.party)}${esc(s.pred.name)} ${s.pred.share.toFixed(1)}%，
+        目前得票率 <b class="num ${gapClass(s.shareGap)}">${signed(s.shareGap)}</b>、領先幅度 <b class="num ${gapClass(s.gap)}">${signed(s.gap)}</b> 個百分點</p>` : ""}
+      <p class="tip-note">細線為我的預測得票率${s.winner ? "；✓ 為當選確定" : ""}</p>`;
+  }
+  function liveDistrictBlock(d) {
+    const s = liveDistrict(d, countyOfDistrict(d));
+    if (!s || !s.total) return `<p class="tip-note">尚未開出票數</p>`;
+    const pred = d.forecast.basis === "prediction" ? Object.fromEntries(d.candidates.map((x) => [x.name, x.share])) : {};
+    const max = Math.max(...s.list.map((x) => x.share), 1);
+    return `${progressBar(s)}
+      <ol class="bars with-votes">${s.list.map((x) => liveBarRow(x, max, pred[x.name], !x.elected && x.leading)).join("")}</ol>
+      <p class="tip-note">✓ 當選確定 · ○ 領先（目前排名在應選名額內） · 席次基準：${seatSummary(d.seatsByParty) || "—"}</p>`;
+  }
+  const gapClass = (g) => (Math.abs(g) < 2 ? "gap0" : Math.abs(g) < 5 ? "gap1" : "gap2");
+
+  // 政黨記分板：當選、領先、預測
+  function scoreBoard(rows, totalLabel) {
+    const keys = PARTY_ORDER.filter((k) => rows.won[k] || rows.lead[k] || rows.pred[k]);
+    const sum = (o) => keys.reduce((a, k) => a + (o[k] || 0), 0);
+    const total = rows.total;
+    const seg = (o, cls) => keys.map((k) => (o[k] ? `<span class="${cls}" style="flex:${o[k]};background:${party(k).color}" title="${party(k).short} ${o[k]}"></span>` : "")).join("");
+    return `<div class="seatbar-wrap">
+      <div class="seatbar-row"><span>開票</span><div class="seatbar">${seg(rows.won, "won")}${seg(rows.lead, "lead")}<span style="flex:${Math.max(0, total - sum(rows.won) - sum(rows.lead))}" class="rest"></span></div></div>
+      <div class="seatbar-row"><span>預測</span><div class="seatbar">${seg(rows.pred, "won")}<span style="flex:${Math.max(0, total - sum(rows.pred))}" class="rest"></span></div></div>
+      </div>
+      <table class="score"><thead><tr><th>${totalLabel}</th><th>當選</th><th>領先</th><th>預測</th><th>差</th></tr></thead><tbody>
+      ${keys.map((k) => { const d = (rows.won[k] || 0) + (rows.lead[k] || 0) - (rows.pred[k] || 0);
+        return `<tr><th>${partyDot(k)}${party(k).short}</th><td class="num"><b>${rows.won[k] || 0}</b></td><td class="num">${rows.lead[k] || 0}</td><td class="num">${rows.pred[k] || 0}</td>
+          <td class="num ${d ? (d > 0 ? "up" : "down") : ""}">${d ? (d > 0 ? "+" : "−") + Math.abs(d) : "±0"}</td></tr>`; }).join("")}
+      </tbody></table>`;
+  }
+  function councilTally(counties) {
+    const won = {}, lead = {}, pred = {};
+    let total = 0;
+    counties.forEach((c) => {
+      const det = state.detail[c.id];
+      total += c.totalSeats;
+      Object.entries(c.seatForecast || {}).forEach(([k, v]) => (pred[k] = (pred[k] || 0) + v));
+      if (!det) return;
+      [...det.districts, ...det.indigenous].forEach((d) => {
+        const s = liveDistrict(d, c.id);
+        if (!s) return;
+        Object.entries(s.electedSeats).forEach(([k, v]) => (won[k] = (won[k] || 0) + v));
+        Object.entries(s.leadSeats).forEach(([k, v]) => (lead[k] = (lead[k] || 0) + v));
+      });
+    });
+    return { won, lead, pred, total };
+  }
+  function liveColorSwitch() {
+    return `<div class="subseg" role="radiogroup" aria-label="地圖著色">
+      <span>地圖著色</span>
+      <button type="button" role="radio" data-lc="leader" aria-checked="${state.liveColor === "leader"}">目前領先</button>
+      <button type="button" role="radio" data-lc="gap" aria-checked="${state.liveColor === "gap"}">與預測差距</button></div>`;
+  }
+  function bindLiveColor() {
+    panel.querySelectorAll("[data-lc]").forEach((b) => b.addEventListener("click", () => {
+      state.liveColor = b.dataset.lc;
+      applyFill(gCounties.selectAll("path"), (d) => countyFill(state.byId[d.properties.COUNTYCODE]), 300);
+      applyFill(gDistricts.selectAll("path"), (x) => districtFill(x.d), 300);
+      if (state.view) renderCountyPanel(state.detail[state.view]); else renderNationPanel();
+    }));
+  }
+  function liveTag() {
+    return state.live && state.live.source === "simulation" ? `<span class="mock">模擬資料</span>` : "";
+  }
+
+  function liveNationPanel(sorted, groupOf) {
+    const mWon = {}, mLead = {}, mPred = {};
+    sorted.forEach((c) => {
+      const s = liveMayor(c);
+      if (c.mayor.basis === "prediction") mPred[c.mayor.leader] = (mPred[c.mayor.leader] || 0) + 1;
+      if (s && s.winner) mWon[s.winner.party] = (mWon[s.winner.party] || 0) + 1;
+      else if (s && s.leader) mLead[s.leader.party] = (mLead[s.leader.party] || 0) + 1;
+    });
+    const council = councilTally(sorted);
+    panel.innerHTML = `
+      <p class="eyebrow">${esc(state.meta.election)} · 開票中${liveClock() ? ` · 更新 ${liveClock()}` : ""} ${liveTag()}</p>
+      <h2>2026 開票結果</h2>
+      <h3 class="sec">縣市長（${sorted.length} 席）</h3>
+      ${scoreBoard({ won: mWon, lead: mLead, pred: mPred, total: sorted.length }, "政黨")}
+      <h3 class="sec">議員（全國 ${council.total} 席）</h3>
+      ${scoreBoard(council, "政黨")}
+      <p class="muted">議員尚未填入預測，「預測」暫以 2022 政黨得票推估的基準席次比較。</p>
+      <h3 class="sec">各縣市長：開票 vs 我的預測</h3>
+      ${liveColorSwitch()}
+      ${legendHtml()}
+      <div class="crow-head lrow"><span></span><span>開票</span><span style="text-align:left">目前領先</span><span>得票率</span><span>與預測</span></div>
+      <ul class="rows">${sorted.map((c, i) => {
+        const s = liveMayor(c);
+        const newGroup = i > 0 && groupOf(c.id) !== groupOf(sorted[i - 1].id);
+        const pct = s ? s.progress * 100 : 0;
+        const gap = s && s.gap != null && s.total
+          ? (s.flipped ? `<span class="flip">翻盤</span>` : `<span class="${gapClass(s.gap)}" title="領先幅度與預測差距（百分點）">${signed(s.gap)}</span>`) : "—";
+        return `
+        <li class="${newGroup ? "grp" : ""}"><button type="button" class="row lrow" data-row="${esc(c.id)}">
+          <span class="row-name">${esc(c.name)}</span>
+          <span class="lprog" title="開票 ${pct.toFixed(1)}%"><i style="width:${pct}%"></i><small class="num">${pct.toFixed(0)}%</small></span>
+          ${s && s.leader ? `<span class="row-who">${s.winner ? '<b class="ok">✓</b>' : ""}${partyDot(s.leader.party)}${esc(s.leader.name)}</span>
+          <span class="num">${s.leader.share.toFixed(1)}%</span>` : `<span class="row-who">尚未開票</span><span></span>`}
+          <span class="num row-margin">${gap}</span>
+        </button></li>`;
+      }).join("")}</ul>
+      <p class="muted">「與預測」：我預測的勝方，實際領先幅度比預測多（+）或少（−）幾個百分點；勝方與預測不同時標「翻盤」。</p>`;
+    bindLiveColor();
+  }
+
   // ---------- 側欄 ----------
   function legendHtml() {
     return `<div class="legend">
       ${["KMT", "DPP", "TPP", "NPP", "IND"].map((k) => `<span>${partyDot(k)}${party(k).short}</span>`).join("")}
-      <p>${forecastMode()
+      <p>${liveMode()
+        ? (state.liveColor === "gap"
+          ? "底色為比我的預測表現更好的陣營；縣市看領先幅度差距，滿 10 個百分點為最深。議員選區看比預測多拿最多席的政黨，與預測相同為白色。"
+          : "底色為目前領先陣營，顏色越深代表開票越多，當選確定為最深。議員選區看目前領先（含當選）席次最多的政黨。")
+        : forecastMode()
         ? (state.meta.hasPredictions ? "底色為預測領先陣營，顏色越深領先越多；尚未預測的地區為白色。" : "尚未填入預測，地圖先以白色呈現。切換到「歷史紀錄」可看歷屆實際結果。")
         : "底色為 2022 縣市長實際得票領先政黨（縣市與議員選區都看該區 2022 縣市長得票）；顏色越深，領先越多。"}</p></div>`;
   }
@@ -635,6 +860,7 @@
     const rank = (id) => (order.includes(id) ? order.indexOf(id) : 99);
     const sorted = [...state.counties].sort((a, b) => rank(a.id) - rank(b.id));
     const groupOf = (id) => (rank(id) < 6 ? "直轄市" : rank(id) < 9 ? "省轄市" : "縣");
+    if (liveMode()) { liveNationPanel(sorted, groupOf); bindNationRows(); return; }
     panel.innerHTML = `
       <p class="eyebrow">${esc(state.meta.election)} · 投票日 ${state.meta.voteDate.replace(/-/g, "/")}</p>
       <h2>${fm ? "2026 縣市長預測" : "縣市長歷史紀錄"}</h2>
@@ -670,6 +896,10 @@
           <span class="num row-margin">+${(hw.share - (h.results[1] ? h.results[1].share : 0)).toFixed(1)}</span>
         </button></li>`;
       }).join("")}</ul>`;
+    bindNationRows();
+  }
+
+  function bindNationRows() {
     panel.querySelectorAll("[data-row]").forEach((b) => {
       const id = b.dataset.row;
       b.addEventListener("click", () => {
@@ -698,6 +928,7 @@
 
   function renderCountyPanel(c) {
     const all = [...c.districts, ...c.indigenous];
+    if (liveMode()) { liveCountyPanel(c, all); bindCountyRows(c, all); return; }
     const sf = seatsOf(c);
     const seatDots = Object.keys(state.meta.parties).flatMap((k) => Array(sf[k] || 0).fill(k));
     while (seatDots.length < c.totalSeats) seatDots.push(null);
@@ -720,8 +951,12 @@
           <span class="row-who">${partyDot(d.forecast.leader)}${party(d.forecast.leader).short}</span>
           <span class="num row-margin">${d.seats} 席</span>
         </button></li>`).join("")}</ul>`;
-    panel.querySelector("#back").addEventListener("click", closeCounty);
     panel.querySelector("#fill-dots").addEventListener("change", (e) => setFillDots(e.target.checked));
+    bindCountyRows(c, all);
+  }
+
+  function bindCountyRows(c, all) {
+    panel.querySelector("#back").addEventListener("click", closeCounty);
     panel.querySelectorAll("[data-row]").forEach((b) => {
       const d = all.find((x) => x.id === b.dataset.row);
       b.addEventListener("mouseenter", () => { setMapHover(".district", (s) => s.d.id === d.id, true); liftDots(d.id, true); });
@@ -735,6 +970,37 @@
         }
       });
     });
+  }
+
+  function liveCountyPanel(c, all) {
+    const council = councilTally([state.byId[c.id]]);
+    const strip = (s) => [
+      ...PARTY_ORDER.flatMap((k) => Array(s.electedSeats[k] || 0).fill(`<i style="background:${party(k).color}"></i>`)),
+      ...PARTY_ORDER.flatMap((k) => Array(s.leadSeats[k] || 0).fill(`<i class="lead" style="background:${party(k).color}"></i>`))];
+    panel.innerHTML = `
+      <button type="button" class="back" id="back">← 回到全臺</button>
+      <h2>${esc(c.name)}</h2>
+      <p class="eyebrow">開票中${liveClock() ? ` · 更新 ${liveClock()}` : ""} ${liveTag()}</p>
+      <h3 class="sec">縣市長開票</h3>
+      ${liveMayorBlock(state.byId[c.id])}
+      <h3 class="sec">議員席次（應選 ${c.totalSeats} 席）</h3>
+      ${scoreBoard(council, "政黨")}
+      <p class="muted">實心＝當選確定，淡色＝目前領先。「預測」為${c.seatBasis === "2022" ? "依 2022 政黨得票推估的基準席次" : "我的預測（未填的選區以 2022 基準）"}。</p>
+      ${liveColorSwitch()}
+      ${legendHtml()}
+      <h3 class="sec">議員選區</h3>
+      <ul class="rows">${all.map((d) => {
+        const s = liveDistrict(d, c.id);
+        const pct = s ? s.progress * 100 : 0;
+        const dots = s ? strip(s) : [];
+        while (dots.length < d.seats) dots.push('<i class="empty"></i>');
+        return `
+        <li><button type="button" class="row drow" data-row="${esc(d.id)}">
+          <span class="row-name">${esc(d.name)}<small>${esc(d.hasGeometry ? placeText(d) : (d.scope || "全縣市") + "（無地理範圍）")}</small></span>
+          <span class="seatstrip mini">${dots.join("")}</span>
+          <span class="lprog" title="開票 ${pct.toFixed(1)}%"><i style="width:${pct}%"></i><small class="num">${pct.toFixed(0)}%</small></span>
+        </button></li>`; }).join("")}</ul>`;
+    bindLiveColor();
   }
 
   function setMapHover(sel, match, on) {
